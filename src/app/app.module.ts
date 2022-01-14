@@ -10,6 +10,7 @@ import { ServicesComponent } from './pages/services/services.component';
 import { PresentationComponent } from './pages/presentation/presentation.component';
 import { PartenairesComponent } from './pages/partenaires/partenaires.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
+import { WelcomeComponent } from './pages/welcome/welcome.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ContactsComponent } from './pages/contacts/contacts.component';
     ServicesComponent,
     PresentationComponent,
     PartenairesComponent,
-    ContactsComponent
+    ContactsComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,25 @@
+h1 {
+    display: flex;
+    font-size: 10vw;
+    justify-content: center;
+    margin:auto;
+    animation: 6s linear blink_effect;
+    margin-top:15vw;
+}
+p {
+    display: flex;
+    justify-content: center;
+    animation: 6s linear blink_effect;
+}
+
+@keyframes blink_effect {
+    0% {
+      opacity: 0;
+    }
+    50% {
+        opacity: 1;
+      }
+    100% {
+      opacity: 0;
+    }
+  }
