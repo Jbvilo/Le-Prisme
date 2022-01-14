@@ -4,14 +4,15 @@ h1 {
     justify-content: center;
     margin:auto;
     animation: 6s linear blink_effect;
-    margin-top:15vw;
 }
 p {
     display: flex;
     justify-content: center;
     animation: 6s linear blink_effect;
 }
-
+.welcome_animation{
+  margin-top:15%;
+}
 @keyframes blink_effect {
     0% {
       opacity: 0;
