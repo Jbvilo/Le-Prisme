@@ -1,12 +1,15 @@
 h1 {
     display: flex;
-    font-size: 5vw;
+    font-size: 10vw;
     justify-content: center;
     margin:auto;
     animation: 5s linear condemned_blink_effect;
     margin-top:15vw;
 }
-
+p {
+    display: flex;
+    justify-content: center;
+}
 
 @keyframes condemned_blink_effect {
     0% {
