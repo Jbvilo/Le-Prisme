@@ -11,6 +11,7 @@ import { PresentationComponent } from './pages/presentation/presentation.compone
 import { PartenairesComponent } from './pages/partenaires/partenaires.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { WelcomeComponent } from './pages/welcome/welcome.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
