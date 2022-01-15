@@ -4,19 +4,19 @@ h1 {
     justify-content: center;
     margin:auto;
     font-family:'Times New Roman', Times, serif;
-    animation: 5s linear blink_effect;
+    animation: 5s linear welcome_effect;
 }
 p {
     display: flex;
     font-size: 1.5vw;
     justify-content: center;
     font-family:'Times New Roman', Times, serif;
-    animation: 5s linear blink_effect;
+    animation: 5s linear welcome_effect;
 }
 .welcome_animation{
   margin-top:15%;
 }
-@keyframes blink_effect {
+@keyframes welcome_effect {
     0% {
       opacity: 0;
     }
@@ -26,4 +26,4 @@ p {
     100% {
       opacity: 0;
     }
-  }
+}

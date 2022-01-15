@@ -6,21 +6,13 @@
     animation: 3s linear blink_effect;
     font-family: 'Roboto', sans-serif;
     margin-top: 2vw;
-    color:grey;
+    color:rgb(190, 187, 187);
 }
 .navbar-logos {
-    cursor: pointer;
+  cursor: pointer;
 }
-.navbar-logos:hover {
+.active, .navbar-logos:hover {
     font-weight: 900;
     color:black;
 }
 
-@keyframes blink_effect {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }

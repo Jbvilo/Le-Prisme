@@ -21,3 +21,13 @@ div {
     /* On mouse-over, add a deeper shadow */
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
 }
+
+/* CSS ANIMATIONS*/
+@keyframes blink_effect {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

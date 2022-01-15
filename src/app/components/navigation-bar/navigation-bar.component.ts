@@ -11,6 +11,14 @@ export class NavigationBarComponent implements OnInit {
   constructor(private route:Router) { }
 
   ngOnInit(): void {
+    let logo= document.getElementsByClassName('navbar-logos')
+    for (let i = 0; i < logo.length; i++) {
+      logo[i].addEventListener("click", function() {
+        let current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
   }
 
   navigateTo(path){
