@@ -15,6 +15,8 @@ import { CommonModule } from '@angular/common';
 import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
 import { ProblemesComponent } from './components/home/problemes/problemes.component';
 import { StepsComponent } from './components/home/steps/steps.component';
+import { AvantagesComponent } from './components/home/avantages/avantages.component';
+import { AvisClientComponent } from './components/home/avis-client/avis-client.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { StepsComponent } from './components/home/steps/steps.component';
     WelcomeComponent,
     NavigationBarComponent,
     ProblemesComponent,
-    StepsComponent
+    StepsComponent,
+    AvantagesComponent,
+    AvisClientComponent
   ],
   imports: [
     BrowserModule,
