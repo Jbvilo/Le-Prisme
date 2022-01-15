@@ -2,16 +2,18 @@
     display: flex;
     justify-content: space-around;
     font-size: 1vw;
-    font-weight: 500;
+    font-weight: 600;
     animation: 3s linear blink_effect;
     font-family: 'Roboto', sans-serif;
     margin-top: 2vw;
+    color:grey;
 }
 .navbar-logos {
     cursor: pointer;
 }
 .navbar-logos:hover {
     font-weight: 900;
+    color:black;
 }
 
 @keyframes blink_effect {

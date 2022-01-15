@@ -13,6 +13,8 @@ import { ContactsComponent } from './pages/contacts/contacts.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { CommonModule } from '@angular/common';
 import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
+import { ProblemesComponent } from './components/home/problemes/problemes.component';
+import { StepsComponent } from './components/home/steps/steps.component';
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import { NavigationBarComponent } from './components/navigation-bar/navigation-b
     PartenairesComponent,
     ContactsComponent,
     WelcomeComponent,
-    NavigationBarComponent
+    NavigationBarComponent,
+    ProblemesComponent,
+    StepsComponent
   ],
   imports: [
     BrowserModule,

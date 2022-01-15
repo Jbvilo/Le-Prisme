@@ -3,11 +3,13 @@ h1 {
     font-size: 10vw;
     justify-content: center;
     margin:auto;
+    font-family:'Times New Roman', Times, serif;
     animation: 5s linear blink_effect;
 }
 p {
     display: flex;
     justify-content: center;
+    font-family:'Times New Roman', Times, serif;
     animation: 5s linear blink_effect;
 }
 .welcome_animation{
