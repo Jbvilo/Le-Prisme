@@ -17,7 +17,8 @@ import { ProblemesComponent } from './components/home/problemes/problemes.compon
 import { StepsComponent } from './components/home/steps/steps.component';
 import { AvantagesComponent } from './components/home/avantages/avantages.component';
 import { AvisClientComponent } from './components/home/avis-client/avis-client.component';
-
+import { DefinitionComponent } from './components/presentation/definition/definition.component';
+import { IntroductionComponent } from './components/presentation/introduction/introduction.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,9 @@ import { AvisClientComponent } from './components/home/avis-client/avis-client.c
     ProblemesComponent,
     StepsComponent,
     AvantagesComponent,
-    AvisClientComponent
+    AvisClientComponent,
+    DefinitionComponent,
+    IntroductionComponent
   ],
   imports: [
     BrowserModule,
