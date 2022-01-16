@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-avantages',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AvantagesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route:Router) { }
 
   ngOnInit(): void {
+  }
+  
+  navigateTo(path): void {
+    this.route.navigate([path])
   }
 
 }

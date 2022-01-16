@@ -7,22 +7,22 @@ import { Router } from '@angular/router';
   styleUrls: ['./navigation-bar.component.scss']
 })
 export class NavigationBarComponent implements OnInit {
-
-  constructor(private route:Router) { }
+  current_path:string;
+  constructor(private route: Router) {
+    this.current_path = this.route.url
+  }
 
   ngOnInit(): void {
-    let logo= document.getElementsByClassName('navbar-logos')
-    for (let i = 0; i < logo.length; i++) {
-      logo[i].addEventListener("click", function() {
-        let current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-      });
-    }
+    this.router_subscribe()
+  }
+  
+  router_subscribe(): void {
+    this.route.events.subscribe(() => {
+      this.current_path = this.route.url
+    })
   }
 
-  navigateTo(path){
+  navigateTo(path): void {
     this.route.navigate([path])
   }
-
 }

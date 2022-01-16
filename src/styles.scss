@@ -50,7 +50,6 @@ body {
 
 
 
-
 /* CSS ANIMATIONS*/
 @keyframes blink_effect {
     0% {
@@ -91,5 +90,15 @@ body {
       opacity: 1;
       margin-left: 0%;
       margin-top:0%;
+    }
+  }
+  @keyframes services-effect {
+    0% {
+      opacity: 0;
+      margin-left: -100%;
+    }
+    100% {
+      opacity: 1;
+      margin-left: 0%;
     }
   }

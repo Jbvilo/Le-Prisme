@@ -21,6 +21,7 @@ import { DefinitionComponent } from './components/presentation/definition/defini
 import { IntroductionComponent } from './components/presentation/introduction/introduction.component';
 import { ServicesPresentationComponent } from './components/services/services-presentation/services-presentation.component';
 import { FirstviewComponent } from './components/home/firstview/firstview.component';
+import { KeywordsCardComponent } from './components/presentation/keywords-card/keywords-card.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { FirstviewComponent } from './components/home/firstview/firstview.compon
     DefinitionComponent,
     IntroductionComponent,
     ServicesPresentationComponent,
-    FirstviewComponent
+    FirstviewComponent,
+    KeywordsCardComponent
   ],
   imports: [
     BrowserModule,

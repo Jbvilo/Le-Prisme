@@ -5,6 +5,7 @@ h1 {
 }
 .titre {
     width: 100%;
+    margin-bottom:2vw;
 }
 .avisclient {
     width: 100%;
@@ -21,4 +22,8 @@ h1 {
     width: 25vw;
     padding: 2vw;
     text-align: start;
+}
+.avis-client-content { 
+    margin-top: 8vw;
+    margin-bottom: 8vw;
 }
