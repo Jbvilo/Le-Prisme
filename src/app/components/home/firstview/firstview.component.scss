@@ -13,10 +13,25 @@ h1 {
     margin-top: -35vw;
 }
 .firstview-content {
-    margin-top: -15vw;
+    margin-top: -40vw;
+    animation: 0.5s linear imghome-effect;
 }
 .firstview-content2 {
     width: 50%;
     text-align: center;
-    height: 15vw;
+    height: 40vw;
+}
+.button {
+    width: 35%;
+    background-color:#E8F2FF;
+    color:black;
+    margin:2%;
+}
+.blue-button {
+    background-color: #377EFA;
+    color:white;
+    
+}
+.button-container {
+    animation: 0.5s linear button-effect;
 }
