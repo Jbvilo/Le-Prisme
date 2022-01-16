@@ -21,7 +21,15 @@ div {
     /* On mouse-over, add a deeper shadow */
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 /* CSS ANIMATIONS*/
 @keyframes blink_effect {
     0% {
