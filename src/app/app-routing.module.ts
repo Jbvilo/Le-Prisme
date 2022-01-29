@@ -15,8 +15,7 @@ const routes: Routes = [
   {path:"services", component:ServicesComponent},
   {path:"partenaires", component:PartenairesComponent},
   {path:"contacts", component:ContactsComponent},
-  {path:"formulaire", component:FormulaireComponent},
-  { path: '**',  redirectTo: '/index.html' }
+  {path:"formulaire", component:FormulaireComponent}
 ];
 
 @NgModule({
