@@ -22,6 +22,7 @@ import { IntroductionComponent } from './components/presentation/introduction/in
 import { ServicesPresentationComponent } from './components/services/services-presentation/services-presentation.component';
 import { FirstviewComponent } from './components/home/firstview/firstview.component';
 import { KeywordsCardComponent } from './components/presentation/keywords-card/keywords-card.component';
+import { FormulaireComponent } from './pages/formulaire/formulaire.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { KeywordsCardComponent } from './components/presentation/keywords-card/k
     IntroductionComponent,
     ServicesPresentationComponent,
     FirstviewComponent,
-    KeywordsCardComponent
+    KeywordsCardComponent,
+    FormulaireComponent
   ],
   imports: [
     BrowserModule,
