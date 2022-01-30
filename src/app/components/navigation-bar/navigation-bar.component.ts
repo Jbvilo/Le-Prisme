@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -11,6 +11,7 @@ export class NavigationBarComponent implements OnInit {
   constructor(private route: Router) {
     this.current_path = this.route.url
   }
+
 
   ngOnInit(): void {
     this.router_subscribe()

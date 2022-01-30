@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PresentationComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    window.scrollBy(0,0)
+   }
 
   ngOnInit(): void {
   }
