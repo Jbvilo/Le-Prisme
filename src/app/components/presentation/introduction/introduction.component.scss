@@ -1,0 +1,32 @@
+h1 {
+    padding-bottom: 2vw;
+    padding-top: 3vw;
+}
+.presentation {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+.definition-text {
+    text-align: start;
+    width:55%;
+}
+.definition-image {
+    width: 100%;
+    margin: auto;
+    display: inline-block;
+}
+.imgback{
+    animation: 1s linear imgback-effect;
+}
+.button-purple {
+    background-color:#377EFA;
+    width: 70%;
+    text-align: center;
+    margin-bottom: 2vw;
+    height:4vw;
+}
+.button-container {
+    margin-top:6vw
+}

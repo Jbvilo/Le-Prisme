@@ -1,0 +1,36 @@
+h1 {   
+    margin-top:15%;
+}
+.firstbackground {
+    width: 55vw;
+    float: right;
+    position: relative;
+}
+.secondbackground {
+    width: 50vw;
+    float: right;
+    position: relative;
+    margin-top: -35vw;
+}
+.firstview-content {
+    margin-top: -40vw;
+    animation: 0.5s linear imghome-effect;
+}
+.firstview-content2 {
+    width: 50%;
+    text-align: center;
+    height: 40vw;
+}
+.button {
+    width: 35%;
+    background-color:#E8F2FF;
+    color:black;
+    margin:2%;
+}
+.blue-button {
+    background-color: #377EFA;
+    color:white;
+}
+.button-container {
+    animation: 0.5s linear button-effect;
+}

@@ -13,7 +13,16 @@ import { ContactsComponent } from './pages/contacts/contacts.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { CommonModule } from '@angular/common';
 import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
-
+import { ProblemesComponent } from './components/home/problemes/problemes.component';
+import { StepsComponent } from './components/home/steps/steps.component';
+import { AvantagesComponent } from './components/home/avantages/avantages.component';
+import { AvisClientComponent } from './components/home/avis-client/avis-client.component';
+import { DefinitionComponent } from './components/presentation/definition/definition.component';
+import { IntroductionComponent } from './components/presentation/introduction/introduction.component';
+import { ServicesPresentationComponent } from './components/services/services-presentation/services-presentation.component';
+import { FirstviewComponent } from './components/home/firstview/firstview.component';
+import { KeywordsCardComponent } from './components/presentation/keywords-card/keywords-card.component';
+import { FormulaireComponent } from './pages/formulaire/formulaire.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +35,17 @@ import { NavigationBarComponent } from './components/navigation-bar/navigation-b
     PartenairesComponent,
     ContactsComponent,
     WelcomeComponent,
-    NavigationBarComponent
+    NavigationBarComponent,
+    ProblemesComponent,
+    StepsComponent,
+    AvantagesComponent,
+    AvisClientComponent,
+    DefinitionComponent,
+    IntroductionComponent,
+    ServicesPresentationComponent,
+    FirstviewComponent,
+    KeywordsCardComponent,
+    FormulaireComponent
   ],
   imports: [
     BrowserModule,

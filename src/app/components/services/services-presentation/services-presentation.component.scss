@@ -1,0 +1,51 @@
+h2 {
+    margin-top: 4vw;
+    margin-bottom:4.5vw;
+    font-size: 1.7vw;
+    color: #01396A;;
+}
+.bluerectangle {
+    height:26vw;
+    width: 35vw;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #CCE0FE;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25), 0 2px 8px rgba(0,0,0,0.22);
+}
+.lightbluerectangle {
+    height: 12vw;
+    width: 22vw;
+    vertical-align: top;
+    background-color: #01396A;
+    margin-left:1vw;
+    margin-bottom:2vw;
+    text-align: start;
+    position: relative;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25), 0 2px 8px rgba(0,0,0,0.22);
+}
+.orangerectangle {
+    height: 12vw;
+    width: 22vw;
+    background-color: #FF8B1F;
+    margin-left:1vw;
+    text-align: start;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25), 0 2px 8px rgba(0,0,0,0.22);
+}
+.services-content {
+    text-align: center;
+    margin:7vw;
+    margin-bottom: 5vw;
+    height: 100%;
+    overflow: visible;
+    animation: 0.5s linear services-effect;
+}
+.bluerectangle:hover,.lightbluerectangle:hover,.orangerectangle:hover {
+    cursor: pointer;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.aah-illustration {
+    width: 15vw;
+    margin: auto;
+    margin-top:2vw;
+}

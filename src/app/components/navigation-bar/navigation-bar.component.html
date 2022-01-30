@@ -1,8 +1,8 @@
 <div class="navbar">
 <!--<img class="navbar-logos" src="../../../assets/svg/prisme-logo.svg"/>-->
-<div class="navbar-logos">ACCUEIL</div>
-<div class="navbar-logos">QUI SOMMES-NOUS ?</div>
-<div class="navbar-logos">NOS SERVICES</div>
-<div class="navbar-logos">PARTENAIRES</div>
-<div class="navbar-logos">CONTACTEZ-NOUS</div>
+<div class="navbar-logos" [ngClass]="current_path == '/home' ? 'active' : '' " (click)="navigateTo('home')">ACCUEIL</div>
+<div class="navbar-logos" [ngClass]="current_path == '/presentation' ? 'active' : '' " (click)="navigateTo('presentation')">QUI SOMMES-NOUS ?</div>
+<div class="navbar-logos" [ngClass]="current_path == '/services' ? 'active' : '' " (click)="navigateTo('services')">NOS SERVICES</div>
+<div class="navbar-logos" [ngClass]="current_path == '/partenaires' ? 'active' : '' "(click)="navigateTo('partenaires')">PARTENAIRES</div>
+<div class="navbar-logos" [ngClass]="current_path == '/contacts' ? 'active' : '' "(click)="navigateTo('contacts')">CONTACTEZ-NOUS</div>
 </div>

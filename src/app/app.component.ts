@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationStart, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,10 +9,21 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'Le Prisme';
   visible: boolean = false;
+  constructor(   private router:Router){
+ 
+  }
 
   ngOnInit(): void {
-    setTimeout(() => {
-      this.visible = true
-    }, 5000);
+ this.router.events.subscribe(res=>{
+  if (res instanceof NavigationStart) {
+    if(res.url == "/"){
+      this.visible=false
+    }
+    else {
+      this.visible=true
+    }
   }
+ })
+  }
+
 }
