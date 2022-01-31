@@ -7,7 +7,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./keywords-card.component.scss']
 })
 export class KeywordsCardComponent implements OnInit {
-chantier:number=0
+chantier:number=1;
 visible:boolean=false
 
   constructor() {
@@ -15,7 +15,7 @@ visible:boolean=false
    }
   @HostListener('window:scroll', ['$event'])
   onWindowScroll($event) {
-    if(window.scrollY > 80){
+    if(window.scrollY > 200){
     let interval=setInterval(() => {
       if(this.chantier<95){
         this.chantier++

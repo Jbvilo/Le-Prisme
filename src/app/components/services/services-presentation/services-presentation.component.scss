@@ -23,6 +23,7 @@ h2 {
     position: relative;
     z-index: 100;
     box-shadow: 0 2px 8px rgba(0,0,0,0.25), 0 2px 8px rgba(0,0,0,0.22);
+    overflow: visible;
 }
 .orangerectangle {
     height: 12vw;
@@ -31,6 +32,7 @@ h2 {
     margin-left:1vw;
     text-align: start;
     box-shadow: 0 2px 8px rgba(0,0,0,0.25), 0 2px 8px rgba(0,0,0,0.22);
+    overflow: visible;
 }
 .services-content {
     text-align: center;
@@ -38,7 +40,7 @@ h2 {
     margin-bottom: 10vw;
     height: 100%;
     overflow: visible;
-    animation: 0.5s linear services-effect;
+    animation: 1s linear services-effect;
 }
 .bluerectangle:hover,.lightbluerectangle:hover,.orangerectangle:hover {
     cursor: pointer;
@@ -47,5 +49,5 @@ h2 {
 .aah-illustration {
     width: 15vw;
     margin: auto;
-    margin-top:2vw;
+    margin-top:-3vw;
 }

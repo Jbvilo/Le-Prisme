@@ -13,7 +13,7 @@ export class DefinitionComponent implements OnInit {
   onWindowScroll($event) {
       
     console.log(window.scrollY)
-    if(window.scrollY >=200){
+    if(window.scrollY >=250){
       this.visible=true
     }
   }

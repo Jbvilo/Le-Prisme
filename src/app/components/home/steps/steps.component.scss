@@ -1,7 +1,7 @@
 .logo-container{
     display: flex;
     justify-content: space-around;
-    width: 80%;
+    width: 60%;
     margin: auto;
 }
 .logos {
@@ -29,4 +29,18 @@ h4 {
     justify-content: space-around;
     width: 80%;
     margin: auto;
+}
+.img-container {
+    width: 9vw;
+    height: 9vw;
+}
+.roundliaison-container {
+    width: 3.5vw;
+    height: 3.5vw;
+    margin-top: 3vw;
+}
+.liaison-container {
+    width: 18vw;
+    height: 4vw;
+    margin-top:3.3vw;
 }

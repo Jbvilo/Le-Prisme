@@ -3,9 +3,18 @@
     margin-left: 8vw;
     margin-right: 8vw;
     margin-top: 1vw;
-    margin-bottom: 5vw;
-    animation: 0.5s linear button-effect;
+    margin-bottom: 3vw;
+    animation: 1s linear button-effect;
 }
 h3 {
     font-weight: 600;
+    color: #0558a0;
+}
+.separator {
+    width: 0.01vw;
+    height: 2.1vw;
+    background-color: white;
+    margin: auto;
+    margin-left: 0px;
+    margin-right: 0px;
 }
