@@ -14,10 +14,14 @@ p {
     margin:0px;
 }
 .welcome_animation{
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 500px;
+}
+
+.img {
+  animation: 4s linear welcome_effect;
 }
 @keyframes welcome_effect {
     0% {
@@ -33,3 +37,5 @@ p {
       opacity: 0;
     }
 }
+
+

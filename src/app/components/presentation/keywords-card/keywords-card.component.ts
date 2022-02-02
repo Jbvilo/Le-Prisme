@@ -8,6 +8,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class KeywordsCardComponent implements OnInit {
 chantier:number=1;
+exp:number=1;
 visible:boolean=false
 
   constructor() {
@@ -17,11 +18,15 @@ visible:boolean=false
   onWindowScroll($event) {
     if(window.scrollY > 200){
     let interval=setInterval(() => {
-      if(this.chantier<95){
+      if(this.chantier<300){
         this.chantier++
+       
+      }
+      if(this.exp<30){
+        this.exp++;
       }
    
-      if(this.chantier >= 95){
+      if(this.chantier >= 300){
         clearInterval(interval)
         this.visible=true
       }

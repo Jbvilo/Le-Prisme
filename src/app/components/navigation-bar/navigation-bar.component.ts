@@ -10,6 +10,9 @@ export class NavigationBarComponent implements OnInit {
   current_path:string;
   constructor(private route: Router) {
     this.current_path = this.route.url
+    if(this.current_path == "/hellodjo" || this.current_path == "/aah" || this.current_path == "/renovation"  ){
+      this.current_path= "/services"
+    }
   }
 
 
@@ -20,6 +23,9 @@ export class NavigationBarComponent implements OnInit {
   router_subscribe(): void {
     this.route.events.subscribe(() => {
       this.current_path = this.route.url
+      if(this.current_path == "/hellodjo"  || this.current_path == "/aah" || this.current_path == "/renovation" ){
+        this.current_path= "/services"
+      }
     })
   }
 

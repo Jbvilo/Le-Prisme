@@ -7,11 +7,15 @@ import { NavigationStart, Router } from '@angular/router';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-nav:boolean=false;
-  constructor(private router:Router) { }
+  nav: boolean = false;
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
 
+  }
+
+  navigateTo(path) {
+    location.href = path
   }
 
 }
