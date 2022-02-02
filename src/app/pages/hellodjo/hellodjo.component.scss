@@ -4,9 +4,12 @@
     display: flex;
     justify-content: space-around;
     margin-top: -2vw;
+    animation: 2s linear blink_effect;
 }
 .first {
     width:25vw;
+    height: 30vw;
+    margin-bottom: 5vw;
 }
 h1 {
     margin-top: 1vw;
@@ -19,4 +22,17 @@ h4 {
     background-color: #FF8B1F;
     margin-top:10vw;
     margin-bottom:2vw;
+    animation: 1s linear button2-effect;
 }
+
+@keyframes button2-effect {
+    0% {
+      opacity: 0;
+ margin-top: 0vw;
+      
+    }
+    100% {
+      opacity: 1;
+      margin-top:10vw;
+    }
+  }

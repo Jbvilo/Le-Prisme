@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-around;
     margin-top: -2vw;
+    animation: 2s linear blink_effect;
 }
 .first {
     width:30vw;
