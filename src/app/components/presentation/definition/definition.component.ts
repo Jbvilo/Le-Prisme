@@ -17,7 +17,7 @@ onResize(event) {
   onWindowScroll($event) {
       
     console.log(window.scrollY)
-    if(window.scrollY >=250){
+    if(window.scrollY >=0){
       this.visible=true
     }
   }
