@@ -16,7 +16,7 @@ visible:boolean=false
    }
   @HostListener('window:scroll', ['$event'])
   onWindowScroll($event) {
-    if(window.scrollY > 900){
+    if(window.scrollY > 700){
     let interval=setInterval(() => {
       if(this.chantier<300){
         this.chantier++
