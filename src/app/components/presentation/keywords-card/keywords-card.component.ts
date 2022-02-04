@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -11,7 +12,7 @@ chantier:number=1;
 exp:number=1;
 visible:boolean=false
 
-  constructor() {
+  constructor(private router:Router) {
 
    }
   @HostListener('window:scroll', ['$event'])
@@ -55,5 +56,9 @@ visible:boolean=false
 
   ngOnInit(): void {
 
+  }
+
+  navigateTo(path) {
+    this.router.navigate([path])
   }
 }

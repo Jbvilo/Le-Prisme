@@ -18,3 +18,15 @@ h3 {
     margin-left: 0px;
     margin-right: 0px;
 }
+.button {
+    background-color:#377EFA;
+    height: 4vw;
+    margin: auto;
+    width: 20%;
+    text-align: center;
+    margin-top: 2vw;
+  }
+
+  .button:hover {
+    transform: translateY(-4px);
+ }
