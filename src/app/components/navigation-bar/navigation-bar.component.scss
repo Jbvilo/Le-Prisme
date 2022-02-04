@@ -1,25 +1,25 @@
 .navbar {
     display: flex;
     justify-content: space-around;
-    font-size: 1vw;
+    font-size: 1.2vw;
     font-weight: 400;
     animation: 1s linear blink_effect;
     font-family: 'Roboto', sans-serif;
-   // margin-top: 2vw;
     color:rgb(190, 187, 187);
     height: 4.5vw;
+    background-color: #FFFFFF;
 }
 .navbar-logos {
   cursor: pointer;
   height: 2.2vw;
   margin: auto;
   margin-top: 2.05vw;
-  width: 10vw;
+  width: 11vw;
   text-align: center;
-
+  transition: transform 0.4s;
 }
 .active, .navbar-logos:hover {
-    font-weight: 400;
+    font-weight: 500;
     color:#01396A;
     transform: translateY(2px);
     //border-bottom: solid 1px #01396A;
@@ -28,3 +28,13 @@
   transform: translateY(2px);
 }
 
+.button {
+  background-color:#377EFA;
+  height: 3vw;
+  margin: auto;
+  width: 10vw;
+  text-align: center;
+}
+.button:hover {
+  transform: translateY(2px);
+}

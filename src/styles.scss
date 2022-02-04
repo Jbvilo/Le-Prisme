@@ -5,7 +5,7 @@ body {
     margin:auto;
     font-family:'Open Sans', sans-serif;
     font-size: 1vw;
-    background-color: #fafbfd;
+    background-color: #FFFFFF;
     color:#1e293f;
 }
 h1 {
@@ -46,6 +46,7 @@ body {
   align-items: center;
   background-color: black;
   color:white;
+  transition: transform 0.3s;
 }
 .button:hover {
   cursor: pointer;
