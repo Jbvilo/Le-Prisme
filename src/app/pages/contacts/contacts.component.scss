@@ -1,0 +1,30 @@
+.content {
+    text-align: center;
+}
+.button {
+    width: 20vw;
+    margin:1vw;
+}
+.blue-button {
+    background-color: #377EFA;
+    color:white;
+}
+.orange-button {
+    background-color: #FF8B1F;
+    color:white;
+}
+.lightblue-button {
+    background-color: #00A2E7;
+    color: white;
+}
+.button:hover {
+   transform: translateY(-4px);
+}
+.coordonees {
+    display: inline-block;
+    text-align: middle;
+    vertical-align: top;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    color:#0658A3;
+}

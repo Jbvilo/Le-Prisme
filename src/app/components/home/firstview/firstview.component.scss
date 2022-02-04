@@ -1,5 +1,6 @@
 h1 {   
     margin-top:15%;
+    font-size: 200%;
 }
 .firstbackground {
     width: 55vw;
@@ -14,7 +15,7 @@ h1 {
 }
 .firstview-content {
     margin-top: -40vw;
-    animation: 0.5s linear imghome-effect;
+    animation: 1s linear imghome-effect;
 }
 .firstview-content2 {
     width: 50%;
@@ -31,6 +32,9 @@ h1 {
     background-color: #377EFA;
     color:white;
 }
+.button:hover {
+   transform: translateY(-4px);
+}
 .button-container {
-    animation: 0.5s linear button-effect;
+    animation: 1s linear button-effect;
 }

@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PartenairesComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    window.scrollBy(0,0)
+   }
 
   ngOnInit(): void {
   }

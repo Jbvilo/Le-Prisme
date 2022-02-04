@@ -15,14 +15,14 @@ export class FirstviewComponent implements OnInit {
   constructor(private router:Router) {
     
    }
-   @HostListener('window:scroll', ['$event'])
-   onWindowScroll($event) {
-       console.log($event);
-   }
 
 
   ngOnInit(): void {
-
+window.addEventListener('touchstart', function (e) {
+  if(e.touches.length > 1) {
+   alert()
+  }
+});
     
   }
   navigateTo(path) {

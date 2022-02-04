@@ -1,6 +1,6 @@
 .card {
-    height:12vw;
-    width:12vw;
+    height:10vw;
+    width:10vw;
     display: inline-block;
     margin:0.3vw;
     text-align: center;
@@ -17,9 +17,8 @@
     opacity: 1;
     vertical-align: top;
     padding: 1vw;
-    margin: auto;
-    margin-top:5vw;
     margin-bottom: 5vw;
+    display: inline-block;
 }
 .cardcontent {
     display:table;
@@ -31,7 +30,7 @@ position:relative;
 vertical-align:middle;
 display: table-cell;
 margin-top:21%;
-height: 9vw;
+height: 7vw;
 }
 .partenairecaf {
     margin-top: 43%;

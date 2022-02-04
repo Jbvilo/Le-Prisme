@@ -23,6 +23,9 @@ import { ServicesPresentationComponent } from './components/services/services-pr
 import { FirstviewComponent } from './components/home/firstview/firstview.component';
 import { KeywordsCardComponent } from './components/presentation/keywords-card/keywords-card.component';
 import { FormulaireComponent } from './pages/formulaire/formulaire.component';
+import { HellodjoComponent } from './pages/hellodjo/hellodjo.component';
+import { AahComponent } from './pages/aah/aah.component';
+import { RenovationComponent } from './pages/renovation/renovation.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +48,10 @@ import { FormulaireComponent } from './pages/formulaire/formulaire.component';
     ServicesPresentationComponent,
     FirstviewComponent,
     KeywordsCardComponent,
-    FormulaireComponent
+    FormulaireComponent,
+    HellodjoComponent,
+    AahComponent,
+    RenovationComponent
   ],
   imports: [
     BrowserModule,

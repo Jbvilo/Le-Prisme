@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-definition',
@@ -6,10 +6,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./definition.component.scss']
 })
 export class DefinitionComponent implements OnInit {
+  visible: boolean=false;
 
   constructor() { }
+  @HostListener('window:resize', ['$event'])
+onResize(event) {
+  console.log(window.screen)
+}
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll($event) {
+      
+    console.log(window.scrollY)
+    if(window.scrollY >=250){
+      this.visible=true
+    }
+  }
 
   ngOnInit(): void {
+    console.log(window.screen)
   }
 
 }

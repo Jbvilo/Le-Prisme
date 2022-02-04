@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactsComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    window.scrollBy(0, 0)
+  }
 
   ngOnInit(): void {
   }
 
+  navigateTo(path) {
+    location.href = path
+  }
 }

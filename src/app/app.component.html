@@ -1,7 +1,7 @@
-<app-header *ngIf="visible==true"></app-header>
-<app-navigation-bar *ngIf="visible==true"></app-navigation-bar>
+<div [ngClass]="scroll? 'scroll' : 'top'" style="position:fixed; width: 100%;z-index: 800;background-color: white;">
+    <app-header *ngIf="visible"></app-header>
+    <app-navigation-bar *ngIf="visible"></app-navigation-bar>
+</div>
+<div *ngIf="visible" style="height: 8vw;"></div>
 <router-outlet></router-outlet>
 <app-footer *ngIf="visible==true"></app-footer>
-<img hidden  src="../assets/svg/introduction-image2.svg"/>
-
-
