@@ -12,27 +12,43 @@ import { Observable } from 'rxjs/internal/Observable';
 export class FirstviewComponent implements OnInit {
   eventSubscription: any;
 
-  constructor(private router:Router) {
-    
-   }
+  constructor(private router: Router) {
+
+  }
 
 
   ngOnInit(): void {
-window.addEventListener('touchstart', function (e) {
-  if(e.touches.length > 1) {
-   alert()
-  }
-});
-    
+    this.screensize()
+    window.addEventListener('touchstart', function (e) {
+      if (e.touches.length > 1) {
+        alert()
+      }
+    });
+
   }
   navigateTo(path) {
-    if(path =="chatbox.html"){
-  location.href =path
+    if (path == "chatbox.html") {
+      location.href = path
     }
-this.router.navigate([path])
+    this.router.navigate([path])
   }
-  onScroll(event){
-    alert(event)
+  navigate(anchor?) {
+    let i = 0;
+    let interval = setInterval(() => {
+      if (i < this.screensize()) {
+        window.scroll({ left: 0, top: i = i + 5 })
+      } else {
+        clearInterval(interval)
+      }
+    }, 5);
   }
 
+  screensize():number{
+    if(window.screen.height <= 720){
+    return 520;
+    }
+    if(window.screen.height <= 1080){
+      return 800
+    }
+  }
 }

@@ -1,7 +1,7 @@
 .keywords-card{
     margin: auto;
-    margin-left: 8vw;
-    margin-right: 8vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
     margin-top: 1vw;
     margin-bottom: 3vw;
     animation: 2s linear definition-effect;
@@ -18,3 +18,15 @@ h3 {
     margin-left: 0px;
     margin-right: 0px;
 }
+.button {
+    background-color:#377EFA;
+    height: 4vw;
+    margin: auto;
+    width: 20%;
+    text-align: center;
+    margin-top: 2vw;
+  }
+
+  .button:hover {
+    transform: translateY(-4px);
+ }

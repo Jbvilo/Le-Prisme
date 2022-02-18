@@ -26,6 +26,7 @@ import { FormulaireComponent } from './pages/formulaire/formulaire.component';
 import { HellodjoComponent } from './pages/hellodjo/hellodjo.component';
 import { AahComponent } from './pages/aah/aah.component';
 import { RenovationComponent } from './pages/renovation/renovation.component';
+import { GobackserviceComponent } from './components/shared/gobackservice/gobackservice.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { RenovationComponent } from './pages/renovation/renovation.component';
     FormulaireComponent,
     HellodjoComponent,
     AahComponent,
-    RenovationComponent
+    RenovationComponent,
+    GobackserviceComponent
   ],
   imports: [
     BrowserModule,

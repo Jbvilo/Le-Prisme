@@ -4,13 +4,13 @@ $blueprisme:#00a2e7;
 body {
     margin:auto;
     font-family:'Open Sans', sans-serif;
-    font-size: 1vw;
+    font-size: 1.2vw;
     background-color: #FFFFFF;
-    color:#1e293f;
+    color:#7a8da8;
 }
 h1 {
   font-weight: 300;
-  color:#0558a0;
+  color:#045092;
 }
 
 div {
@@ -44,9 +44,10 @@ body {
   border-radius: 7px;
   display: inline-flex;
   align-items: center;
-  background-color: black;
+  background-color:#377EFA;
   color:white;
   transition: transform 0.3s;
+
 }
 .button:hover {
   cursor: pointer;

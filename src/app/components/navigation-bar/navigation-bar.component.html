@@ -1,8 +1,16 @@
 <div class="navbar">
 <!--<img  style="vertical-align: top;" class="navbar-logos" src="../../../assets/images/logoprisme.jpeg"/>-->
+<div style="width: 15vw; height: 2.2vw;
+margin: auto;
+margin-top: 2vw;
+width: 11vw;
+text-align: center;
+font-weight: 900;
+color:#377EFA;
+font-size: 140%;">Le Prisme</div>
 <div class="navbar-logos" [ngClass]="current_path == '/home' ? 'active' : '' " (click)="navigateTo('home')">Accueil</div>
 <div class="navbar-logos" [ngClass]="current_path == '/presentation' ? 'active' : '' " (click)="navigateTo('presentation')">Qui sommes-nous ?</div>
 <div class="navbar-logos" [ngClass]="current_path == '/services' ? 'active' : '' " (click)="navigateTo('services')">Nos services</div>
 <div class="navbar-logos" [ngClass]="current_path == '/partenaires' ? 'active' : '' "(click)="navigateTo('partenaires')">Nos partenaires</div>
-<div class="button" (click)="navigateTo('contacts')"><span style="width:100%;text-align: center;font-weight: 500;">Contactez-nous</span></div>
+<div class="button" (click)="navigateTo('contacts')"><span style="width:100%;text-align: center;font-weight: 600;">Contactez-nous</span></div>
 </div>

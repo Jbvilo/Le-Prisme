@@ -36,11 +36,10 @@ h2 {
 }
 .services-content {
     text-align: center;
-    margin:2vw;
-    margin-bottom: 10vw;
     height: 100%;
     overflow: visible;
     animation: 1s linear services-effect;
+    margin-bottom: 5vw;
 }
 .bluerectangle:hover,.lightbluerectangle:hover,.orangerectangle:hover {
     cursor: pointer;

@@ -16,10 +16,7 @@ onResize(event) {
   @HostListener('window:scroll', ['$event'])
   onWindowScroll($event) {
       
-    console.log(window.scrollY)
-    if(window.scrollY >=250){
       this.visible=true
-    }
   }
 
   ngOnInit(): void {
