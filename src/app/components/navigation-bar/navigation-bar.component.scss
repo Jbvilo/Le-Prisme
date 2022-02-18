@@ -8,6 +8,7 @@
     color:rgb(190, 187, 187);
     height: 4.5vw;
     background-color: #FFFFFF;
+    z-index: 1000;
 }
 .navbar-logos {
   cursor: pointer;
@@ -20,7 +21,7 @@
 }
 .active, .navbar-logos:hover {
     font-weight: 500;
-    color:#01396A;
+    color:#377EFA;
     transform: translateY(2px);
     //border-bottom: solid 1px #01396A;
 }
