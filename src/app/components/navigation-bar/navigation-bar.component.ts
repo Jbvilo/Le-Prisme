@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,11 +7,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./navigation-bar.component.scss']
 })
 export class NavigationBarComponent implements OnInit {
-  current_path:string;
+  current_path: string;
   constructor(private route: Router) {
     this.current_path = this.route.url
-    if(this.current_path == "/hellodjo" || this.current_path == "/aah" || this.current_path == "/renovation"  ){
-      this.current_path= "/services"
+    if (this.current_path == "/hellodjo" || this.current_path == "/aah" || this.current_path == "/renovation") {
+      this.current_path = "/services"
     }
   }
 
@@ -19,12 +19,12 @@ export class NavigationBarComponent implements OnInit {
   ngOnInit(): void {
     this.router_subscribe()
   }
-  
+
   router_subscribe(): void {
     this.route.events.subscribe(() => {
       this.current_path = this.route.url
-      if(this.current_path == "/hellodjo"  || this.current_path == "/aah" || this.current_path == "/renovation" ){
-        this.current_path= "/services"
+      if (this.current_path == "/hellodjo" || this.current_path == "/aah" || this.current_path == "/renovation") {
+        this.current_path = "/services"
       }
     })
   }

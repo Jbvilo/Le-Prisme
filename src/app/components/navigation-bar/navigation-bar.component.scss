@@ -1,14 +1,31 @@
+@import '../../../styles.scss';
+
+.navbar_title {
+  width: 15vw; 
+  height: 2.2vw;
+  margin: auto;
+  margin-top: 2vw;
+  width: 11vw;
+  text-align: center;
+  font-weight: 900;
+  color:$blueprisme;
+  font-size: 140%;
+}
+.button_text {
+  width:100%;
+  text-align: center;
+  font-weight: 600;
+}
 .navbar {
-    display: flex;
-    justify-content: space-around;
-    font-size: 1.2vw;
-    font-weight: 400;
-    animation: 1s linear blink_effect;
-    font-family: 'Roboto', sans-serif;
-    color:rgb(190, 187, 187);
-    height: 4.5vw;
-    background-color: #FFFFFF;
-    z-index: 1000;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2vw;
+  font-weight: 400;
+  color:$greyprisme;
+  height: 4.5vw;
+  background-color: #FFFFFF;
+  animation: 1s linear blink_effect;
+  z-index: 1000;
 }
 .navbar-logos {
   cursor: pointer;
@@ -20,17 +37,15 @@
   transition: transform 0.4s;
 }
 .active, .navbar-logos:hover {
-    font-weight: 500;
-    color:#377EFA;
-    transform: translateY(2px);
-    //border-bottom: solid 1px #01396A;
+  font-weight: 500;
+  color:$blueprisme;
+  transform: translateY(2px);
 }
 .navbar-logos:active {
   transform: translateY(2px);
 }
-
 .button {
-  background-color:#377EFA;
+  background-color:$blueprisme;
   height: 3vw;
   margin: auto;
   width: 10vw;
