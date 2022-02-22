@@ -1,3 +1,5 @@
+@import '../../../../styles.scss';
+
 .avantages {
     display: inline-block;
     width: 60%;
@@ -37,6 +39,6 @@
     margin-top:2vw;
 }
 h4 {
-    color: #0558a0;
+    color: $blueprisme;
     margin-bottom: 0.5vw;
 }
