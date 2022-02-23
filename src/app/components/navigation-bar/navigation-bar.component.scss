@@ -1,5 +1,16 @@
 @import '../../../styles.scss';
 
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2vw;
+  font-weight: 400;
+  color:$greyprisme;
+  height: 4.8vw;
+  background-color: #FFFFFF;
+  animation: 1s linear blink_effect;
+  z-index: 1000;
+}
 .navbar_title {
   width: 15vw; 
   height: 2.2vw;
@@ -16,18 +27,8 @@
   text-align: center;
   font-weight: 600;
 }
-.navbar {
-  display: flex;
-  justify-content: space-around;
-  font-size: 1.2vw;
-  font-weight: 400;
-  color:$greyprisme;
-  height: 4.5vw;
-  background-color: #FFFFFF;
-  animation: 1s linear blink_effect;
-  z-index: 1000;
-}
-.navbar-logos {
+
+.navbar-items {
   cursor: pointer;
   height: 2.2vw;
   margin: auto;
@@ -36,7 +37,7 @@
   text-align: center;
   transition: transform 0.4s;
 }
-.active, .navbar-logos:hover {
+.active, .navbar-items:hover {
   font-weight: 500;
   color:$blueprisme;
   transform: translateY(2px);
