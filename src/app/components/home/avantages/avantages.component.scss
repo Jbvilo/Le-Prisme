@@ -2,12 +2,12 @@
 
 .avantages {
     display: inline-block;
-    width: 60%;
+    width: 55%;
     vertical-align: top;
 }
 .avantages2 {
     display: inline-block;
-    width: 40%;
+    width: 45%;
     vertical-align: top;
 }
 .avantage-img {
@@ -23,12 +23,6 @@
     margin-bottom: 4vw;
     margin-right: 2vw;
 }
-.button-purple {
-    background-color:#8A6DCC;
-    width: 35%;
-    text-align: center;
-    margin-bottom: 2vw;
-}
 .button-container {
     display: flex;
     justify-content: space-around;
@@ -38,6 +32,6 @@
     margin-top:2vw;
 }
 h4 {
-    color: $blueprisme;
+    color: #0658AC;
     margin-bottom: 0.5vw;
 }

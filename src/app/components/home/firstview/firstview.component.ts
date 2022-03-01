@@ -1,8 +1,5 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Observable } from 'rxjs/internal/Observable';
-
-
 
 @Component({
   selector: 'app-firstview',
@@ -17,22 +14,16 @@ export class FirstviewComponent implements OnInit {
   }
 
 
-  ngOnInit(): void {
-    this.screensize()
-    window.addEventListener('touchstart', function (e) {
-      if (e.touches.length > 1) {
-        alert()
-      }
-    });
+  ngOnInit(): void { }
 
-  }
   navigateTo(path) {
     if (path == "chatbox.html") {
       location.href = path
     }
     this.router.navigate([path])
   }
-  navigate(anchor?) {
+
+  scroll(anchor?) {
     let i = 0;
     let interval = setInterval(() => {
       if (i < this.screensize()) {
@@ -43,11 +34,11 @@ export class FirstviewComponent implements OnInit {
     }, 5);
   }
 
-  screensize():number{
-    if(window.screen.height <= 720){
-    return 520;
+  screensize(): number {
+    if (window.screen.height <= 720) {
+      return 520;
     }
-    if(window.screen.height <= 1080){
+    if (window.screen.height <= 1080) {
       return 800
     }
   }
