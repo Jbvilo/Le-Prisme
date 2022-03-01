@@ -6,7 +6,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./definition.component.scss']
 })
 export class DefinitionComponent implements OnInit {
-  visible: boolean=false;
+  visible: boolean=true;
 
   constructor() { }
   @HostListener('window:resize', ['$event'])

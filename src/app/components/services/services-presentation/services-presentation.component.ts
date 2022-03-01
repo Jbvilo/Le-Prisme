@@ -14,6 +14,6 @@ export class ServicesPresentationComponent implements OnInit {
   }
 
   navigateTo(path): void {
-    this.route.navigate([path])
+
   }
 }

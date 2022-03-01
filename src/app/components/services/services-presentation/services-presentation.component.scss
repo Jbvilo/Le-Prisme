@@ -36,10 +36,9 @@ h2 {
 }
 .services-content {
     text-align: center;
-    height: 100%;
+    height: calc(95vh);
     overflow: visible;
-    animation: 1s linear services-effect;
-    margin-bottom: 5vw;
+    animation: 1s linear blink_effect;
 }
 .bluerectangle:hover,.lightbluerectangle:hover,.orangerectangle:hover {
     cursor: pointer;
