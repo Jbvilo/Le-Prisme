@@ -10,7 +10,7 @@ export class FirstviewComponent implements OnInit {
   eventSubscription: any;
 
   constructor(private router: Router) {
-
+    alert("Site en cours de développement, mais vous pouvez effectuer vos demandes")
   }
 
 
