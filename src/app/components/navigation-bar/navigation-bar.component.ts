@@ -30,6 +30,9 @@ export class NavigationBarComponent implements OnInit {
   }
 
   navigateTo(path): void {
+ 
     this.route.navigate([path])
+
+    
   }
 }

@@ -20,7 +20,7 @@ onResize(event) {
   }
 
   ngOnInit(): void {
-   // console.log(window.screen)
+    // console.log(window.screen)
   }
 
 }

@@ -12,4 +12,7 @@ export class HellodjoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  navigateTo(path) {
+      location.href =path;
+  }
 }
