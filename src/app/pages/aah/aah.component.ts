@@ -10,6 +10,11 @@ export class AahComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    window.scrollBy(0,0)
   }
+
+  navigateTo() {
+    location.href ="chatbox.html"
+}
 
 }

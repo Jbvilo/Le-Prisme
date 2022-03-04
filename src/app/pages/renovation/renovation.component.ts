@@ -12,4 +12,7 @@ export class RenovationComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  navigateTo() {
+    location.href ="chatbox.html"
+}
 }
