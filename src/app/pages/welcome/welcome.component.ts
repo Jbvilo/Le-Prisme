@@ -11,6 +11,7 @@ export class WelcomeComponent implements OnInit {
 
   ngOnInit(): void {
     setTimeout(() => {
+      alert("Site en cours de développement, mais vous pouvez effectuer vos demandes")
       this.router.navigate(['home'])
     }, 4500);
   }
