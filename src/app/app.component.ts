@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   constructor(private router: Router) {
 
  this.onResize()
-    
+
 
   }
   @HostListener('window:scroll', ['$event'])
@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
 
   @HostListener('window:resize', ['$event'])
   onResize() {
-    if(window.innerWidth <= 820) {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       this.computer= false;
     }
     else {
