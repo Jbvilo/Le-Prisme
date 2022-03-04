@@ -10,7 +10,12 @@ export class AppComponent implements OnInit {
   title = 'Le Prisme';
   visible: boolean = false;
   scroll: boolean = false;
+  computer: boolean;
+
   constructor(private router: Router) {
+
+ this.onResize()
+
 
   }
   @HostListener('window:scroll', ['$event'])
@@ -20,6 +25,16 @@ export class AppComponent implements OnInit {
     }
     else {
       this.scroll = false;
+    }
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      this.computer= false;
+    }
+    else {
+      this.computer=true;
     }
   }
 

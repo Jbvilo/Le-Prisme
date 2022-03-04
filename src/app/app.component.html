@@ -1,10 +1,32 @@
-<div [ngClass]="scroll? 'scroll' : 'top'" style="position:fixed; width: 100%;z-index: 800;background-color: white;">
-    <app-navigation-bar *ngIf="visible"></app-navigation-bar>
-</div>
+<comp *ngIf="computer">
 
-<!--A remplacer, permet de descendre le contenu principal-->
-<div *ngIf="visible" style="height: 8vw;"></div>
+    <div [ngClass]="scroll? 'scroll' : 'top'" style="position:fixed; width: 100%;z-index: 800;background-color: white;">
+        <app-navigation-bar *ngIf="visible"></app-navigation-bar>
+    </div>
 
-<router-outlet></router-outlet>
+    <!--A remplacer, permet de descendre le contenu principal-->
+    <div *ngIf="visible" style="height: 8vw;"></div>
 
-<app-footer *ngIf="visible"></app-footer>
+    <router-outlet></router-outlet>
+
+    <app-footer *ngIf="visible"></app-footer>
+
+</comp>
+
+<comp *ngIf="!computer">
+    <div style="width:100%;height: calc(90vh);display: flex;justify-content: space-around;align-items: center;">
+
+        <div style="text-align: center;">
+            <h1 style="font-size: 700%;"> LE PRISME </h1>
+            <h1 style="font-size: 300%;"> Version mobile et tablette en cours de développement
+                <br>
+                Merci de consulter le site sur ordinateur
+
+            </h1>
+        </div>
+
+
+    </div>
+
+
+</comp>

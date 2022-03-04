@@ -11,7 +11,7 @@ export class DefinitionComponent implements OnInit {
   constructor() { }
   @HostListener('window:resize', ['$event'])
 onResize(event) {
-  console.log(window.screen)
+  //console.log(window.screen)
 }
   @HostListener('window:scroll', ['$event'])
   onWindowScroll($event) {
@@ -20,7 +20,7 @@ onResize(event) {
   }
 
   ngOnInit(): void {
-    console.log(window.screen)
+   // console.log(window.screen)
   }
 
 }
