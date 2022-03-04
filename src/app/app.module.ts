@@ -26,6 +26,7 @@ import { HellodjoComponent } from './pages/hellodjo/hellodjo.component';
 import { AahComponent } from './pages/aah/aah.component';
 import { RenovationComponent } from './pages/renovation/renovation.component';
 import { GobackserviceComponent } from './components/shared/gobackservice/gobackservice.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,7 @@ import { GobackserviceComponent } from './components/shared/gobackservice/goback
     AppRoutingModule,
     CommonModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
