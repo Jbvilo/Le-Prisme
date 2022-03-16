@@ -1,13 +1,13 @@
 h1 {
     padding-bottom: 2vw;
-    margin-right: 20%;
+    margin-right: 15%;
 }
 .presentation {
     width: 60%;
     display: inline-block;
     text-align: center;
-    vertical-align: middle;
-    animation: 2s linear definition-effect 
+    vertical-align: top;
+    animation: 2s linear definition-effect;
 }
 .presentation2 {
     width: 40%;
@@ -18,10 +18,11 @@ h1 {
 }
 .definition-text {
     text-align: start;
-    width:55%;
+    width:60%;
     margin: auto;
+    margin-top:3vw;
 }
 .definition-image {
-    width: 90%;
+    width: 95%;
     margin: auto;
 }
