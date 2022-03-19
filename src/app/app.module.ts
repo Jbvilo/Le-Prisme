@@ -21,7 +21,6 @@ import { IntroductionComponent } from './components/presentation/introduction/in
 import { ServicesPresentationComponent } from './components/services/services-presentation/services-presentation.component';
 import { FirstviewComponent } from './components/home/firstview/firstview.component';
 import { KeywordsCardComponent } from './components/home/keywords-card/keywords-card.component';
-import { FormulaireComponent } from './pages/formulaire/formulaire.component';
 import { HellodjoComponent } from './pages/hellodjo/hellodjo.component';
 import { AahComponent } from './pages/aah/aah.component';
 import { RenovationComponent } from './pages/renovation/renovation.component';
@@ -48,7 +47,6 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     ServicesPresentationComponent,
     FirstviewComponent,
     KeywordsCardComponent,
-    FormulaireComponent,
     HellodjoComponent,
     AahComponent,
     RenovationComponent,
