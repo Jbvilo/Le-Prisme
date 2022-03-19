@@ -57,6 +57,9 @@ body {
 .button:active {
   transform: translateY(2px);
 }
+.button:hover {
+  transform: translateY(-4px);
+}
 
 
 

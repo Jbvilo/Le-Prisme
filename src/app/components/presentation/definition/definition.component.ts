@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-definition',
@@ -8,7 +9,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 export class DefinitionComponent implements OnInit {
   visible: boolean=true;
 
-  constructor() { }
+  constructor(private router:Router) { }
   @HostListener('window:resize', ['$event'])
 onResize(event) {
   //console.log(window.screen)
@@ -21,6 +22,10 @@ onResize(event) {
 
   ngOnInit(): void {
     // console.log(window.screen)
+  }
+
+  navigateTo(path): void {
+    this.router.navigate([path])
   }
 
 }
