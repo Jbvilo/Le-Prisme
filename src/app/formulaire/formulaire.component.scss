@@ -1,0 +1,21 @@
+@import '../../styles.scss';
+
+:host {
+    ::ng-deep div {
+        overflow: visible;
+    }
+    .stepper_content {
+    //   width: fit-content;
+        margin: auto;
+    }
+    ::ng-deep .mat-form-field {
+        width: 30vw;
+    }
+    .navbar_title {
+        font-weight: 900;
+        color:$blueprisme;
+        font-size: 150%;
+        width: fit-content;
+        margin: auto;
+      }
+}

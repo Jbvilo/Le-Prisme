@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -26,6 +25,11 @@ import { AahComponent } from './pages/aah/aah.component';
 import { RenovationComponent } from './pages/renovation/renovation.component';
 import { GobackserviceComponent } from './components/shared/gobackservice/gobackservice.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material.module';
+import { FormulaireComponent } from './formulaire/formulaire.component';
+import { IdentiteComponent } from './formulaire/components/identite/identite.component';
+import { CoordonnesComponent } from './formulaire/components/coordonnes/coordonnes.component';
 
 @NgModule({
   declarations: [
@@ -50,12 +54,17 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     HellodjoComponent,
     AahComponent,
     RenovationComponent,
-    GobackserviceComponent
+    GobackserviceComponent,
+    FormulaireComponent,
+    IdentiteComponent,
+    CoordonnesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CommonModule
+    CommonModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
