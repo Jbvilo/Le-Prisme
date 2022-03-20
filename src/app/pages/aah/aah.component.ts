@@ -10,7 +10,7 @@ export class AahComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    window.scrollBy(0,0)
+    window.scrollTo(0,0)
   }
 
   navigateTo() {

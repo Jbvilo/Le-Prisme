@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { FormulaireServiceService } from '../formulaire-service.service';
 
 @Component({
@@ -8,7 +9,7 @@ import { FormulaireServiceService } from '../formulaire-service.service';
 })
 export class FormulaireComponent implements OnInit {
   title;
-  constructor(private formulaireservice:FormulaireServiceService) { 
+  constructor(private formulaireservice:FormulaireServiceService,private router:Router) { 
     this.formulaireservice.setFormsTitle("Votre identité")
     this.formulaireservice.open.subscribe(title=> {
       this.title=title
@@ -24,4 +25,7 @@ export class FormulaireComponent implements OnInit {
   this.formulaireservice.setFormsTitle(event.selectedStep.label)
   }
 
+  goback(){
+    this.router.navigate(['/home'])
+  }
 }

@@ -14,8 +14,18 @@
     .navbar_title {
         font-weight: 900;
         color:$blueprisme;
-        font-size: 150%;
+        font-size: 200%;
         width: fit-content;
         margin: auto;
+      }
+      .title {
+        font-weight: 900;
+        color:$blueprisme;
+        margin-left:2vw;
+        margin-top:1vw;
+        cursor: pointer;
+      }
+      .title:hover {
+       
       }
 }

@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   constructor() { 
-    window.scrollBy(0,0)
+    window.scrollTo(0,0)
   }
 
   ngOnInit(): void {
