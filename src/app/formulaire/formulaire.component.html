@@ -1,25 +1,25 @@
 
-  <div class="title" (click)="goback()"> Le Prisme</div>  <div  class="navbar_title">Faire une demande</div>
+  <div class="title" (click)="goback()"> Le Prisme </div>  <div  class="navbar_title"> Faire une demande </div>
 <div class="stepper_content">
 
 <mat-horizontal-stepper (selectionChange)="selectionChange($event)">
   
     <mat-step label="Votre identité" >
-      <h1 style="width:fit-content;">{{title}}</h1>
+      <h1 style="width:fit-content;">{{title}} &nbsp;&nbsp;<i class="fa fa-id-card-o" aria-hidden="true"></i></h1>
     <app-identite></app-identite>
     </mat-step>
   
     <mat-step label=" Vos coordonnées">
-      <h1 style="width:fit-content;">{{title}}</h1>
+      <h1 style="width:fit-content;">{{title}} &nbsp;<i class="fa fa-globe" aria-hidden="true"></i></h1>
       <app-coordonnes></app-coordonnes>
     </mat-step>
   
     <mat-step label="Votre foyer">
-      <h1 style="width:fit-content;">{{title}}</h1>
+      <h1 style="width:fit-content;">{{title}} &nbsp; <i class="fa fa-home" aria-hidden="true"></i></h1>
     </mat-step>
 
     <mat-step label="Votre statut">  
-      <h1 style="width:fit-content;">{{title}}</h1>
+      <h1 style="width:fit-content;">{{title}} &nbsp;<i class="fa fa-user" aria-hidden="true"></i></h1>
 
       </mat-step>
     
