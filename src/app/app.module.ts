@@ -30,6 +30,10 @@ import { MaterialModule } from './material.module';
 import { FormulaireComponent } from './formulaire/formulaire.component';
 import { IdentiteComponent } from './formulaire/components/identite/identite.component';
 import { CoordonnesComponent } from './formulaire/components/coordonnes/coordonnes.component';
+import { StatutComponent } from './formulaire/components/statut/statut.component';
+import { FoyerComponent } from './formulaire/components/foyer/foyer.component';
+import { RevenusComponent } from './formulaire/components/revenus/revenus.component';
+import { ProjetComponent } from './formulaire/components/projet/projet.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +61,11 @@ import { CoordonnesComponent } from './formulaire/components/coordonnes/coordonn
     GobackserviceComponent,
     FormulaireComponent,
     IdentiteComponent,
-    CoordonnesComponent
+    CoordonnesComponent,
+    StatutComponent,
+    FoyerComponent,
+    RevenusComponent,
+    ProjetComponent
   ],
   imports: [
     BrowserModule,

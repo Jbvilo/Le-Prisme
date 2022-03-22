@@ -5,6 +5,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatIconModule} from '@angular/material/icon';
 import {MatStepperModule} from '@angular/material/stepper';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
     exports: [
@@ -14,7 +16,9 @@ import {MatStepperModule} from '@angular/material/stepper';
         ReactiveFormsModule,
         FormsModule,
         MatIconModule,
-        MatStepperModule
+        MatStepperModule,
+        MatCheckboxModule,
+        MatButtonModule
       ]
     })
 export class MaterialModule { }
