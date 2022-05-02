@@ -1,101 +1,179 @@
 
 <div class="content">
+    <div *ngIf="salaire">
     <h1 style="font-weight: 300;"> Est ce que vous percevez un salaire  ?</h1>    
-    <div style="text-align: center;display: flex;"> 
-        <div class="button">
+    <div style="text-align: center;display: flex; justify-content: center;"> 
+        <div class="button" (click)="salairevalue='oui';changeview(1.5)">
             <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> OUI </h2> 
         </div>
         &nbsp;&nbsp;
-        <div class="button">
+        <div class="button" (click)="salairevalue='non';changeview(1)">
             <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> NON </h2> 
         </div>
     </div>
+    </div>
+
+    <div *ngIf="employeur">
+        <h1 style="font-weight: 300;"> Quel est votre employeur ?</h1>    
+
+        <mat-form-field appearance="outline" >
+        <mat-label> </mat-label>
+        <input matInput type="text" [(ngModel)]="employeurvalue">
+    </mat-form-field>
+<br>
+    <div class="button" (click)="changeview(1)">
+        <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> Valider </h2>
+    </div>
+        </div>
+        
+    <div *ngIf="chommage">
+        <h1 style="font-weight: 300;"> Est ce que vous percevez des indemnités de chomage  ?</h1>    
+        <div style="text-align: center;display: flex;justify-content: center;"> 
+            <div class="button" (click)="chommagevalue='oui'; changeview(2)">
+                <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> OUI </h2> 
+            </div>
+            &nbsp;&nbsp;
+            <div class="button" (click)="chommagevalue='non';changeview(2)">
+                <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> NON </h2> 
+            </div>
+        </div>
+    </div>
+        
+    <div *ngIf="retraite">
+    <h1 style="font-weight: 300;"> Est ce que vous percevez une retraite ?</h1>    
+    <div style="text-align: center;display: flex;justify-content: center;"> 
+        <div class="button" (click)="retraitevalue='oui';changeview(3.5)">
+            <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> OUI </h2> 
+        </div>
+        &nbsp;&nbsp;
+        <div class="button" (click)="retraitevalue='non';changeview(3)">
+            <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> NON </h2> 
+        </div>
+    </div>
+    </div>
+
+    <div *ngIf="organismeretraite">
+        <h1 style="font-weight: 300;">Quel est votre organisme de retraite ?</h1>    
+        <mat-form-field appearance="outline">
+            <mat-label> </mat-label>
+            <input matInput type="text" [(ngModel)]="organismeretraitevalue">
+        </mat-form-field>
+        <br>
+        <div class="button" (click)="changeview(3)">
+            <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> Valider </h2>
+        </div>
+    </div>
+        
+    <div *ngIf="retraitecomplementaire">
+        <h1 style="font-weight: 300;"> Est ce que vous percevez une retraite complémentaire ?</h1>    
+        <div style="text-align: center;display: flex;justify-content: center;"> 
+            <div class="button" (click)="retraitecomplementairevalue='oui';changeview(4.5)">
+                <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> OUI </h2> 
+            </div>
+            &nbsp;&nbsp;
+            <div class="button" (click)="retraitecomplementaire='non';changeview(4)">
+                <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> NON </h2> 
+            </div>
+        </div>
+    
+    </div>
+
+
+    <div *ngIf="organismeretraitec">
+        <h1 style="font-weight: 300;">Quel est votre organisme de retraite complémentaire ?</h1>    
+        <mat-form-field appearance="outline">
+            <mat-label> </mat-label>
+            <input matInput type="text" [(ngModel)]="organismeretraitecvalue">
+        </mat-form-field>
+        <br>
+        <div class="button" (click)="changeview(4)">
+            <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> Valider </h2>
+        </div>
+    </div>
+        
+    <div *ngIf="pension">
+        <h1 style="font-weight: 300;"> Est ce que vous percevez une pension autre ?</h1>    
+        <div style="text-align: center;display: flex;justify-content: center;"> 
+            <div class="button" (click)="pensionvalue='oui'; changeview(5)">
+                <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> OUI </h2> 
+            </div>
+            &nbsp;&nbsp;
+            <div class="button" (click)="pensionvalue='non';changeview(6)">
+                <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> NON </h2> 
+            </div>
+        </div>
+    </div>
+        
+    <div *ngIf="pensionorganisme">
+        <h1 style="font-weight: 300;">Organisme de pension</h1>    
+        <mat-form-field appearance="outline">
+            <mat-label> </mat-label>
+            <input matInput type="text" [(ngModel)]="pensionorganismevalue">
+        </mat-form-field>
+        <br>
+        <div class="button" (click)="changeview(6)">
+            <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> Valider </h2>
+        </div>
+    </div>
+        
+    <div *ngIf="rsa">
+        <h1 style="font-weight: 300;"> Est ce que vous percevez le RSA ?</h1>    
+        <div style="text-align: center;display: flex;justify-content: center;"> 
+            <div class="button" (click)="rsavalue='oui';changeview(7)">
+                <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> OUI </h2> 
+            </div>
+            &nbsp;&nbsp;
+            <div class="button" (click)="rsavalue='non'; changeview(7)">
+                <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> NON </h2> 
+            </div>
+        </div>
+    </div>
+        
+    <div *ngIf="allocAAH">
+        <h1 style="font-weight: 300;"> Est ce que vous percevez une allocation adulte handicapé ?</h1>    
+        <div style="text-align: center;display: flex;justify-content: center;"> 
+            <div class="button" (click)="allocAAHvalue='oui';changeview(8)">
+                <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> OUI </h2> 
+            </div>
+            &nbsp;&nbsp;
+            <div class="button" (click)="allocAAHvalue='non' ; changeview(8)">
+                <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> NON </h2> 
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="autreremu">
+        <h1 style="font-weight: 300;"> Percevez vous un autre type de rémunération ?</h1>    
+        <div style="text-align: center;display: flex;justify-content: center;"> 
+            <div class="button" (click)="autreremuvalue='oui'; changeview(9.5)">
+                <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> OUI </h2> 
+            </div>
+            &nbsp;&nbsp;
+            <div class="button" (click)="autreremuvalue='non' ; changeview(9)">
+                <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> NON </h2> 
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="autretype">
+        <h1 style="font-weight: 300;">Quel est cet autre type de rémunération ?</h1>    
+        <mat-form-field appearance="outline">
+            <mat-label> </mat-label>
+            <input matInput type="text" [(ngModel)]="autretypevalue">
+        </mat-form-field>
+        <br>
+        <div class="button" (click)="changeview(9)">
+            <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> Valider </h2>
+        </div>
+    </div>
+
 
     
-    <h1 style="font-weight: 300;"> Est ce que vous percevez des indemnités de chomage  ?</h1>    
-    <div style="text-align: center;display: flex;"> 
-        <div class="button">
-            <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> OUI </h2> 
-        </div>
-        &nbsp;&nbsp;
-        <div class="button">
-            <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> NON </h2> 
-        </div>
-    </div>
-
-
-    <h1 style="font-weight: 300;"> Est ce que vous percevez une retraite ?</h1>    
-    <div style="text-align: center;display: flex;"> 
-        <div class="button">
-            <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> OUI </h2> 
-        </div>
-        &nbsp;&nbsp;
-        <div class="button">
-            <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> NON </h2> 
-        </div>
-    </div>
-
-    <h1 style="font-weight: 300;"> Est ce que vous percevez une retraite complémentaire ?</h1>    
-    <div style="text-align: center;display: flex;"> 
-        <div class="button">
-            <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> OUI </h2> 
-        </div>
-        &nbsp;&nbsp;
-        <div class="button">
-            <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> NON </h2> 
-        </div>
-    </div>
-
-    <h1 style="font-weight: 300;"> Est ce que vous percevez une pension autre ?</h1>    
-    <div style="text-align: center;display: flex;"> 
-        <div class="button">
-            <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> OUI </h2> 
-        </div>
-        &nbsp;&nbsp;
-        <div class="button">
-            <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> NON </h2> 
-        </div>
-    </div>
-
-
-    <h1 style="font-weight: 300;">Organisme de pension</h1>    
-    <mat-form-field appearance="outline">
-        <mat-label> </mat-label>
-        <input matInput type="text">
-    </mat-form-field>
-
-    <h1 style="font-weight: 300;"> Est ce que vous percevez le RSA ?</h1>    
-    <div style="text-align: center;display: flex;"> 
-        <div class="button">
-            <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> OUI </h2> 
-        </div>
-        &nbsp;&nbsp;
-        <div class="button">
-            <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> NON </h2> 
-        </div>
-    </div>
-
-
-    <h1 style="font-weight: 300;"> Est ce que vous percevez une allocation adulte handicapé ?</h1>    
-    <div style="text-align: center;display: flex;"> 
-        <div class="button">
-            <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> OUI </h2> 
-        </div>
-        &nbsp;&nbsp;
-        <div class="button">
-            <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> NON </h2> 
-        </div>
-    </div>
-    <h1 style="font-weight: 300;"> Percevez vous un autre type de rémunération ?</h1>    
-    <div style="text-align: center;display: flex;"> 
-        <div class="button">
-            <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> OUI </h2> 
-        </div>
-        &nbsp;&nbsp;
-        <div class="button">
-            <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> NON </h2> 
-        </div>
-    </div>
-
     
 </div>
+
+<div style="display:flex;justify-content:end"> 
+    <mat-progress-spinner
+    [mode]="mode"
+    [value]="value">
+    </mat-progress-spinner> </div>

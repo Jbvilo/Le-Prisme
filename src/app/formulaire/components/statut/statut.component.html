@@ -1,18 +1,24 @@
 <div class="content">
-    <h1 style="font-weight: 300;"> Quel est votre revenu fiscal de référence ?</h1>    
+    
+
+    
+
+    
+    <h1 style="font-weight: 300;"> Quel est votre revenu fiscal de référence & votre nombre de part(s) ?</h1>    
     <div style="text-align: center;"> 
         <mat-form-field appearance="outline" >
             <mat-label>Revenu fiscal</mat-label>
-            <input matInput type="text">
+            <input matInput type="text" [(ngModel)]="revenufiscal">
         </mat-form-field>
     </div>
 
-    <h1 style="font-weight: 300;"> Quel est votre nombre de part ?</h1>    
+    <!-- <h1 style="font-weight: 300;"> Quel est votre nombre de part ?</h1>     -->
     <div style="text-align: center;"> 
         <mat-form-field appearance="outline" >
             <mat-label>Nombre de part </mat-label>
-            <input matInput type="text">
+            <input matInput type="text" [(ngModel)]="part">
         </mat-form-field>
     </div>
-    <div style="text-align: center;"> <div class="button">      <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;">  Valider </h2> </div></div>
+
+    <div style="text-align: center;width:25%;margin:auto;"> <div class="button" (click)="validateAnswers()">      <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;">  Valider </h2> </div></div>
 </div>

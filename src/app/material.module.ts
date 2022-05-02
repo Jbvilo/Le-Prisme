@@ -7,6 +7,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatButtonModule} from '@angular/material/button';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
     exports: [
@@ -18,7 +19,8 @@ import {MatButtonModule} from '@angular/material/button';
         MatIconModule,
         MatStepperModule,
         MatCheckboxModule,
-        MatButtonModule
+        MatButtonModule,
+        MatProgressSpinnerModule
       ]
     })
 export class MaterialModule { }

@@ -31,9 +31,13 @@
       }
       h1 {
         margin:auto; 
-        margin-top: 3vw;  
+        margin-top: 1vw;  
         margin-bottom: 1vw;
  
 
       }
+}
+
+::ng-deep .mat-horizontal-stepper-header{
+  //pointer-events: none !important;
 }

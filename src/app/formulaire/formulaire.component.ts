@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { MatStepper } from '@angular/material/stepper';
 import { Router } from '@angular/router';
 import { FormulaireServiceService } from '../formulaire-service.service';
 
@@ -9,6 +10,8 @@ import { FormulaireServiceService } from '../formulaire-service.service';
 })
 export class FormulaireComponent implements OnInit {
   title;
+  @ViewChild('stepper') private myStepper: MatStepper;
+ linear:boolean=false;
   constructor(private formulaireservice:FormulaireServiceService,private router:Router) { 
     window.scrollTo(0,0)
     this.formulaireservice.setFormsTitle("Votre identité")
@@ -16,12 +19,16 @@ export class FormulaireComponent implements OnInit {
       this.title=title
            })
 
+
   }
 
-  ngOnInit(): void {
- 
-  }
+  ngOnInit(): void { 
+    this.formulaireservice.changePageEvent.subscribe(()=> {
+    this.myStepper.next()
+           })
+   }
 
+   
   selectionChange(event) {
   this.formulaireservice.setFormsTitle(event.selectedStep.label)
   }

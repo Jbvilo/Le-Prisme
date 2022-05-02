@@ -1,67 +1,92 @@
 <div class="content">
-    <h1 style="font-weight: 300;"> Est ce que vous habitez seul ?</h1>    
-    <div style="text-align: center;display: flex;"> 
-        <div class="button">
-            <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> OUI </h2> 
-        </div>
-        &nbsp;&nbsp;
-        <div class="button">
-            <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> NON </h2> 
-        </div>
-    </div>
-
-    <h1 style="font-weight: 300;"> Avec votre conjoint ?</h1>    
-    <div style="text-align: center;display: flex;"> 
-        <div class="button">
-            <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> OUI </h2> 
-        </div>
-        &nbsp;&nbsp;
-        <div class="button">
-            <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> NON </h2> 
+    <div *ngIf="habiteseul">
+        <h1 style="font-weight: 300;"> Est-ce que vous habitez seul ?</h1>
+        <div style="text-align: center;display: flex;width: 90%;margin: auto;">
+            <div class="button" (click)="habitesolo='oui';changeview(4)">
+                <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;" > OUI </h2>
+            </div>
+            &nbsp;&nbsp;
+            <div class="button" (click)="habitesolo='non';changeview(1);">
+                <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> NON </h2>
+            </div>
         </div>
     </div>
 
-    <h1 style="font-weight: 300;">Adulte(s) à votre charge</h1>    
-    <mat-form-field appearance="outline">
-        <mat-label> </mat-label>
-        <input matInput type="text">
-    </mat-form-field>
-
-    <h1 style="font-weight: 300;">Mineur(s) à votre charge</h1>    
-    <mat-form-field appearance="outline">
-        <mat-label> </mat-label>
-        <input matInput type="text" >
-    </mat-form-field>
-
-
-
-    <h1 style="font-weight: 300;"> Etes-vous propriétaire ou locataire ?</h1>    
-    <div style="text-align: center;display: flex;"> 
-        <div class="button">
-            <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> Propriétaire </h2> 
-        </div>
-        &nbsp;&nbsp;
-        <div class="button">
-            <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> Locataire </h2> 
+    <div *ngIf="conjoint">
+        <h1 style="font-weight: 300;"> Avec votre conjoint ?</h1>
+        <div style="text-align: center;display: flex;">
+            <div class="button" (click)="avecconjoint='oui';changeview(2)">
+                <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> OUI </h2>
+            </div>
+            &nbsp;&nbsp;
+            <div class="button" (click)="avecconjoint='non'; changeview(2)">
+                <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> NON </h2>
+            </div>
         </div>
     </div>
 
-    <h1 style="font-weight: 300;">Vivez vous dans le logement où il faudra effectuer les travaux ?</h1>    
-    <div style="text-align: center;display: flex;"> 
-        <div class="button">
-            <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> OUI </h2> 
-        </div>
-        &nbsp;&nbsp;
-        <div class="button">
-            <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> NON </h2> 
+    <div *ngIf="personnesacharge">
+        <h1 style="font-weight: 300;">Adulte(s) à votre charge</h1>
+        <mat-form-field appearance="outline">
+            <mat-label> </mat-label>
+            <input matInput type="text" [(ngModel)]="adultes">
+        </mat-form-field>
+
+        <div >
+            <div class="button" (click)="changeview(3)" style="width: 200px;margin: auto;">
+                <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> Valider </h2>
+            </div>
+           </div>
+
+    </div>
+
+    <div *ngIf="mineuracharge">
+     
+        <h1 style="font-weight: 300;">Mineur(s) à votre charge</h1>
+        <mat-form-field appearance="outline">
+            <mat-label> </mat-label>
+            <input matInput type="text" [(ngModel)]="enfants">
+        </mat-form-field>
+
+    <div>
+        <div class="button" style="width: 200px;margin: auto;" (click)="changeview(4)">
+            <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> Valider </h2>
         </div>
     </div>
 
+    </div>
 
+    
+    <div *ngIf="propouloc">
 
+        <h1 style="font-weight: 300;"> Etes-vous propriétaire ou locataire ?</h1>
+        <div style="text-align: center;display: flex;width: 80%;margin: auto;">
+            <div class="button" (click)="status='proprietaire';changeview(5)">
+                <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> Propriétaire </h2>
+            </div>
+            &nbsp;&nbsp;
+            <div class="button" (click)="status='locataire';changeview(5)">
+                <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> Locataire </h2>
+            </div>
+        </div>
 
-
-
-
-
+    </div>
+    <div *ngIf="habitedanslogement">
+        <h1 style="font-weight: 300;">Vivez vous dans le logement où il faudra effectuer les travaux ?</h1>
+        <div style="text-align: center;display: flex;justify-content: center;width: 45%;margin: auto;">
+            <div class="button"  (click)="viedanslogement='oui';changeview(6)">
+                <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> OUI </h2>
+            </div>
+            &nbsp;&nbsp;
+            <div class="button"  (click)="viedanslogement='non';changeview(6)">
+                <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> NON </h2>
+            </div>
+        </div>
+    </div>
 </div>
+
+<div style="display:flex;justify-content:end"> 
+    <mat-progress-spinner
+    [mode]="mode"
+    [value]="value">
+    </mat-progress-spinner> </div>

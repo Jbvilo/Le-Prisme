@@ -34,6 +34,7 @@ import { StatutComponent } from './formulaire/components/statut/statut.component
 import { FoyerComponent } from './formulaire/components/foyer/foyer.component';
 import { RevenusComponent } from './formulaire/components/revenus/revenus.component';
 import { ProjetComponent } from './formulaire/components/projet/projet.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -72,7 +73,8 @@ import { ProjetComponent } from './formulaire/components/projet/projet.component
     AppRoutingModule,
     CommonModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]

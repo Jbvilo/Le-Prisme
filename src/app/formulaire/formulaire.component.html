@@ -1,12 +1,14 @@
 
-  <div class="title" (click)="goback()"> Le Prisme </div>  <div  class="navbar_title"> Faire une demande </div>
+  <div class="title" (click)="goback()"> Le Prisme </div>  <div  class="navbar_title"> Faire une demande d'accompagnement</div>
 <div class="stepper_content">
 
-<mat-horizontal-stepper (selectionChange)="selectionChange($event)">
+<mat-horizontal-stepper #stepper (selectionChange)="selectionChange($event)" >
+  <!-- [linear]="linear"-->
   
     <mat-step label="Votre identité" >
       <h1 style="width:fit-content;">{{title}} &nbsp;&nbsp;<i class="fa fa-id-card-o" aria-hidden="true"></i></h1>
     <app-identite></app-identite>
+ 
     </mat-step>
   
     <mat-step label=" Vos coordonnées">
@@ -30,11 +32,9 @@
         </mat-step>
 
         <mat-step label="Votre projet">  
-          <h1 style="width:fit-content;">{{title}} &nbsp;<i class="fa fa-user" aria-hidden="true"></i></h1>
+          <h1 style="width:fit-content;">{{title}} &nbsp;<i class="fa fa-cogs" aria-hidden="true"></i></h1>
           <app-projet></app-projet>
           </mat-step>
     
 </mat-horizontal-stepper>
 </div>
-
-<!--mat-horizontal-stepper mat-vertical-stepper-->
