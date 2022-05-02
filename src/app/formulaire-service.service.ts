@@ -32,7 +32,6 @@ export class FormulaireServiceService {
    this.values.push({name:"ETAT",value:"A TRAITER"})
    
     return this.http.post<any>('http://localhost:3000/newDemande',demande)
-    
  
   }
 }
