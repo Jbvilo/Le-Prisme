@@ -31,8 +31,7 @@ export class FormulaireServiceService {
    this.values.push({name:"DATE_ARRIVEE",value:"01/05/2022"})
    this.values.push({name:"ETAT",value:"A TRAITER"})
    
-    return this.http.post<any>('http://localhost:3000/newDemande',demande)
+    return this.http.post<any>('https://myleprismews.herokuapp.com/newDemande',demande)
  
   }
 }
-
