@@ -43,14 +43,22 @@ export class FormulaireServiceService {
   }
 
   addState() {
-    let push: Boolean = true;
+    let pushstate: Boolean = true;
+    let pushDate: Boolean = true ;
     this.values.forEach(val => {
       if (val.name == "ETAT") {
-        push = false
+        pushstate = false
+      }
+      if (val.name == "DATE_ARRIVEE") {
+        pushDate = false
       }
     })
-    if (push) {
+
+    if (pushstate) {
       this.values.push({ name: "ETAT", value: "A TRAITER" })
+    }
+    if( pushDate) {
+      this.values.push({ name: "DATE_ARRIVEE", value: "19/05/2022" })
     }
   }
 
