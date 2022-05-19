@@ -12,11 +12,7 @@ export class FormulaireServiceService {
   values = [];
   apiurl: string = 'https://myleprismews.herokuapp.com/newDemande';
 
-  constructor(private http: HttpClient) {
-    if (!environment.production) {
-      this.apiurl = 'http://localhost:3000/newDemande'
-    }
-  }
+  constructor(private http: HttpClient) {}
 
   setFormsTitle(title) {
     setTimeout(() => {
