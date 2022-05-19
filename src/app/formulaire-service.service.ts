@@ -10,14 +10,11 @@ export class FormulaireServiceService {
   open: EventEmitter<string> = new EventEmitter<string>();
   changePageEvent: EventEmitter<any> = new EventEmitter<any>();
   values = [];
-  apiurl: string;
+  apiurl: string = 'https://myleprismews.herokuapp.com/newDemande';
 
   constructor(private http: HttpClient) {
     if (!environment.production) {
       this.apiurl = 'http://localhost:3000/newDemande'
-    }
-    else {
-      this.apiurl = 'https://myleprismews.herokuapp.com/newDemande'
     }
   }
 
