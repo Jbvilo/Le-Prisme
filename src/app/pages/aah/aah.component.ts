@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-aah',
@@ -7,14 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AahComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     window.scrollTo(0,0)
   }
 
   navigateTo() {
-    location.href ="chatbox.html"
+    this.router.navigate(['/demande'])
 }
 
 }

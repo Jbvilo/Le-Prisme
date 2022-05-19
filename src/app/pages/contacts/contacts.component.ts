@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contacts',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactsComponent implements OnInit {
 
-  constructor() {
+  constructor(private router:Router) {
     window.scrollTo(0,0)
   }
 
@@ -15,6 +16,6 @@ export class ContactsComponent implements OnInit {
   }
 
   navigateTo(path) {
-    location.href = path
+    this.router.navigate(['/demande'])
   }
 }

@@ -1,37 +1,62 @@
 import { HttpClient } from '@angular/common/http';
 import { EventEmitter, Injectable } from '@angular/core';
 import { map } from 'rxjs/operators';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class FormulaireServiceService {
   open: EventEmitter<string> = new EventEmitter<string>();
-  changePageEvent:EventEmitter<any> = new EventEmitter<any>();
-  values =[];
-  set = new Set();
-  constructor(private http:HttpClient) {}
+  changePageEvent: EventEmitter<any> = new EventEmitter<any>();
+  values = [];
+  apiurl: string;
 
-  setFormsTitle(title){
+  constructor(private http: HttpClient) {
+    if (!environment.production) {
+      this.apiurl = 'http://localhost:3000/newDemande'
+    }
+    else {
+      this.apiurl = 'https://myleprismews.herokuapp.com/newDemande'
+    }
+  }
+
+  setFormsTitle(title) {
     setTimeout(() => {
       this.open.emit(title)
     }, 200);
   }
 
-  changePage(){
-      this.changePageEvent.emit();
-      console.log(this.values)
+  changePage() {
+    this.changePageEvent.emit();
   }
-  submitvalue(value){
-    this.values.push(value)
+  submitvalue(value) {
+    let submit: Boolean = true;
+    this.values.forEach(val => {
+      if (val.name == value.name) {
+        submit = false
+      }
+    })
+    if (submit) {
+      this.values.push(value)
+    }
   }
-  sendValues(){
-  
-   const demande=this.values
-   this.values.push({name:"DATE_ARRIVEE",value:"01/05/2022"})
-   this.values.push({name:"ETAT",value:"A TRAITER"})
-   
-    return this.http.post<any>('https://myleprismews.herokuapp.com/newDemande',demande)
- 
+
+  addState() {
+    let push: Boolean = true;
+    this.values.forEach(val => {
+      if (val.name == "ETAT") {
+        push = false
+      }
+    })
+    if (push) {
+      this.values.push({ name: "ETAT", value: "A TRAITER" })
+    }
+  }
+
+  sendValues() {
+    const demande = this.values
+    this.addState()
+    return this.http.post<any>(this.apiurl, demande)
   }
 }
