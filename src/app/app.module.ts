@@ -9,7 +9,7 @@ import { PresentationComponent } from './pages/presentation/presentation.compone
 import { PartenairesComponent } from './pages/partenaires/partenaires.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
-import { CommonModule } from '@angular/common';
+import { CommonModule, DatePipe } from '@angular/common';
 import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
 import { ProblemesComponent } from './components/home/problemes/problemes.component';
 import { StepsComponent } from './components/home/steps/steps.component';
@@ -76,7 +76,7 @@ import { HttpClientModule } from '@angular/common/http';
     MaterialModule,
     HttpClientModule
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy},DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

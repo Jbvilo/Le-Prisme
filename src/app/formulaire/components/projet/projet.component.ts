@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
 import { ProgressSpinnerMode } from '@angular/material/progress-spinner';
 import { FormulaireServiceService } from 'src/app/formulaire-service.service';
 
@@ -40,6 +41,9 @@ export class ProjetComponent implements OnInit {
   organismeaide:string;
   aidestravauxanterieurs:string;
   spinner=true;
+  quiControl= new FormControl('', [Validators.required]);
+  anneeControl= new FormControl('', [Validators.required,Validators.minLength(4),Validators.maxLength(4)]);
+  montantControl= new FormControl('', [Validators.required]);
 
   constructor(private formulaireservice:FormulaireServiceService) { }
 
@@ -69,16 +73,24 @@ export class ProjetComponent implements OnInit {
       this.value=70;
     }
     if(a ==1.70){
+      this.quiControl.markAllAsTouched()
+      if(this.quiControl.valid){
       this.putValueToTrue(false,false,false,false,false,false,true,false,false)
       this.value=80;
+      }
     }
     if(a ==1.75){
+      this.anneeControl.markAllAsTouched()
+      if(this.anneeControl.valid){
       this.putValueToTrue(false,false,false,false,false,true,false,false,false)
       this.value=90;
+      }
     }
     if(a == 2 ){
+      if(this.checkvalues()){
       this.putValueToTrue(false,false,false,true,false,false,false,false,false)
       this.value=25;
+      }
     }
     if(a ==3 ){
       this.putValueToTrue(false,false,true,false,false,false,false,false,false)
@@ -89,6 +101,13 @@ export class ProjetComponent implements OnInit {
       this.value=50;
     }
     if(a ==5 ){
+      this.montantControl.markAllAsTouched()
+      if(this.montantControl.valid){
+      this.putValueToTrue(false,false,false,false,false,false,false,true,false)
+      this.value=95;
+      }
+    }
+    if(a ==5.1 ){
       this.putValueToTrue(false,false,false,false,false,false,false,true,false)
       this.value=95;
     }
@@ -99,6 +118,39 @@ export class ProjetComponent implements OnInit {
     }
   }
 
+  checkvalues(){
+    if(this.toiture){
+      return true;
+    }
+    if (this.fauxplafond) {
+      return true;
+    }
+    if (this.menuiserie) {
+      return true;
+    }
+    if (this.autres) {
+      return true;
+    } if (this.ventilation) {
+      return true;
+    } if (this.desamiantage) {
+      return true;
+    } if (this.antiterm) {
+      return true;
+    } if (this.parasis) {
+      return true;
+    } if (this.fossesept) {
+      return true;
+    } if (this.adaptsalldo) {
+      return true;
+    } if (this.miseonormelec) {
+      return true;
+    } 
+    if (this.accesslog) {
+      return true;
+    }
+
+    return false
+  }
 
 
   getCheckboxesValues(){
@@ -140,7 +192,7 @@ export class ProjetComponent implements OnInit {
     this.formulaireservice.submitvalue({name:'APRES_TRAVAUX',value : this.aprestrav})
     this.formulaireservice.submitvalue({name:'AIDES_TRAVAUX_ANTERIEURS',value : this.aidestravauxanterieurs})
     this.formulaireservice.submitvalue({name:'ORGANISME_AIDE',value : this.organismeaide})
-    this.formulaireservice.submitvalue({name:'ANNEE_AIDE',value : this.montantAide})
+    this.formulaireservice.submitvalue({name:'ANNEE_AIDE',value : this.anneeAide})
     this.formulaireservice.submitvalue({name:'MONTANT_AIDE',value :this.montantAide})
     this.formulaireservice.submitvalue({name:'COMMENTAIRE',value : this.comsi})
 this.formulaireservice.sendValues().subscribe(res=>{

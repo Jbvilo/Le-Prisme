@@ -2,13 +2,13 @@
 
     <div *ngIf="travauxavant">
 
-        <h1 style="font-weight: 300;"> Avez vous déjà perçu des aides pour des travaux antérieurs ?</h1>
-        <div style="text-align: center;display: flex;width: 45%;margin: auto;">
+        <h1 style="font-weight: 200;"> Avez vous déjà perçu des aides pour des travaux antérieurs ?</h1>
+        <div style="text-align: center;display: flex;width: 35%;margin: auto;">
              <div class="button" (click)="aidestravauxanterieurs='oui'; changeview(1.5)">
                 <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> OUI </h2>
             </div>
             &nbsp;&nbsp;
-             <div class="button" (click)="aidestravauxanterieurs='non'; changeview(5)">
+             <div class="button" (click)="aidestravauxanterieurs='non'; changeview(5.1)">
                 <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> NON </h2>
             </div>
         </div>
@@ -17,10 +17,10 @@
 
     <div *ngIf="travauxoui">
 
-        <h1 style="font-weight: 300;"> De qui ?</h1>
+        <h1 style="font-weight: 200;"> De qui ?</h1>
         <mat-form-field appearance="outline">
             <mat-label>Organisme(s) d'aides ? </mat-label>
-            <input matInput type="text" [(ngModel)]="organismeaide">
+            <input matInput type="text" [(ngModel)]="organismeaide" (keyup.enter)="changeview(1.70)" [formControl]="quiControl">
         </mat-form-field>
         <div style="text-align: center;"> <div class="button" (click)="changeview(1.70)">      <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;">  Valider </h2> </div></div>
     
@@ -29,10 +29,10 @@
 
     <div *ngIf="annee">
 
-        <h1 style="font-weight: 300;"> En quelle année ?</h1>
+        <h1 style="font-weight: 200;"> En quelle année ?</h1>
         <mat-form-field appearance="outline">
-            <mat-label> </mat-label>
-            <input matInput type="text" [(ngModel)]="anneeAide">
+            <mat-label> Année des aides perçues</mat-label>
+            <input matInput type="text" [(ngModel)]="anneeAide" (keyup.enter)="changeview(1.75)" [formControl]="anneeControl" placeholder="YYYY">
         </mat-form-field>
         <div style="text-align: center;"> <div class="button" (click)="changeview(1.75)">      <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;">  Valider </h2> </div></div>
     
@@ -42,10 +42,10 @@
     
     <div *ngIf="travauxoui2">
 
-        <h1 style="font-weight: 300;">Quel était le montant de ces aides ?</h1>
+        <h1 style="font-weight: 200;">Quel était le montant de ces aides ?</h1>
         <mat-form-field appearance="outline">
             <mat-label>Montant des aides perçues </mat-label>
-            <input matInput type="text" [(ngModel)]="montantAide">
+            <input matInput type="text" [(ngModel)]="montantAide" (keyup.enter)="changeview(5)" [formControl]="montantControl">
         </mat-form-field>
         <div style="text-align: center;"> <div class="button" (click)="changeview(5)">      <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;">  Valider </h2> </div></div>
     
@@ -57,7 +57,7 @@
     <div *ngIf="typedetravaux">
 
 
-        <h1 style="font-weight: 300;"> Quel type de travaux souhaitez-vous faire ?</h1>
+        <h1 style="font-weight: 200;"> Quel type de travaux souhaitez-vous faire ?</h1>
 
 
 
@@ -106,9 +106,9 @@
 
 
     <div *ngIf="propouloc">
-        <h1 style="font-weight: 300;"> Après les travaux, vous souhaitez habitez dans le logement où le mettre en
+        <h1 style="font-weight: 200;"> Après les travaux, vous souhaitez habitez dans le logement où le mettre en
             location ?</h1>
-        <div style="text-align: center;display: flex;width: 35%;margin: auto;">
+        <div style="text-align: center;display: flex;width: 25%;margin: auto;">
              <div class="button" (click)="aprestrav='habiter'; changeview(4)">
                 <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> Habiter </h2>
             </div>
@@ -122,7 +122,7 @@
 
 
     <div *ngIf="terminer">
-        <h1 style="font-weight: 300;">Décrivez votre projet si vous le souhaitez</h1>
+        <h1 style="font-weight: 200;">Décrivez votre projet si vous le souhaitez</h1>
         <mat-form-field appearance="outline">
             <mat-label>Description de votre projet  </mat-label>
             <textarea matInput style="height:100px" [(ngModel)]="descriptionproj"></textarea>
@@ -135,7 +135,7 @@
     </div>
 
     <div *ngIf="coms">
-        <h1 style="font-weight: 300;">Ajoutez un commentaire si vous le souhaitez</h1>
+        <h1 style="font-weight: 200;">Ajoutez un commentaire si vous le souhaitez</h1>
         <mat-form-field appearance="outline">
             <mat-label>Commentaire </mat-label>
             <textarea matInput style="height:100px" [(ngModel)]="comsi"></textarea>

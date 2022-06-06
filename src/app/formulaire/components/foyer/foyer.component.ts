@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
 import { ProgressSpinnerMode } from '@angular/material/progress-spinner';
 import { FormulaireServiceService } from 'src/app/formulaire-service.service';
 
@@ -22,8 +23,8 @@ export class FoyerComponent implements OnInit {
   enfants:string;
   status:string;
   viedanslogement:string;
-
-
+  adultecontrol = new FormControl('', [Validators.required]);
+  mineurcontrol = new FormControl('', [Validators.required]);
 
 
   constructor(private formulaireservice:FormulaireServiceService) { }
@@ -52,10 +53,20 @@ export class FoyerComponent implements OnInit {
       this.value=32;
     }
     if(value ==3){
+      this.adultecontrol.markAllAsTouched()
+      if(this.adultecontrol.valid){
       this.putValueToTrue(false,false,false,true,false,false);
       this.value=48;
+      }
     }
     if(value ==4){
+      this.mineurcontrol.markAllAsTouched()
+      if(this.mineurcontrol.valid){
+      this.putValueToTrue(false,false,false,false,true,false);
+      this.value=64;
+      }
+    }
+    if(value ==4.1){
       this.putValueToTrue(false,false,false,false,true,false);
       this.value=64;
     }

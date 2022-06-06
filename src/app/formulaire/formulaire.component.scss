@@ -8,12 +8,13 @@
     //   width: fit-content;
         margin: auto;
         margin-top:2vw;
+        width: 95%;
     }
     ::ng-deep .mat-form-field {
         width: 30vw;
     }
     .navbar_title {
-        font-weight: 900;
+        font-weight: 500;
         color:$blueprisme;
         font-size: 200%;
         width: fit-content;
@@ -22,6 +23,7 @@
       .title {
         font-weight: 900;
         color:$blueprisme;
+        font-size: 120%;
         margin-left:2vw;
         margin-top:1vw;
         cursor: pointer;

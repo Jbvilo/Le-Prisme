@@ -1,3 +1,4 @@
+import { DatePipe } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { EventEmitter, Injectable } from '@angular/core';
 import { map } from 'rxjs/operators';
@@ -12,7 +13,8 @@ export class FormulaireServiceService {
   values = [];
   apiurl: string = 'https://myleprismews.herokuapp.com/newDemande';
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private datePipe: DatePipe) {
+  }
 
   setFormsTitle(title) {
     setTimeout(() => {
@@ -31,6 +33,9 @@ export class FormulaireServiceService {
       }
     })
     if (submit) {
+      if (value.value == undefined) {
+        value.value = "";
+      }
       this.values.push(value)
     }
   }
@@ -38,6 +43,8 @@ export class FormulaireServiceService {
   addState() {
     let pushstate: Boolean = true;
     let pushDate: Boolean = true ;
+    let date = new Date;
+
     this.values.forEach(val => {
       if (val.name == "ETAT") {
         pushstate = false
@@ -51,7 +58,7 @@ export class FormulaireServiceService {
       this.values.push({ name: "ETAT", value: "A TRAITER" })
     }
     if( pushDate) {
-      this.values.push({ name: "DATE_ARRIVEE", value: "19/05/2022" })
+      this.values.push({ name: "DATE_ARRIVEE", value: this.datePipe.transform(date.getTime(),"dd/MM/yyyy") })
     }
   }
 
