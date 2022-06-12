@@ -1,12 +1,10 @@
 @import '../../../../styles.scss';
 
 .keywords-card{
-    margin: auto;
-    margin-left: 4vw;
-    margin-right: 4vw;
-    margin-top: 1vw;
+    width: 100%;
     margin-bottom: 3vw;
     animation: 2s linear definition-effect;
+
 }
 h3 {
     font-weight: 600;
@@ -21,18 +19,33 @@ h3 {
     margin-right: 0px;
 }
 .button {
-    background-color:#377EFA;
+    background-color:#335EEA;
     height: 4vw;
     margin: auto;
     width: 20%;
     text-align: center;
-    margin-top: 2vw;
   }
 
   .button:hover {
     transform: translateY(-4px);
  }
  .bold {
-    font-weight:bold;
     color:$blueprisme;
 }
+h4 {
+    margin: 0px;
+    margin-bottom: 15px;
+
+}
+
+
+.partenaires {
+    width: 100px;
+}
+.partenairecaf {
+    width: 100px;
+}
+.cardcontent {
+    margin-top: 80px;
+}
+

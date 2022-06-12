@@ -35,6 +35,7 @@ import { FoyerComponent } from './formulaire/components/foyer/foyer.component';
 import { RevenusComponent } from './formulaire/components/revenus/revenus.component';
 import { ProjetComponent } from './formulaire/components/projet/projet.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SpeedformComponent } from './components/home/speedform/speedform.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +67,8 @@ import { HttpClientModule } from '@angular/common/http';
     StatutComponent,
     FoyerComponent,
     RevenusComponent,
-    ProjetComponent
+    ProjetComponent,
+    SpeedformComponent
   ],
   imports: [
     BrowserModule,

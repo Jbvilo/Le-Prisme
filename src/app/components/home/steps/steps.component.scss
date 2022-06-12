@@ -3,35 +3,21 @@
 .logo-container{
     display: flex;
     justify-content: space-around;
-    width: 70%;
-    margin: auto;
 }
 .logos {
     padding: 1vw;
 }
 .step-text {
-    width: 33%;
-    text-align: center;
+    text-align: start;
+
+    margin-bottom: 50px;
 }
-h1 {
-    text-align: center;
-    width: 50%;
-    margin: auto;
-}
-h4 {
-    font-size: 1.2vw;
-    color:#0558a0;
+h4 { 
+    margin: 0px;
+    margin-bottom: 8px;
 }
 .titre {
-    width: 100%;
-    margin-top:5vw;
-    margin-bottom: 5vw;
-}
-.steptext-container {
-    display: flex;
-    justify-content: space-around;
-    width: 95%;
-    margin: auto;
+    text-align: start;
 }
 .img-container {
     width: 9vw;
@@ -46,4 +32,8 @@ h4 {
     width: 18vw;
     height: 4vw;
     margin-top:3.3vw;
+}
+.steptext-container {
+    text-align: center;
+    width: 100%;
 }

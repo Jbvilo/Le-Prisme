@@ -5,10 +5,9 @@
         overflow: visible;
     }
     .stepper_content {
-    //   width: fit-content;
         margin: auto;
-        margin-top:2vw;
         width: 98%;
+        height: 600px;
     }
     ::ng-deep .mat-form-field {
         width: 30vw;
@@ -27,6 +26,7 @@
         margin-left:2vw;
         margin-top:1vw;
         cursor: pointer;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       }
       .title:hover {
        
@@ -35,11 +35,21 @@
         margin:auto; 
         margin-top: 1vw;  
         margin-bottom: 1vw;
- 
+    color:#255099;;
 
       }
 }
 
 ::ng-deep .mat-horizontal-stepper-header{
   //pointer-events: none !important;
+}
+
+
+.navbar_title {
+  width: 15vw; 
+  height: 2.2vw;
+  margin-top: 1.5vw;
+  color:$blueprisme;
+  font-size: 150%;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

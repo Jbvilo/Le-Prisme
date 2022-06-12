@@ -34,24 +34,21 @@ $LePrismeWeb-theme: mat-light-theme((
 @include angular-material-theme($LePrismeWeb-theme);
 
 /* You can add global styles to this file, and also import other style files */
-$blueprisme:#377EFA;
+$blueprisme:#335EEA;
 $greyprisme:gray;
 
 body {
-    margin:auto;
-   font-family:'Open Sans', sans-serif;
-    font-size: 1.2vw;
-    background-color: #FFFFFF;
-    color:#7a8da8;
-}
-h1 {
-  font-weight: 300;
-  color:#045092;
+ font-family:'Open Sans', sans-serif;
+  font-size: 19px;
+  background-color: #FFFFFF;
 }
 
-div {
-    overflow: hidden;
+
+h1 {
+  font-weight: 300;
+  color:#021c33;
 }
+
 
 .card {
     /* Add shadows to create the "card" effect */
@@ -74,13 +71,13 @@ body {
   scrollbar-width: none;  /* Firefox */
 }
 .button {
-  height: 4.5vw;
+  height: 60px;
   width: 100%;
   text-align: center;
   border-radius: 7px;
   display: inline-flex;
   align-items: center;
-  background-color:#377EFA;
+  background-color:$blueprisme;
   color:white;
   transition: transform 0.3s;
 }

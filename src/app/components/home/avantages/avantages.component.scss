@@ -7,7 +7,7 @@
 }
 .avantages2 {
     display: inline-block;
-    width: 45%;
+
     vertical-align: top;
 }
 .avantage-img {
@@ -17,21 +17,23 @@
 }
 .avantage-block {
     margin: 1vw;
-}
-.avantages-content { 
-    margin-top: 0vw;
-    margin-right: 2vw;
-    height: calc(80vh);
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
 }
 .button-container {
     display: flex;
     justify-content: space-around;
     
 }
-.firstblock {
-    margin-top:2vw;
-}
+
 h4 {
-    color: #0658AC;
-    margin-bottom: 0.5vw;
+    margin-bottom: 20px;
+    font-weight: 600;
 }
+.text {
+
+}
+
+
+

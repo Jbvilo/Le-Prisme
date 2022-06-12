@@ -1,49 +1,70 @@
 <div class="content">
+    <h1> N'hésitez pas à nous contacter.</h1>
+    <div> Nous sommes là pour vous aider.</div>
 
-    <h1 style="margin-top: 0vw;">Contactez le
-        <span style="font-weight: 700">bon interlocuteur</span> et<br>
-        faites nous part de vos projets !
-    </h1>
+    <br><br><br><br><br><br><br><br><br>
 
-    <div class="button blue-button" (click)="navigateTo('/demande')">
-        <h2 style="margin: auto;font-size: 1.2vw;"> Recevoir des subventions </h2>
+    <div class="info">
+        <div class="values">
+            <h4> TELEPHONE </h4>
+            <span class="value">
+                0596 56 37 59
+            </span>
+        </div>
+        <div class="values">
+            <h4> EMAIL </h4>
+            <span class="value">
+                contact@leprisme.fr
+            </span>
+        </div>
+        <div class="values">
+            <h4> ADRESSE </h4>
+            <span class="value">
+                Allée Hermann Litté <br>
+                Quartier Bac, Ducos 97224 <br>
+                Martinique
+            </span>
+        </div>
+        <div class="values">
+            <h4> HORAIRE </h4>
+            <span class="value">
+                Du lundi au vendredi <br>
+                De 8h30 à 17h.
+            </span>
+        </div>
     </div>
+    <br><br><br>
+    <div style="border-bottom: solid 1px rgb(187, 186, 186);"> </div>
 
-    <div class="button orange-button" (click)="navigateTo('https://www.hellodjo.fr/')">
-        <h2 style="margin: auto;font-size: 1.2vw;"> Contacter Djo</h2>
+    <br><br><br>
+
+    <h2>Envoyez-nous un message directement ! </h2>
+
+    <div class="textmessage">
+        Quelque soit votre problème, nous ferons de notre mieux pour le résoudre <br> le plus rapidement que possible.
     </div>
+<br><br><br>
+
+    <mat-form-field appearance="outline" style="width: 400px;" >
+        <mat-label>Nom complet</mat-label>
+        <input  matInput type="text" >
+    </mat-form-field>   
+ &nbsp;&nbsp; &nbsp;&nbsp;
+    <mat-form-field appearance="outline" style="width: 400px;" >
+        <mat-label>Email</mat-label>
+        <input  matInput type="text" >
+    </mat-form-field>   
+    <br>
+    <mat-form-field appearance="outline" style="width: 832px;">
+        <mat-label>Votre message  </mat-label>
+        <textarea matInput style="height:120px"></textarea>
+    </mat-form-field>
+
+    <br>  <br>
 
 
+    <div class="button" style="width: 200px;"><h4 style="text-align: center;width: 100%;margin:auto;font-size: 17px;color:white">Envoyer un message</h4></div>
 
-    
-    <h1 style="margin-top: 1vw;margin-bottom: 1vw;margin-top: 8vw;">Nos coordonnées</h1>
-        
-    <div class="card" style="width: fit-content;margin: auto;height: 11vw;">
-    <div class="coordonees">
-    <h2><i class="fa fa-envelope-o" aria-hidden="true"></i> Email</h2>
-    contact@leprisme.fr
-    </div>
+    <br><br><br>
 
-    <div class="coordonees">
-        <h2> <i class="fa fa-phone" aria-hidden="true"></i> Téléphone</h2>
-        0596 56 37 59
-    </div>
-
-    <div class="coordonees">
-        <h2><i class="fa fa-map-marker" aria-hidden="true"></i> Adresse</h2>
-        Allée Hermann Litté <br>
-        Quartier Bac Ducos 97224 <br>
-        Martinique
-    </div>
-</div>
-  
-
-
-    <h1 style="margin-top: 8vw;"> Nous envoyer un message !</h1>
-    <div class="button lightblue-button">
-        <h2 style="margin: auto;font-size: 1.2vw;"> Envoyer un message </h2>
-    </div>
-
-
-    <div style="height: 5vw;"></div>
 </div>

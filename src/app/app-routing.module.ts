@@ -16,7 +16,7 @@ const routes: Routes = [
   {path:"home", component:HomeComponent},
   {path:"presentation", component:PresentationComponent},
   {path:"services", component:ServicesComponent},
-  {path:"partenaires", component:PartenairesComponent},
+  {path:"plateforme", component:FormulaireComponent},
   {path:"contacts", component:ContactsComponent},
   {path:"hellodjo", component:HellodjoComponent},
   {path:"aah", component:AahComponent},

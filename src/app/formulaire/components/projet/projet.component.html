@@ -5,11 +5,11 @@
         <h1 style="font-weight: 200;"> Avez vous déjà perçu des aides pour des travaux antérieurs ?</h1>
         <div style="text-align: center;display: flex;width: 35%;margin: auto;">
              <div class="button" (click)="aidestravauxanterieurs='oui'; changeview(1.5)">
-                <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> OUI </h2>
+                <h4 style="margin: auto;   font-family:'Open Sans', sans-serif;"> OUI </h4>
             </div>
             &nbsp;&nbsp;
              <div class="button" (click)="aidestravauxanterieurs='non'; changeview(5.1)">
-                <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> NON </h2>
+                <h4 style="margin: auto;   font-family:'Open Sans', sans-serif;"> NON </h4>
             </div>
         </div>
 
@@ -22,7 +22,7 @@
             <mat-label>Organisme(s) d'aides ? </mat-label>
             <input matInput type="text" [(ngModel)]="organismeaide" (keyup.enter)="changeview(1.70)" [formControl]="quiControl">
         </mat-form-field>
-        <div style="text-align: center;"> <div class="button" (click)="changeview(1.70)">      <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;">  Valider </h2> </div></div>
+        <div style="text-align: center;"> <div class="button" (click)="changeview(1.70)">      <h4 style="margin: auto;   font-family:'Open Sans', sans-serif;">  Valider </h4> </div></div>
     
 
     </div>
@@ -34,7 +34,7 @@
             <mat-label> Année des aides perçues</mat-label>
             <input matInput type="text" [(ngModel)]="anneeAide" (keyup.enter)="changeview(1.75)" [formControl]="anneeControl" placeholder="YYYY">
         </mat-form-field>
-        <div style="text-align: center;"> <div class="button" (click)="changeview(1.75)">      <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;">  Valider </h2> </div></div>
+        <div style="text-align: center;"> <div class="button" (click)="changeview(1.75)">      <h4 style="margin: auto;   font-family:'Open Sans', sans-serif;">  Valider </h4> </div></div>
     
 
     </div>
@@ -47,7 +47,7 @@
             <mat-label>Montant des aides perçues </mat-label>
             <input matInput type="text" [(ngModel)]="montantAide" (keyup.enter)="changeview(5)" [formControl]="montantControl">
         </mat-form-field>
-        <div style="text-align: center;"> <div class="button" (click)="changeview(5)">      <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;">  Valider </h2> </div></div>
+        <div style="text-align: center;"> <div class="button" (click)="changeview(5)">      <h4 style="margin: auto;   font-family:'Open Sans', sans-serif;">  Valider </h4> </div></div>
     
 
 
@@ -98,7 +98,7 @@
         <br>
         <br>
          <div class="button" (click)="changeview(2)">
-            <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> Valider </h2>
+            <h4 style="margin: auto;   font-family:'Open Sans', sans-serif;"> Valider </h4>
         </div>
 
     </div>
@@ -110,11 +110,11 @@
             location ?</h1>
         <div style="text-align: center;display: flex;width: 25%;margin: auto;">
              <div class="button" (click)="aprestrav='habiter'; changeview(4)">
-                <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> Habiter </h2>
+                <h4 style="margin: auto;   font-family:'Open Sans', sans-serif;"> Habiter </h4>
             </div>
             &nbsp;&nbsp;
              <div class="button" (click)="aprestrav='louer'; changeview(4)">
-                <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> Louer </h2>
+                <h4 style="margin: auto;   font-family:'Open Sans', sans-serif;"> Louer </h4>
             </div>
         </div>
     </div>
@@ -130,7 +130,7 @@
 
 <br>
          <div class="button" (click)="changeview(3)">
-            <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> Valider </h2>
+            <h4 style="margin: auto;   font-family:'Open Sans', sans-serif;"> Valider </h4>
         </div>
     </div>
 
@@ -143,7 +143,7 @@
 <br>
 
          <div class="button" style="width: 220px;" (click)="changeview(6)">
-            <h2 style="margin: auto;font-size: 1.2vw;   font-family:'Open Sans', sans-serif;"> Terminer </h2>
+            <h4 style="margin: auto;   font-family:'Open Sans', sans-serif;"> Terminer </h4>
         </div>
     </div>
 

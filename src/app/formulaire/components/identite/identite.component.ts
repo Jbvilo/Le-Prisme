@@ -33,7 +33,7 @@ formGroup = new FormGroup({
   validateAnswers(){
     this.formGroup.markAllAsTouched()
     if ( this.formGroup.valid) {
-     this.formulaireservice.submitvalue({name:'NOM',value:this.nom})
+     this.formulaireservice.submitvalue({name:'NOM',value:this.nom.toLocaleUpperCase()})
      this.formulaireservice.submitvalue({name:'PRENOM',value:this.prenom})
      this.formulaireservice.submitvalue({name:'DATE_DE_NAISSANCE',value:this.birthdate})
      this.formulaireservice.changePage();
