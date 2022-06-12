@@ -35,7 +35,7 @@
         margin:auto; 
         margin-top: 1vw;  
         margin-bottom: 1vw;
-    color:#255099;;
+        color:black;
 
       }
 }
@@ -44,6 +44,14 @@
   //pointer-events: none !important;
 }
 
+::ng-deep h1 {
+  color : #5780FA;
+ font-weight: 300;
+}
+
+::ng-deep i {
+  color : #335EEA;
+}
 
 .navbar_title {
   width: 15vw; 
