@@ -82,7 +82,24 @@
 @media only screen and (max-width: 900px) {
   .navbar {
     max-width: 800px;
+    margin-top: 1.5vw;
 }
+}
+
+
+
+
+//MOBILE
+@media only screen and (max-width: 500px) {
+  .navbar_title {
+    width: auto;
+    margin-top: 10px;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+  }
 }
 
 

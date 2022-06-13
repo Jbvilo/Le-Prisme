@@ -1,4 +1,4 @@
-<div class="navbar">
+<div class="navbar" *ngIf="!mobile">
     <h4 class="navbar_title">Le Prisme</h4>
 
     <div class="navbar-items" [ngClass]="current_path == '/home' ? 'active' : '' " (click)="navigateTo('home')">
@@ -21,4 +21,8 @@
         <h4 class="button_text">Contactez-nous</h4>
     </div>
     
+</div>
+
+<div class="navbar" *ngIf="mobile">
+    <h4 class="navbar_title">Le Prisme</h4>
 </div>
