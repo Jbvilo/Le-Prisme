@@ -28,7 +28,42 @@ h1 {
 .bold {
     color:$blueprisme;
 }
+.boldi {
+    color:$blueprisme;
+}
 .info_button {
     margin: auto;
     color:$blueprisme;
+}
+.text {
+    width: 50%;
+    font-weight:500;
+}
+h4 {
+    font-size: 17px;
+}
+
+@media only screen and (max-width: 500px) {
+    .firstview-content {
+        text-align: center;
+        margin-top: 250px;
+    }
+    h1 {
+        font-size: 30px;
+        font-weight: 400;
+    }
+    .text {
+        width: 100%;
+    }
+    .bold {
+        color:black;
+    }
+    .button {
+        width: 47%;
+        margin: 4px;
+    }
+    h4 {
+        font-size: 14px;
+    }
+    
 }

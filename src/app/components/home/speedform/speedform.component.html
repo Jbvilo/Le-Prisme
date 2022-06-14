@@ -1,51 +1,57 @@
 <br><br><br><br><br><br>
-<div style="width: 40%;display: inline-block;vertical-align: top;">
-    <h1 style="color:black">Découvrez notre plateforme <br><span style="color:rgb(49, 170, 110)"> de demande. </span></h1>
-    <div style="font-size:19px"> Dans le but de faciliter nos échanges, vous pouvez  
-        effectuer <br>une demande d'accompagnement  
-        directement sur notre site vià notre plateforme   de demande, cela permet d'accelérer la procédure car 
-       nous aurons toutes les informations nécéssaires.</div>
-<br><br>
-      
-    <div style="width: 50%;display: inline-block;color:rgb(49, 170, 110)"><i class="fa fa-check" aria-hidden="true" style="color:rgb(49, 170, 110)"></i> Echanges simplifiés</div>
-    <div style="width: 50%;display: inline-block;color:rgb(49, 170, 110)"> <i class="fa fa-check" aria-hidden="true" style="color:rgb(49, 170, 110)" ></i> Réponse plus rapide</div>
-    <br>    <br>
-    <div style="width: 50%;display: inline-block;color:rgb(49, 170, 110)"> <i class="fa fa-check" aria-hidden="true" style="color:rgb(49, 170, 110)"></i> Aide téléphonique</div>
+<div class="text">
+    <h1 style="color:black">Découvrez notre plateforme <br><span style="color:rgb(49, 170, 110)"> de demande. </span>
+    </h1>
+    <div style="font-size:19px"> Dans le but de faciliter nos échanges, vous pouvez
+        effectuer <br>une demande d'accompagnement
+        directement sur notre site vià notre plateforme de demande, cela permet d'accelérer la procédure car
+        nous aurons toutes les informations nécéssaires.</div>
+    <br><br>
+
+    <div class="icons"><i class="fa fa-check" aria-hidden="true"
+            style="color:rgb(49, 170, 110)"></i> Echanges simplifiés</div>
+            <br *ngIf="mobile">    <br *ngIf="mobile">
+    <div class="icons"> <i class="fa fa-check" aria-hidden="true"
+            style="color:rgb(49, 170, 110)"></i> Réponse plus rapide</div>
+    <br> <br>
+    <div class="icons"> <i class="fa fa-check" aria-hidden="true"
+            style="color:rgb(49, 170, 110)"></i> Aide téléphonique</div>
 
 </div>
 
+<br *ngIf="mobile">    <br *ngIf="mobile">         <br *ngIf="mobile">    <br *ngIf="mobile">
+    <div class="forms">
 
-<div style="width: 60%;display: inline-block;vertical-align: middle;">
+    <div class="card formsInput">
+        <div style="height: 40%;"> </div>
 
-<div class="card" style="height: 680px;width: 450px;margin: auto;margin-left: 25%;">
-<div style="height: 40%;"> </div>
+        <div style="text-align: center;">
+            <mat-form-field appearance="outline" class="matform">
+                <mat-label>Nom</mat-label>
+                <input required matInput type="text" placeholder="XXXXXXXXXX">
+            </mat-form-field>
 
-<div style="text-align: center;"> 
-<mat-form-field appearance="outline" style="width: 400px;margin: 0px;">
-    <mat-label>Nom</mat-label>
-    <input required matInput type="text" placeholder="XXXXXXXXXX">
-</mat-form-field>
+            <mat-form-field appearance="outline" class="matform">
+                <mat-label>Prénom</mat-label>
+                <input required matInput type="text" placeholder="XXXXXXXXXX">
+            </mat-form-field>
 
-<mat-form-field appearance="outline" style="width: 400px;margin: 0px;">
-    <mat-label>Prénom</mat-label>
-    <input required matInput type="text" placeholder="XXXXXXXXXX">
-</mat-form-field>
-
-<mat-form-field appearance="outline" style="width: 400px;margin: 0px;">
-    <mat-label>Adresse email</mat-label>
-    <input required matInput type="text" placeholder="XXXXXXXXXX">
-</mat-form-field>
-
-
-<div style="text-align: center;">
-    <div class="button" style="width: 400px;height: 55px;background-color:rgb(49, 170, 110) ;">    
-          <span style="margin: auto; font-weight: 600;  font-family:'Open Sans', sans-serif;font-size: 17px;">  Se faire accompagner </span>
-   </div>
-</div>
+            <mat-form-field appearance="outline" class="matform">
+                <mat-label>Adresse email</mat-label>
+                <input required matInput type="text" placeholder="XXXXXXXXXX">
+            </mat-form-field>
 
 
-</div>
+            <div style="text-align: center;">
+                <div class="button">
+                    <h4 >
+                        Se faire accompagner </h4>
+                </div>
+            </div>
 
-</div>
+
+        </div>
+
+    </div>
 
 </div>

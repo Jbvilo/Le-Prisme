@@ -34,6 +34,15 @@ h4 {
 .text {
 
 }
+@media only screen and (max-width: 500px) {
+    .avantage-block {
+        margin: 1vw;
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+    }
+
+}
 
 
 

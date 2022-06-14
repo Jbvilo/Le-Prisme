@@ -1,15 +1,17 @@
 @import '../../../../styles.scss';
 
-.keywords-card{
+.keywords-card {
     width: 100%;
     margin-bottom: 3vw;
     animation: 2s linear definition-effect;
 
 }
+
 h3 {
     font-weight: 600;
     color: #0558a0;
 }
+
 .separator {
     width: 0.01vw;
     height: 2.1vw;
@@ -18,20 +20,23 @@ h3 {
     margin-left: 0px;
     margin-right: 0px;
 }
+
 .button {
-    background-color:#335EEA;
+    background-color: #335EEA;
     height: 4vw;
     margin: auto;
     width: 20%;
     text-align: center;
-  }
-
-  .button:hover {
-    transform: translateY(-4px);
- }
- .bold {
-    color:$blueprisme;
 }
+
+.button:hover {
+    transform: translateY(-4px);
+}
+
+.bold {
+    color: $blueprisme;
+}
+
 h4 {
     margin: 0px;
     margin-bottom: 15px;
@@ -42,10 +47,50 @@ h4 {
 .partenaires {
     width: 100px;
 }
+
 .partenairecaf {
     width: 100px;
 }
+
 .cardcontent {
     margin-top: 80px;
 }
 
+.block {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.typestravaux {
+    width: 50%;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 500px) {
+    .block {
+        width: 100%;
+    }
+    .typestravaux {
+        width: 100%;   }
+
+        .button {
+          width: 80%;
+          height: 45px;
+          margin-top: 230px;
+        }
+        
+        .partenaires {
+            width: 70px;
+        }
+        
+        .partenairecaf {
+            width: 70px;
+        }
+
+        .cardcontent {
+      display: inline-block;
+      width: fit-content;
+        }
+        
+}

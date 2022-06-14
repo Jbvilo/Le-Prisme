@@ -25,4 +25,24 @@
 
 <div class="navbar" *ngIf="mobile">
     <h4 class="navbar_title">Le Prisme</h4>
+
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+
 </div>
+
+<mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <!-- <mat-icon></mat-icon> -->
+      <span>Qui sommes-nous ?</span>
+    </button>
+    <button mat-menu-item>
+      <!-- <mat-icon></mat-icon> -->
+      <span>Nos services</span>
+    </button>
+    <button mat-menu-item>
+      <!-- <mat-icon></mat-icon> -->
+      <span>Faire une demande</span>
+    </button>
+  </mat-menu>

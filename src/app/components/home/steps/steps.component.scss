@@ -37,3 +37,21 @@ h4 {
     text-align: center;
     width: 100%;
 }
+.content {
+    display: inline-block;
+    width: 50%;
+    margin-top: 10%;
+}
+
+//MOBILE
+@media only screen and (max-width: 500px) {
+    .content {
+     
+        width: 100%;
+    
+    }
+
+    .titre {
+    
+    }
+}
