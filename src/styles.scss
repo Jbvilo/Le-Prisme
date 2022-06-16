@@ -43,7 +43,9 @@ body {
   background-color: #FFFFFF;
 }
 
-
+.bold {
+  color:$blueprisme;
+}
 h1 {
   font-weight: 300;
   color:#021c33;
@@ -105,6 +107,17 @@ body {
 /* CSS ANIMATIONS*/
 @keyframes blink_effect {
     0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes blink_effectt {
+    0% {
+      opacity: 0;
+    }
+    25% {
       opacity: 0;
     }
     100% {
