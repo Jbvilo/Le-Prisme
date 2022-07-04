@@ -4,3 +4,13 @@
      text-align: center;
      height: 15vw;
  }
+ :host {
+    @media only screen and (max-width: 500px) {
+        mat-form-field {
+            width: 250px;
+        }
+        .button {
+            height: 50px;
+        }
+    }
+ }

@@ -25,3 +25,16 @@ h1 {
 i {
     animation: 3s linear blink_effectt;
 }
+
+
+@media only screen and (max-width: 500px) {
+.firsttext {
+    width: 100%;
+}
+.text {
+    width: 100%;
+}
+.content {
+    width: 100%;
+}
+}

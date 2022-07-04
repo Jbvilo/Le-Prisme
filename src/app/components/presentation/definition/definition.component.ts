@@ -8,24 +8,35 @@ import { Router } from '@angular/router';
 })
 export class DefinitionComponent implements OnInit {
   visible: boolean=true;
+  mobile: boolean;
 
   constructor(private router:Router) { }
-  @HostListener('window:resize', ['$event'])
-onResize(event) {
-  //console.log(window.screen)
-}
   @HostListener('window:scroll', ['$event'])
   onWindowScroll($event) {
       
       this.visible=true
   }
 
-  ngOnInit(): void {
-    // console.log(window.screen)
-  }
 
   navigateTo(path): void {
     this.router.navigate([path])
   }
+
+  
+  @HostListener('window:resize', ['$event'])
+onResize(event) {
+if(window.innerWidth <= 500){
+  this.mobile = true
+}
+else {
+  this.mobile = false
+}
+}
+  ngOnInit(): void {
+    if (window.innerWidth<= 500){
+      this.mobile = true;
+    }
+  }
+
 
 }

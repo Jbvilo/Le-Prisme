@@ -43,7 +43,7 @@
 </div>
 
 <br><br><br><br>
-<div style="display:flex; justify-content: space-around;width: 100%;">
+<div style="display:flex; justify-content: space-around;width: 100%;" *ngIf="!mobile">
 <div style="margin-right: 50px;">
     <i class="fa fa-folder-open-o" aria-hidden="true" style="font-size:53px;color:#377EFA"></i>
     <h4 > Monter votre dossier </h4>
@@ -68,7 +68,7 @@
 <div style="margin-right: 50px;" >
     <i class="fa fa-search" aria-hidden="true" style="font-size:53px;color:#377EFA"></i>
     <h4  >Rechercher un maitre d'oeuvre </h4>
-    Une fois votre dossier validé par la DEAL ainsi que par vous même, nous recherchons un maitre d'oeuvre qui
+    Une fois votre dossier validé auprès de l'Etat, ainsi que par vous même, nous recherchons un maitre d'oeuvre qui
     s'occupera de la réalisation des travaux puis nous vous contactons pour démarrer ces derniers.
 
 </div>
@@ -83,4 +83,50 @@
 </div>
 
 </div>
+
+
+
+
+<!-- MOBILE -->
+
+<div style="width: 100%;text-align: center;" *ngIf="mobile">
+    <div>
+        <i class="fa fa-folder-open-o" aria-hidden="true" style="font-size:53px;color:#377EFA"></i>
+        <h4 > Monter votre dossier </h4>
+        Nous réunissons toutes les informations que vous nous avez fournies afin de monter votre dossier et évaluer le
+        montant des travaux.
+    
+    </div>
+    
+    <br><br>
+    
+    <div  >
+        <i class="fa fa-check" aria-hidden="true" style="font-size:53px;color:#377EFA"></i>
+        <h4  >Faire valider les financements </h4>
+        Nous faisons appels à nos différents partenaires ainsi qu'aux différents programmes de l'état afin de vous trouvez
+        les meilleurs financements possibles et de les faire valider par les services concernées.
+    
+    </div>
+    
+    
+    
+    <br><br>
+    <div  >
+        <i class="fa fa-search" aria-hidden="true" style="font-size:53px;color:#377EFA"></i>
+        <h4  >Rechercher un maitre d'oeuvre </h4>
+        Une fois votre dossier validé auprès de l'Etat, ainsi que par vous même, nous recherchons un maitre d'oeuvre qui
+        s'occupera de la réalisation des travaux puis nous vous contactons pour démarrer ces derniers.
+    
+    </div>
+    
+    <br><br>
+    <div>
+        <i class="fa fa-eye" aria-hidden="true" style="font-size:53px;color:#377EFA"></i>
+        <h4 >Suivre les travaux </h4>
+        Nous assurons la bonne réalisation des travaux jusqu'à leurs livraisons. Nous restons disponibles pour vous tenir
+        informés ainsi que pour toutes autres démarches administratives.
+    
+    </div>
+    
+    </div>
 

@@ -27,3 +27,25 @@ h2 {
     font-size: 150%;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
+.field {
+    width: 400px;
+}
+.fieldtext {
+    width: 832px;
+}
+  @media only screen and (max-width: 500px) {
+    .info {
+     display:block;
+    }
+    .values {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+    }
+    .field {
+        width: 100%;
+    }
+    .fieldtext {
+        width: 100%;
+    }
+}

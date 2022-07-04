@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, HostListener, OnInit, ViewChild } from '@angular/core';
 import { MatStepper } from '@angular/material/stepper';
 import { Router } from '@angular/router';
 import { FormulaireServiceService } from '../formulaire-service.service';
@@ -12,6 +12,7 @@ export class FormulaireComponent implements OnInit {
   title;
   @ViewChild('stepper') private myStepper: MatStepper;
  linear:boolean=false;
+  mobile: boolean;
   constructor(private formulaireservice:FormulaireServiceService,private router:Router) { 
     window.scrollTo(0,0)
     this.formulaireservice.setFormsTitle("Votre identité")
@@ -23,9 +24,23 @@ export class FormulaireComponent implements OnInit {
   }
 
   ngOnInit(): void { 
+    if (window.innerWidth<= 500){
+      this.mobile = true;
+    }
     this.formulaireservice.changePageEvent.subscribe(()=> {
     this.myStepper.next()
            })
+   }
+
+
+   @HostListener('window:resize', ['$event'])
+   onResize(event) {
+   if(window.innerWidth <= 500){
+     this.mobile = true
+   }
+   else {
+     this.mobile = false
+   }
    }
 
    

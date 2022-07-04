@@ -34,23 +34,23 @@
 </div>
 
 <mat-menu #menu="matMenu" yPosition="below">
-  <button mat-menu-item>
+  <button mat-menu-item (click)="navigateTo('home')" >
     <!-- <mat-icon></mat-icon> -->
     <span style="font-size:larger">Accueil</span>
   </button>
-    <button mat-menu-item>
+    <button mat-menu-item (click)="navigateTo('presentation')">
       <!-- <mat-icon></mat-icon> -->
       <span style="font-size:larger" >Qui sommes-nous ?</span>
     </button>
-    <button mat-menu-item>
+    <button mat-menu-item (click)="navigateTo('services')">
       <!-- <mat-icon></mat-icon> -->
       <span style="font-size:larger" >Nos services</span>
     </button>
-    <button mat-menu-item>
+    <button mat-menu-item (click)="navigateTo('plateforme')">
       <!-- <mat-icon></mat-icon> -->
       <span style="font-size:larger" >Faire une demande</span>
     </button>
-    <button mat-menu-item>
+    <button mat-menu-item (click)="navigateTo('contacts')">
       <!-- <mat-icon></mat-icon> -->
       <span style="font-size:larger">Contactez-nous</span>
     </button>

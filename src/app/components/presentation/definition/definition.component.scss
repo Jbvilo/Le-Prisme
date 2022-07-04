@@ -2,3 +2,14 @@ i {
     color: #377EFA;
     font-size: 15px;
 }
+
+.content {
+    width:50%;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 500px) {
+    .content {
+        width: 100%;
+    }
+}
