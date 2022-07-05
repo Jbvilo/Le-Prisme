@@ -37,10 +37,10 @@ export class FormulaireComponent implements OnInit {
 
   screensize(): number {
     if (window.screen.height <= 720) {
-      return 660;
+      return 600;
     }
     if (window.screen.height <= 1080) {
-      return 800
+      return 660;
     }
   }
 
