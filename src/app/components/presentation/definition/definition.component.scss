@@ -1,28 +1,22 @@
-h1 {
-    padding-bottom: 2vw;
-    margin-right: 15%;
+i {
+    color: #377EFA;
+    font-size: 15px;
 }
-.presentation {
-    width: 60%;
+
+.content {
+    width:50%;
     display: inline-block;
-    text-align: center;
-    vertical-align: top;
-    animation: 2s linear definition-effect;
 }
-.presentation2 {
-    width: 40%;
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    animation: 2s linear definition-effect 
+.bitt {
+    width:200px;background-color:#335EEA;
 }
-.definition-text {
-    text-align: start;
-    width:60%;
-    margin: auto;
-    margin-top:3vw;
+.bibit {
+    text-align: center;width: 100%;margin:auto;font-size: 17px;
 }
-.definition-image {
-    width: 95%;
-    margin: auto;
+
+@media only screen and (max-width: 500px) {
+    .content {
+        width: 100%;
+    }
+
 }

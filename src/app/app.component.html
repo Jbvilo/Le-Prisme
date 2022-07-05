@@ -1,33 +1,15 @@
-<comp *ngIf="computer">
 
-    <div [ngClass]="scroll? 'scroll' : 'top'" style="position:fixed; width: 100%;z-index: 800;background-color: white;">
+  <div [ngClass]="scroll? 'scroll' : 'top'" style="position:fixed; width: 100%;z-index: 800;background-color: white;margin-top: -10px;">
         <app-navigation-bar *ngIf="visible"></app-navigation-bar>
     </div>
   
     <!--A remplacer, permet de descendre le contenu principal-->
     <div *ngIf="visible" style="height: 8vw;"></div>
 
+    <div class="bodyy"> 
+    
     <router-outlet></router-outlet>
 
-    <app-footer *ngIf="visible"></app-footer>
-
-
-</comp>
-
-<comp *ngIf="!computer">
-    <div style="width:100%;height: calc(90vh);display: flex;justify-content: space-around;align-items: center;">
-
-        <div style="text-align: center;">
-            <h1 style="font-size: 700%;"> LE PRISME </h1>
-            <h1 style="font-size: 300%;"> Version mobile et tablette en cours de développement
-                <br>
-                Merci de consulter le site sur ordinateur
-
-            </h1>
-        </div>
-
-
     </div>
+    <app-footer *ngIf="visible2"></app-footer>
 
-
-</comp>

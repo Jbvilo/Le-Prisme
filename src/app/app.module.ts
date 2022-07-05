@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -10,7 +9,7 @@ import { PresentationComponent } from './pages/presentation/presentation.compone
 import { PartenairesComponent } from './pages/partenaires/partenaires.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
-import { CommonModule } from '@angular/common';
+import { CommonModule, DatePipe } from '@angular/common';
 import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
 import { ProblemesComponent } from './components/home/problemes/problemes.component';
 import { StepsComponent } from './components/home/steps/steps.component';
@@ -21,12 +20,22 @@ import { IntroductionComponent } from './components/presentation/introduction/in
 import { ServicesPresentationComponent } from './components/services/services-presentation/services-presentation.component';
 import { FirstviewComponent } from './components/home/firstview/firstview.component';
 import { KeywordsCardComponent } from './components/home/keywords-card/keywords-card.component';
-import { FormulaireComponent } from './pages/formulaire/formulaire.component';
 import { HellodjoComponent } from './pages/hellodjo/hellodjo.component';
 import { AahComponent } from './pages/aah/aah.component';
 import { RenovationComponent } from './pages/renovation/renovation.component';
 import { GobackserviceComponent } from './components/shared/gobackservice/gobackservice.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material.module';
+import { FormulaireComponent } from './formulaire/formulaire.component';
+import { IdentiteComponent } from './formulaire/components/identite/identite.component';
+import { CoordonnesComponent } from './formulaire/components/coordonnes/coordonnes.component';
+import { StatutComponent } from './formulaire/components/statut/statut.component';
+import { FoyerComponent } from './formulaire/components/foyer/foyer.component';
+import { RevenusComponent } from './formulaire/components/revenus/revenus.component';
+import { ProjetComponent } from './formulaire/components/projet/projet.component';
+import { HttpClientModule } from '@angular/common/http';
+import { SpeedformComponent } from './components/home/speedform/speedform.component';
 
 @NgModule({
   declarations: [
@@ -48,18 +57,28 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     ServicesPresentationComponent,
     FirstviewComponent,
     KeywordsCardComponent,
-    FormulaireComponent,
     HellodjoComponent,
     AahComponent,
     RenovationComponent,
-    GobackserviceComponent
+    GobackserviceComponent,
+    FormulaireComponent,
+    IdentiteComponent,
+    CoordonnesComponent,
+    StatutComponent,
+    FoyerComponent,
+    RevenusComponent,
+    ProjetComponent,
+    SpeedformComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CommonModule
+    CommonModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    HttpClientModule
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy},DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

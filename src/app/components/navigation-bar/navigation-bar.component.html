@@ -1,5 +1,5 @@
-<div class="navbar">
-    <div class="navbar_title">Le Prisme</div>
+<div class="navbar" *ngIf="!mobile">
+    <h4 class="navbar_title" (click)="navigateTo('home')">Le Prisme</h4>
 
     <div class="navbar-items" [ngClass]="current_path == '/home' ? 'active' : '' " (click)="navigateTo('home')">
         Accueil
@@ -13,11 +13,45 @@
         Nos services
     </div>
 
-    <div class="navbar-items" [ngClass]="current_path == '/partenaires' ? 'active' : '' " (click)="navigateTo('partenaires')">
-        Nos partenaires
+    <div class="navbar-items" [ngClass]="current_path == '/plateforme' ? 'active' : '' " (click)="navigateTo('plateforme')">
+        Faire une demande
     </div>
-
+    <div style="width: 15%;"> </div>
     <div class="button" (click)="navigateTo('contacts')">
-        <span class="button_text">Contactez-nous</span>
+        <h4 class="button_text">Contactez-nous</h4>
     </div>
+    
 </div>
+
+<div class="navbar" *ngIf="mobile">
+    <h4 class="navbar_title" (click)="navigateTo('home')" >Le Prisme</h4>
+
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+    
+
+</div>
+
+<mat-menu #menu="matMenu" yPosition="below">
+  <button mat-menu-item (click)="navigateTo('home')" >
+    <!-- <mat-icon></mat-icon> -->
+    <span style="font-size:larger">Accueil</span>
+  </button>
+    <button mat-menu-item (click)="navigateTo('presentation')">
+      <!-- <mat-icon></mat-icon> -->
+      <span style="font-size:larger" >Qui sommes-nous ?</span>
+    </button>
+    <button mat-menu-item (click)="navigateTo('services')">
+      <!-- <mat-icon></mat-icon> -->
+      <span style="font-size:larger" >Nos services</span>
+    </button>
+    <button mat-menu-item (click)="navigateTo('plateforme')">
+      <!-- <mat-icon></mat-icon> -->
+      <span style="font-size:larger" >Faire une demande</span>
+    </button>
+    <button mat-menu-item (click)="navigateTo('contacts')">
+      <!-- <mat-icon></mat-icon> -->
+      <span style="font-size:larger">Contactez-nous</span>
+    </button>
+  </mat-menu>

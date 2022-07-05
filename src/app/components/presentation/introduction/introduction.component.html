@@ -1,23 +1,132 @@
 <div class="presentation">
     <div class="definition-image">
-        <img style="width: 35%;position: relative;z-index: 200;margin-left: 40%;margin-top: 10%;"
-            src="../../../../assets/svg/introduction-image.svg" />
-
-        <img style="width: 70%;position: relative;z-index: 100;margin-top: -45%;" class="imgback"
-            src="../../../../assets/svg/introduction-image2.svg" />
+     
     </div>
 </div>
 <div class="presentation">
     <div class="definition-text">
-        <h1>Le Prisme, <span style="font-weight: 600;color: #377EFA;">Assistant</span> à <span style="font-weight: 600;color: #377EFA;">Maitrise</span> <br>d' <span style="font-weight: 600;color: #377EFA;">Ouvrage</span> en Martinique</h1>
+        <h1>Le Prisme, <br>   <span style="color: #377EFA;">Assistant à Maitrise d'Ouvrage.</span></h1>
         Notre principal objectif est d’accompagner tout
-        propriétaire désirant rénover, réparer ou adapter son logement.
+        propriétaire désirant rénover, réparer ou adapter son logement en lui permettant de bénéficier de subventions de nos partenaires.
         <br><br>
-        Dans le cadre d'<span class="bold">A</span>ssistance à <span class="bold">M</span>aîtrise d’<span class="bold">O</span>uvrage déléguée,
-        nous vous aidons à définir votre projet et vous accompagnons dans sa réalisation en suivant l'avancement des travaux.
-        <div class="button-container">
-            <div class="button button-purple" (click)="navigateTo('services')">
-                <h2 style="margin: auto;font-size: 1.2vw;"> Consulter nos services </h2>
-            </div>
-        </div>
+        Dans le cadre d'Assistance à Maîtrise d’Ouvrage déléguée,
+        nous vous aidons à définir votre projet, nous occupons de toutes les tâches administratives et vous accompagnons dans sa réalisation en suivant l'avancement des travaux.
+        <br><br>
+        <div style="width: 50%;display: inline-block;"> <i class="fa fa-check-circle" aria-hidden="true" style="color:#377EFA"></i> <span style="font-weight: 600;"> Rénovation  </span>  </div>
+
+        <div style="width: 50%;display: inline-block;"> <i class="fa fa-check-circle" aria-hidden="true"  style="color:#377EFA"></i>  <span style="font-weight: 600;"> Réparations  </span> </div>
+        <br>  <br>
+        <div style="width: 50%;display: inline-block;"> <i class="fa fa-check-circle" aria-hidden="true"  style="color:#377EFA"></i>  <span style="font-weight: 600;"> Adapter son logement  </span> </div>
+
+        <div style="width: 50%;display: inline-block;"> <i class="fa fa-check-circle" aria-hidden="true"  style="color:#377EFA"></i>  <span style="font-weight: 600;"> Bénéficier de subventions  </span> </div>
     </div>
+
+</div>
+
+<br><br><br><br><br><br>
+
+
+<div class="presentation">
+
+  
+    <div style="text-align: start;"> 
+        <h1> Quel est notre rôle ?  </h1>
+        
+        
+        En tant que propriétaire bailleur ou propriétaire
+        occupant vous pouvez bénéficier de subventions pour réaliser vos travaux.
+        <br> <br>
+        Pour y avoir droit, vous avez pour obligation de vous
+        faire accompagner par un Assistant à Maitrise d'Ouvrage.<br><br>
+        Une fois votre demande effectuée sur notre plateforme, nous nous chargeons de : 
+    </div>
+</div>
+
+<br><br><br><br>
+<div style="display:flex; justify-content: space-around;width: 100%;" *ngIf="!mobile">
+<div style="margin-right: 50px;">
+    <i class="fa fa-folder-open-o" aria-hidden="true" style="font-size:53px;color:#377EFA"></i>
+    <h4 > Monter votre dossier </h4>
+    Nous réunissons toutes les informations que vous nous avez fournies afin de monter votre dossier et évaluer le
+    montant des travaux.
+
+</div>
+
+
+
+<div style="margin-right: 50px;" >
+    <i class="fa fa-check" aria-hidden="true" style="font-size:53px;color:#377EFA"></i>
+    <h4  >Faire valider les financements </h4>
+    Nous faisons appels à nos différents partenaires ainsi qu'aux différents programmes de l'état afin de vous trouvez
+    les meilleurs financements possibles et de les faire valider par les services concernées.
+
+</div>
+
+
+
+
+<div style="margin-right: 50px;" >
+    <i class="fa fa-search" aria-hidden="true" style="font-size:53px;color:#377EFA"></i>
+    <h4  >Rechercher un maitre d'oeuvre </h4>
+    Une fois votre dossier validé auprès de l'Etat, ainsi que par vous même, nous recherchons un maitre d'oeuvre qui
+    s'occupera de la réalisation des travaux puis nous vous contactons pour démarrer ces derniers.
+
+</div>
+
+
+<div>
+    <i class="fa fa-eye" aria-hidden="true" style="font-size:53px;color:#377EFA"></i>
+    <h4 >Suivre les travaux </h4>
+    Nous assurons la bonne réalisation des travaux jusqu'à leurs livraisons. Nous restons disponibles pour vous tenir
+    informés ainsi que pour toutes autres démarches administratives.
+
+</div>
+
+</div>
+
+
+
+
+<!-- MOBILE -->
+
+<div style="width: 100%;text-align: center;" *ngIf="mobile">
+    <div>
+        <i class="fa fa-folder-open-o" aria-hidden="true" style="font-size:53px;color:#377EFA"></i>
+        <h4 > Monter votre dossier </h4>
+        Nous réunissons toutes les informations que vous nous avez fournies afin de monter votre dossier et évaluer le
+        montant des travaux.
+    
+    </div>
+    
+    <br><br>
+    
+    <div  >
+        <i class="fa fa-check" aria-hidden="true" style="font-size:53px;color:#377EFA"></i>
+        <h4  >Faire valider les financements </h4>
+        Nous faisons appels à nos différents partenaires ainsi qu'aux différents programmes de l'état afin de vous trouvez
+        les meilleurs financements possibles et de les faire valider par les services concernées.
+    
+    </div>
+    
+    
+    
+    <br><br>
+    <div  >
+        <i class="fa fa-search" aria-hidden="true" style="font-size:53px;color:#377EFA"></i>
+        <h4  >Rechercher un maitre d'oeuvre </h4>
+        Une fois votre dossier validé auprès de l'Etat, ainsi que par vous même, nous recherchons un maitre d'oeuvre qui
+        s'occupera de la réalisation des travaux puis nous vous contactons pour démarrer ces derniers.
+    
+    </div>
+    
+    <br><br>
+    <div>
+        <i class="fa fa-eye" aria-hidden="true" style="font-size:53px;color:#377EFA"></i>
+        <h4 >Suivre les travaux </h4>
+        Nous assurons la bonne réalisation des travaux jusqu'à leurs livraisons. Nous restons disponibles pour vous tenir
+        informés ainsi que pour toutes autres démarches administratives.
+    
+    </div>
+    
+    </div>
+

@@ -9,6 +9,7 @@ import { NavigationStart, Router } from '@angular/router';
 export class AppComponent implements OnInit {
   title = 'Le Prisme';
   visible: boolean = false;
+  visible2: boolean = false;
   scroll: boolean = false;
   computer: boolean;
 
@@ -44,9 +45,15 @@ export class AppComponent implements OnInit {
       if (res instanceof NavigationStart) {
         if (res.url == "/") {
           this.visible = false
+          this.visible2 = false;
+        }
+        else if(res.url == "/demande"){
+          this.visible = false
+          this.visible2 = true;
         }
         else {
           this.visible = true
+          this.visible2 = true;
         }
       }
     })

@@ -1,22 +1,56 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$LePrismeWeb-primary: mat-palette($mat-indigo);
+$LePrismeWeb-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$LePrismeWeb-warn: mat-palette($mat-red);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$LePrismeWeb-theme: mat-light-theme((
+  color: (
+    primary: $LePrismeWeb-primary,
+    accent: $LePrismeWeb-accent,
+    warn: $LePrismeWeb-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($LePrismeWeb-theme);
+
 /* You can add global styles to this file, and also import other style files */
-$blueprisme:#377EFA;
+$blueprisme:#335EEA;
 $greyprisme:gray;
 
 body {
-    margin:auto;
-    font-family:'Open Sans', sans-serif;
-    font-size: 1.2vw;
-    background-color: #FFFFFF;
-    color:#7a8da8;
+ font-family:'Open Sans', sans-serif;
+  font-size: 19px;
+  background-color: #FFFFFF;
+}
+
+.bold {
+  color:$blueprisme;
 }
 h1 {
   font-weight: 300;
-  color:#045092;
+  color:#021c33;
 }
 
-div {
-    overflow: hidden;
-}
 
 .card {
     /* Add shadows to create the "card" effect */
@@ -30,7 +64,7 @@ div {
 //     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
 // }
 body::-webkit-scrollbar {
-  display: none;
+
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
@@ -39,16 +73,15 @@ body {
   scrollbar-width: none;  /* Firefox */
 }
 .button {
-  height: 4.5vw;
+  height: 60px;
   width: 100%;
   text-align: center;
   border-radius: 7px;
   display: inline-flex;
   align-items: center;
-  background-color:#377EFA;
+  background-color:$blueprisme;
   color:white;
   transition: transform 0.3s;
-
 }
 .button:hover {
   cursor: pointer;
@@ -57,12 +90,34 @@ body {
 .button:active {
   transform: translateY(2px);
 }
+.button:hover {
+  transform: translateY(-4px);
+}
+
+@media only screen and (max-width: 500px) {
+  h1 {
+      font-size: 30px;
+      font-weight: 400;
+  }
+}
+
 
 
 
 /* CSS ANIMATIONS*/
 @keyframes blink_effect {
     0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes blink_effectt {
+    0% {
+      opacity: 0;
+    }
+    25% {
       opacity: 0;
     }
     100% {

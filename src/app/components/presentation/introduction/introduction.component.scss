@@ -1,8 +1,9 @@
 @import '../../../../styles.scss';
 
 h1 {
-    padding-bottom: 2vw;
+    padding-bottom: 15px;
     padding-top: -1vw;
+    font-weight: 500;
 }
 .presentation {
     width: 50%;
@@ -12,7 +13,6 @@ h1 {
 }
 .definition-text {
     text-align: start;
-    width:80%;
 }
 .definition-image {
     width: 100%;
@@ -28,6 +28,7 @@ h1 {
     text-align: center;
     margin-bottom: 3vw;
     height:4vw;
+    margin-top:2vw;
 }
 .button-container {
     margin-top:6vw;
@@ -36,5 +37,12 @@ h1 {
 }
 .bold {
     font-weight: 900;
+
+}
+
+@media only screen and (max-width: 500px) {
+    .presentation {
+        width: 100%;
+    }
 
 }

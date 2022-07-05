@@ -1,51 +1,46 @@
-h2 {
-    margin-top: 4vw;
-    margin-bottom:4.5vw;
-    font-size: 1.7vw;
-    color: #01396A;
-}
-.bluerectangle {
-    height:26vw;
-    width: 35vw;
+.content {
+    width: 49%;
     display: inline-block;
-    vertical-align: top;
-    background-color: #CCE0FE;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.25), 0 2px 8px rgba(0,0,0,0.22);
 }
-.lightbluerectangle {
-    height: 12vw;
-    width: 22vw;
-    vertical-align: top;
-    background-color: #01396A;
-    margin-left:1vw;
-    margin-bottom:2vw;
-    text-align: start;
-    position: relative;
-    z-index: 100;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.25), 0 2px 8px rgba(0,0,0,0.22);
-    overflow: visible;
+
+h1 {
+    font-size: 33px;
+    color: black;
 }
-.orangerectangle {
-    height: 12vw;
-    width: 22vw;
-    background-color: #FF8B1F;
-    margin-left:1vw;
-    text-align: start;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.25), 0 2px 8px rgba(0,0,0,0.22);
-    overflow: visible;
-}
-.services-content {
-    text-align: center;
- //   height: calc(95vh);
-    overflow: visible;
-    animation: 1s linear blink_effect;
-}
-.bluerectangle:hover,.lightbluerectangle:hover,.orangerectangle:hover {
-    cursor: pointer;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-.aah-illustration {
-    width: 15vw;
+
+.text {
+    width: 80%;
     margin: auto;
-    margin-top:-3vw;
+}
+
+.first {
+    text-align: center;
+}
+.firsttext {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+i {
+    animation: 3s linear blink_effectt;
+}
+
+.bitou {
+    text-align: center;width: 100%;margin:auto;font-size: 17px;
+}
+
+
+@media only screen and (max-width: 500px) {
+.firsttext {
+    width: 100%;
+}
+.text {
+    width: 100%;
+}
+.content {
+    width: 100%;
+}
+
+
 }

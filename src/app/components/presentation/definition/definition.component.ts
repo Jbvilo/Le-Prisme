@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-definition',
@@ -7,20 +8,35 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class DefinitionComponent implements OnInit {
   visible: boolean=true;
+  mobile: boolean;
 
-  constructor() { }
-  @HostListener('window:resize', ['$event'])
-onResize(event) {
-  //console.log(window.screen)
-}
+  constructor(private router:Router) { }
   @HostListener('window:scroll', ['$event'])
   onWindowScroll($event) {
       
       this.visible=true
   }
 
-  ngOnInit(): void {
-    // console.log(window.screen)
+
+  navigateTo(path): void {
+    this.router.navigate([path])
   }
+
+  
+  @HostListener('window:resize', ['$event'])
+onResize(event) {
+if(window.innerWidth <= 500){
+  this.mobile = true
+}
+else {
+  this.mobile = false
+}
+}
+  ngOnInit(): void {
+    if (window.innerWidth<= 500){
+      this.mobile = true;
+    }
+  }
+
 
 }

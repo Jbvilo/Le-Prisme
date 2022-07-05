@@ -11,6 +11,7 @@ export class KeywordsCardComponent implements OnInit {
 chantier:number=1;
 exp:number=1;
 visible:boolean=false
+  mobile: boolean;
 
   constructor(private router:Router) {
 
@@ -54,8 +55,20 @@ visible:boolean=false
   }
   }
 
-  ngOnInit(): void {
 
+  @HostListener('window:resize', ['$event'])
+onResize(event) {
+if(window.innerWidth <= 500){
+  this.mobile = true
+}
+else {
+  this.mobile = false
+}
+}
+  ngOnInit(): void {
+    if (window.innerWidth<= 500){
+      this.mobile = true;
+    }
   }
 
   navigateTo(path) {

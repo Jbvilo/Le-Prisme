@@ -1,13 +1,15 @@
 <div class="firstview-content">
-    <h1>Redonnez vie à<span class="bold"> votre logement</span> avec l'aide de l'état </h1>
-    <div style="font-size: 110%;"> <span class="bold">Le Prisme</span>, Assistant à Maîtrise d'Ouvrage, vous accompagne dans vos projets de rénovation et d’accessibilité de votre logement</div>
-    <div style="height: 20%;"></div>
-    <div class="button-container">
+    <h1 style="font-weight: 500;">Donnez vie à<span class="boldi"> votre logement</span> <br *ngIf="!mobile"> avec l'aide de l'état. </h1>
+
+    <div class="text"> Le Prisme,<span class="bold"> Assistant à Maîtrise d'Ouvrage</span> , vous accompagne dans la rénovation et l'amménagement de votre logement en vous permettant de bénéficier de <span class="bold">subventions</span> de l'état.</div>
+    <br><br>
+    <div class="button-container" style="overflow: visible;">
         <div class="button" (click)="scroll()">
-            <h2 class="info_button" > En savoir plus &nbsp; <i class="fa fa-arrow-down" aria-hidden="true"></i> </h2>
+            <h4 class="info_button"> En savoir plus &nbsp; <i class="fa fa-arrow-down" aria-hidden="true"></i> </h4>
         </div>
-        <div class="button blue-button" (click)="navigateTo('chatbox.html')">
-            <h2 style="margin: auto;font-size: 1.2vw;">  Faire une demande </h2>
+        <div class="button blue-button" (click)="navigateTo('/plateforme')">
+            <h4 style="margin: auto;"> Se faire accompagner </h4>
         </div>
     </div>
+    <br><br><br> 
 </div>

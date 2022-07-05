@@ -1,0 +1,18 @@
+<div style="width: fit-content;margin: auto; height: 15vw;">
+    <mat-form-field appearance="outline" >
+        <mat-label>Nom</mat-label>
+        <input required matInput type="text" [(ngModel)]="nom" [formControl]="nomControl" (keyup.enter)="validateAnswers()">
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="outline">
+        <mat-label>Prénom </mat-label>
+        <input required matInput type="text"  [(ngModel)]="prenom" [formControl]="prenomControl"  (keyup.enter)="validateAnswers()">
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="outline">
+        <mat-label>Date de naissance </mat-label>
+        <input required matInput type="text"  [(ngModel)]="birthdate" [formControl]="birthControl" placeholder="JJ/MM/AAAA" (keyup)="birthvalue()"  (keyup.enter)="validateAnswers()">
+    </mat-form-field>   
+    <div style="text-align: center;"> <div class="button" (click)="validateAnswers()">      <h4 style="margin: auto;   font-family:'Open Sans', sans-serif;">  Valider </h4> </div></div>
+    
+</div>

@@ -1,0 +1,37 @@
+.content {
+   width: fit-content;
+    margin: auto;
+    text-align: center;
+    height: 15vw;
+}
+.solo {
+    text-align: center;
+        display: flex;
+        width: 69%;
+        margin: auto;
+    }
+:host {
+    .button {
+        width: 180px;
+        margin: auto;
+        height: 4vw;
+    }
+    @media only screen and (max-width: 500px) {
+        mat-form-field {
+            width: 250px;
+        }
+        .button {
+            height: 50px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+.content {
+    width: 100%;
+}
+.solo {
+    width: 80%;
+}
+}

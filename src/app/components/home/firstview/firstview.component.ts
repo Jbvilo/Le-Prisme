@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,13 +8,28 @@ import { Router } from '@angular/router';
 })
 export class FirstviewComponent implements OnInit {
   eventSubscription: any;
+  mobile: boolean;
 
   constructor(private router: Router) {
 
   }
 
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    if (window.innerWidth<= 500){
+      this.mobile = true;
+    }
+   }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+  if(window.innerWidth <= 500){
+    this.mobile = true
+  }
+  else {
+    this.mobile = false
+  }
+  }
 
   navigateTo(path) {
     if (path == "chatbox.html") {
