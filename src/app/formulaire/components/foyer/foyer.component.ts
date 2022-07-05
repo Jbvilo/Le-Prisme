@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { ProgressSpinnerMode } from '@angular/material/progress-spinner';
 import { FormulaireServiceService } from 'src/app/formulaire-service.service';
@@ -25,13 +25,28 @@ export class FoyerComponent implements OnInit {
   viedanslogement:string;
   adultecontrol = new FormControl('', [Validators.required]);
   mineurcontrol = new FormControl('', [Validators.required]);
+  mobile: boolean;
 
 
   constructor(private formulaireservice:FormulaireServiceService) { }
 
   ngOnInit(): void {
     this.putValueToTrue(true,false,false,false,false,false);
+    if (window.innerWidth<= 500){
+      this.mobile = true;
+    }
+   }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+  if(window.innerWidth <= 500){
+    this.mobile = true
   }
+  else {
+    this.mobile = false
+  }
+  }
+
 
 
   putValueToTrue(a,b,c,d,e,f) {

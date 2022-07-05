@@ -4,7 +4,12 @@
     text-align: center;
     height: 15vw;
 }
-
+.solo {
+    text-align: center;
+        display: flex;
+        width: 69%;
+        margin: auto;
+    }
 :host {
     .button {
         width: 180px;
@@ -19,4 +24,14 @@
             height: 50px;
         }
     }
+}
+
+
+@media only screen and (max-width: 500px) {
+.content {
+    width: 90%;
+}
+.solo {
+    width: 80%;
+}
 }

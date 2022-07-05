@@ -4,7 +4,9 @@
     
 
     
-    <h1 > Quel est votre revenu fiscal de référence & votre nombre de part(s) ? <mat-icon>info</mat-icon></h1>    
+    <h1 > Quel est votre revenu fiscal de référence & votre nombre de part(s) ? 
+        
+        <span class="tooltip">  <mat-icon style="cursor:pointer">info</mat-icon> <span class="tooltiptext">Ces informations sont présentes sur votre dernier avis d’impôts sur les revenus.</span> </span> </h1>    
     <div style="text-align: center;"> 
         <mat-form-field appearance="outline" >
             <mat-label>Revenu fiscal</mat-label>
@@ -20,5 +22,5 @@
         </mat-form-field>
     </div>
 
-    <div style="text-align: center;width:25%;margin:auto;"> <div class="button" (click)="validateAnswers()">      <h4 style="margin: auto;   font-family:'Open Sans', sans-serif;">  Valider </h4> </div></div>
+    <div class="buttvalid"> <div class="button" (click)="validateAnswers()">      <h4 style="margin: auto;   font-family:'Open Sans', sans-serif;">  Valider </h4> </div></div>
 </div>

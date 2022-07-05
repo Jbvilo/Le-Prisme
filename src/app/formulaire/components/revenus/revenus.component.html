@@ -172,7 +172,7 @@
     
 </div>
 
-<div style="display:flex;justify-content:end"> 
+<div style="display:flex;justify-content:end" *ngIf="!mobile"> 
     <mat-progress-spinner
     [mode]="mode"
     [value]="value">
