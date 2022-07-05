@@ -98,8 +98,9 @@ export class FoyerComponent implements OnInit {
       this.formulaireservice.submitvalue({name:'MINEURS_A_CHARGE',value:this.enfants})
       this.formulaireservice.submitvalue({name:'STATUS',value:this.status})
       this.formulaireservice.submitvalue({name:'HABITE_DANS_LOGEMENT',value:this.viedanslogement})
- 
+      
       setTimeout(() => {
+        window.scrollTo(0,660)
         this.formulaireservice.changePage();
       }, 500);
 

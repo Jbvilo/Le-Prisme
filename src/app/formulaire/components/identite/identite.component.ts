@@ -32,6 +32,7 @@ formGroup = new FormGroup({
 
   validateAnswers(){
     this.formGroup.markAllAsTouched()
+    window.scrollTo(0,660)
     if ( this.formGroup.valid) {
      this.formulaireservice.submitvalue({name:'NOM',value:this.nom.toLocaleUpperCase()})
      this.formulaireservice.submitvalue({name:'PRENOM',value:this.prenom})
