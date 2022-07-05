@@ -167,7 +167,12 @@
         </div>
     </div>
 
-
+    <div *ngIf="mobile" style="width: 100%;margin-top:30px;display: flex;justify-content: center;"> 
+        <mat-progress-spinner
+        [mode]="mode"
+        [value]="value"
+        [diameter]="80">
+        </mat-progress-spinner> </div>
     
     
 </div>

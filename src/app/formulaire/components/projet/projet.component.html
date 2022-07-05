@@ -1,4 +1,4 @@
-<div class="content">
+<div class="content" *ngIf="!ending">
 
     <div *ngIf="travauxavant">
 
@@ -153,11 +153,28 @@
     </h1> 
     <h3  style="font-weight:300"> Nous vous contacterons par mail ou par téléphone une fois celle-ci traitée par nos services</h3>   
     </div>
+
+
+
+    <div *ngIf="mobile" style="width: 100%;margin-top:30px;display: flex;justify-content: center;"> 
+        <mat-progress-spinner
+        [mode]="mode"
+        [value]="value"
+        [diameter]="80">
+        </mat-progress-spinner> </div>
 </div>
 
 
-<div style="display:flex;justify-content:end" *ngIf="spinner && !mobile"> 
+<div style="display:flex;justify-content:end" *ngIf="spinner && !mobile && !ending"> 
     <mat-progress-spinner
     [mode]="mode"
     [value]="value">
     </mat-progress-spinner> </div>
+
+
+
+
+
+    <div *ngIf="loading"  style="width: 100%;margin-top:30px;display: flex;justify-content: center;">
+        <mat-spinner [diameter]="80"></mat-spinner>
+    </div>

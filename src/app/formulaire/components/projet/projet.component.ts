@@ -45,7 +45,8 @@ export class ProjetComponent implements OnInit {
   anneeControl= new FormControl('', [Validators.required,Validators.minLength(4),Validators.maxLength(4)]);
   montantControl= new FormControl('', [Validators.required]);
   mobile: boolean;
-
+  loading: boolean=false;
+  ending:boolean = false;
   constructor(private formulaireservice:FormulaireServiceService) { }
 
 
@@ -210,9 +211,15 @@ export class ProjetComponent implements OnInit {
     this.formulaireservice.submitvalue({name:'ANNEE_AIDE',value : this.anneeAide})
     this.formulaireservice.submitvalue({name:'MONTANT_AIDE',value :this.montantAide})
     this.formulaireservice.submitvalue({name:'COMMENTAIRE',value : this.comsi})
+    this.ending = true;
+    this.loading=true;
 this.formulaireservice.sendValues().subscribe(res=>{
+
  if(res.affectedRows){
   setTimeout(() => {
+    this.value=0;
+    this.ending = false;
+    this.loading=false;
     this.putValueToTrue(false,false,false,false,false,false,false,false,true)
     this.spinner=false
   }, 500);

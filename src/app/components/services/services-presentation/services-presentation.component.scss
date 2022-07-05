@@ -26,6 +26,10 @@ i {
     animation: 3s linear blink_effectt;
 }
 
+.bitou {
+    text-align: center;width: 100%;margin:auto;font-size: 17px;
+}
+
 
 @media only screen and (max-width: 500px) {
 .firsttext {
@@ -37,4 +41,6 @@ i {
 .content {
     width: 100%;
 }
+
+
 }

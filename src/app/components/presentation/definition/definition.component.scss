@@ -7,9 +7,16 @@ i {
     width:50%;
     display: inline-block;
 }
+.bitt {
+    width:200px;background-color:#335EEA;
+}
+.bibit {
+    text-align: center;width: 100%;margin:auto;font-size: 17px;
+}
 
 @media only screen and (max-width: 500px) {
     .content {
         width: 100%;
     }
+
 }
