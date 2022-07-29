@@ -17,7 +17,7 @@ h4 {
     margin-bottom: 8px;
 }
 .titre {
-    text-align: start;
+    text-align: center;
 }
 .img-container {
     width: 9vw;
@@ -35,11 +35,12 @@ h4 {
 }
 .steptext-container {
     text-align: center;
-    width: 100%;
+    width: 50%;
+    display:inline-block;
 }
 .content {
     display: inline-block;
-    width: 50%;
+    width: 100%;
     margin-top: 10%;
 }
 

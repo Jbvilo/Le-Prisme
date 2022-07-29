@@ -16,12 +16,12 @@
   width:100%;
   text-align: center;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 13px;
 }
 .navbar_title {
   width: 15vw; 
   height: 2.2vw;
-  margin-top: 1.5vw;
+  margin-top: 28px;
   color:$blueprisme;
   font-size: 150%;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -33,7 +33,7 @@
   font-size: 16px;
 }
 .button_text {
-  font-size: 16px;
+  font-size: 13px;
 }
 .navbar_title {
   font-size: 130%;
@@ -57,7 +57,7 @@
   font-size: 15px;
 }
 .button_text {
-  font-size: 15px;
+  font-size: 13px;
 }
 .navbar_title {
   font-size: 100%;
@@ -94,13 +94,17 @@
 @media only screen and (max-width: 500px) {
   .navbar_title {
     width: auto;
-    margin-top: 10px;
+    margin-top: 20px;
+    font-size: 25px;
   }
   .navbar {
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    height: 70px;
     width: 96%;
+  }
+  .hey {
+    margin-top: 13px;
   }
 }
 
@@ -119,7 +123,7 @@
   text-align: center;
   transition: transform 0.4s;
   color:#5F7193;
-  font-weight: 500;
+  font-weight: 300;
 }
 .active, .navbar-items:hover {
   font-weight: 600;

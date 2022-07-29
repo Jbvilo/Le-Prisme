@@ -1,7 +1,7 @@
 @import '../../../../styles.scss';
 
 h1 {
-    padding-bottom: 15px;
+    padding-bottom: 0px;
     padding-top: -1vw;
     font-weight: 500;
 }
@@ -39,7 +39,16 @@ h1 {
     font-weight: 900;
 
 }
+.bitt {
+    width:200px;background-color:#335EEA;
+}
+.bibit {
+    text-align: center;width: 100%;margin:auto;font-size: 15px;
+}
 
+h4 {
+    margin-bottom: 10px;
+}
 @media only screen and (max-width: 500px) {
     .presentation {
         width: 100%;
