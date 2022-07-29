@@ -1,52 +1,4 @@
-<div style="background-color: #377EFA;  margin-top: 5vw;" *ngIf="mobile">
-  
-<div class="footer_content">
-    <div class="headhead">
-    <div class="head">
-        <br *ngIf="mobile">
-       <div class="titre">
-        Le Prisme</div>
-
-        <div class="text"> L'Assistant à Maîtrise d'Ouvrage. </div> <br><br *ngIf="!mobile">
-        <img class="socialnetwork_logos" src="../../../assets/svg/instagram-logo.svg" />
-        <img class="socialnetwork_logos" src="../../../assets/svg/facebook-logo.svg" />
-        <img class="socialnetwork_logos" src="../../../assets/svg/twitter-logo.svg" />
-        <img class="socialnetwork_logos" src="../../../assets/svg/snapchat.svg" />
-    </div>
-    <br *ngIf="mobile"><br *ngIf="mobile">
-    <div style="display: inline-block;vertical-align: top;margin-left: 6vw;margin-right: 8vw;">
-        <h4 style="color:white">PRODUITS</h4>
-        <p style="color:white"> Amélioration Habitat</p>
-        <p style="color:white"> Adapter son logement</p>
-        <p style="color:white"> HelloDjo</p>
-    </div>
-    
-    <div style="display: inline-block;vertical-align: top;">
-        <h4 style="color:white">CONTACT</h4>
-        <p style="color:white">0596 56 37 59</p>
-        <p style="color:white"> contact@leprisme.fr </p>
-    </div>
-
-    <div style="display: inline-block;vertical-align: top; margin-left: 6vw">
-        <h4 style="color:white">MENTIONS LEGALES</h4>
-        <p style="color:white"> Plan du site </p>
-    </div>
-
-</div>
-</div>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-<div style="margin-top: 5vw;" >
+<div style="margin-top: 5vw;" *ngIf="!mobile">
     <div style="border-bottom: solid 1px rgb(187, 186, 186);margin-bottom: 100px;width:92.5%;margin:auto"> </div>
     <div class="content">
         <div>
@@ -69,6 +21,38 @@
         </div>
     </div>
 
-    <h4 style="text-align:center;" class="navbar_title"><i class="fa fa-check-circle" aria-hidden="true" style="color:black;"></i>&nbsp; Le Prisme.fr</h4>
+    <h4 style="text-align:center;" class="navbar_title"><i class="fa fa-check-circle" aria-hidden="true"
+            style="color:black;"></i>&nbsp; Le Prisme.fr</h4>
+</div>
+
+<!--MOBILE-->
+<div style="margin-top: 5vw;" *ngIf="mobile">
+    <div style="border-bottom: solid 1px rgb(187, 186, 186);margin-bottom: 100px;width:92.5%;margin:auto"> </div>
+  <br><br>
+    <div class="content" >
+        <div>
+            <h4>LE PRISME</h4>
+            <p> L'assistant à maitrise d'ouvrage.</p>
+        </div>
+        <div>
+            <h4>SERVICES</h4>
+            <p> Rénovation du logement</p>
+            <p> Accessibilité du logement</p>
+        </div>
     </div>
-    
+    <div class="content">
+        <div>
+            <h4>CONTACT</h4>
+            <p>0596 56 37 59</p>
+            <p> contact@leprisme.fr </p>
+        </div>
+        <div>
+            <h4>MENTIONS LEGALES</h4>
+            <p> Plan du site </p>
+        </div>
+    </div>
+
+    <h4 style="text-align:center;" class="navbar_title"><i class="fa fa-check-circle" aria-hidden="true"
+            style="color:black;"></i>&nbsp; Le Prisme.fr</h4>
+</div>
+
