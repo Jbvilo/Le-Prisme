@@ -50,10 +50,10 @@ export class FirstviewComponent implements OnInit {
   }
 
   screensize(): number {
-    if (window.screen.height <= 720) {
-      return 520;
+    if (window.screen.width <= 500) {
+      return 585;
     }
-    if (window.screen.height <= 1080) {
+    if (window.screen.width <= 1080) {
       return 800
     }
   }
