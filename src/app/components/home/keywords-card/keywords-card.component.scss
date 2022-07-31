@@ -80,9 +80,8 @@ h4 {
         width: 100%;   }
 
         .button {
-          width: 80%;
+          width: 60%;
           height: 45px;
-          margin-top: 230px;
         }
         
         .partenaires {
@@ -97,5 +96,13 @@ h4 {
       display: inline-block;
       width: fit-content;
         }
+
+        .keywords-card {
+            width: 100%;
+            margin-bottom:0px;
+            margin-top: 0px;
+            animation: 2s linear definition-effect;
+        
+        }   
         
 }

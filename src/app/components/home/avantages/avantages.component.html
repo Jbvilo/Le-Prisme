@@ -24,27 +24,94 @@
 </div>
 
 <div class="avantages-content" *ngIf="mobile">
-
     <div class="avantages2">
       
         <div class="avantage-block firstblock">
-            <!-- <i class="fa fa-handshake-o" aria-hidden="true" style="color :#377EFA;font-size: 70px;" ></i> -->
+            <i class="fa fa-handshake-o" aria-hidden="true" style="color :#377EFA;font-size: 35px;" ></i>
             <h4 > Un accompagnement personnalisé</h4>
             <div class="text">Nous nous chargeons de monter votre dossier et de vous trouver les meilleurs financements possible.</div>
             <br>
         </div>
         <div class="avantage-block">
-            <!-- <i class="fa fa-gavel" aria-hidden="true" style="color :#377EFA;font-size: 35px;" ></i> -->
+            <i class="fa fa-gavel" aria-hidden="true" style="color :#377EFA;font-size: 35px;" ></i>
             <h4>Des artisans fiables et compétents</h4>
             <div class="text" >Grâce à nos 30 ans d’expérience dans la rénovation, nous prennons plaisir à vous trouver les meilleurs artisans.</div>
         </div>
         <div class="avantage-block">
             <br>
-            <!-- <i class="fa fa-headphones" aria-hidden="true" style="color :#377EFA;font-size: 35px;" ></i> -->
+            <i class="fa fa-headphones" aria-hidden="true" style="color :#377EFA;font-size: 35px;" ></i>
             <h4>Des équipes réactives et joignables</h4>
             <div class="text">Nos collaborateurs sont à votre disposition pour vous tenir informés de l'avancée de votre chantier.</div>
         </div>
     </div>
+    <br>    <br>
+    <div class="typestravaux">
+        <h1 *ngIf="!mobile"> Tous types de travaux <br><span style="color:#377EFA;"> et tout public.</span> </h1>
+        <h1 *ngIf="mobile" style="text-align:start"> Tous types de travaux <br><span style="color:#377EFA;"> et tout public.</span> </h1>
+        <br *ngIf="!mobile">
+        <span *ngIf="!mobile">    Particulier comme professionel, nous pouvons vous monter un dossier pour des subventions et vous accompagner à
+            réaliser des travaux de tous types :</span>
+            <div *ngIf="mobile" style="text-align:start">    Particulier comme professionel, nous pouvons vous monter un dossier pour des subventions et vous accompagner à
+                réaliser des travaux de tous types :</div>
+        
+        <br *ngIf="!mobile"><br *ngIf="!mobile">
+        <br *ngIf="mobile"> <br *ngIf="mobile">
+        <div *ngIf="!mobile">
+            <div style="width:33%;display: inline-block;"> <span style="font-weight:600"><i class="fa fa-align-left"
+                aria-hidden="true" style="color: #377EFA;font-size: 15px;"></i> Menuiserie</span></div>
+    <div style="width:33%;display: inline-block;"> <span style="font-weight:600"><i class="fa fa-chevron-up"
+                aria-hidden="true" style="color: #377EFA;font-size: 15px;"></i> Toitures</span></div>
+    <div style="width:33%;display: inline-block;"> <span style="font-weight:600"> <i class="fa fa-bolt"
+                aria-hidden="true" style="color: #377EFA;font-size: 15px;"></i> Electricité</span></div>
+    <br><br>
+    <br *ngIf="mobile"> <br *ngIf="mobile">
+    <div style="width:33%;display: inline-block;"> <span style="font-weight:600"> <i class="fa fa-paint-brush"
+                aria-hidden="true" style="color: #377EFA;font-size: 15px;"></i> Peinture</span></div>
+    <div style="width:33%;display: inline-block;"> <span style="font-weight:600"> <i class="fa fa-shower"
+                aria-hidden="true" style="color: #377EFA;font-size: 15px;"></i> Sanitaires </span></div>
+    <div style="width:33%;display: inline-block;"> <span style="font-weight:600"><i class="fa fa-tint"
+                aria-hidden="true" style="color: #377EFA;font-size: 15px;"></i> Plomberie</span></div>
+    <br><br>
+    <br *ngIf="mobile"> <br *ngIf="mobile">
+    <div style="width:33%;display: inline-block;vertical-align: text-top;"> <span style="font-weight:600"><i
+                class="fa fa-check-circle" aria-hidden="true" style="color: #377EFA;font-size: 15px;"></i> Mises aux
+            normes</span></div>
+    <div style="width:60%;display: inline-block;vertical-align: text-top;"> <span style="font-weight:600"> <i
+                class="fa fa-home" aria-hidden="true" style="color: #377EFA;font-size: 15px;"></i> Aménagement de
+            l'habitat </span></div>
+    
+        </div>
+    
+        <div *ngIf="mobile">
+            <div style="width:33%;display: inline-block;text-align: center;"> <span style="font-weight:600"><i class="fa fa-align-left"
+                aria-hidden="true" style="color: #377EFA;font-size: 28px;"></i>
+                <br>Menuiserie</span></div>
+    <div style="width:33%;display: inline-block;text-align: center;"> <span style="font-weight:600"><i class="fa fa-chevron-up"
+                aria-hidden="true" style="color: #377EFA;font-size:  28px;"></i>  <br>Toitures</span></div>
+    <div style="width:33%;display: inline-block;text-align: center;"> <span style="font-weight:600"> <i class="fa fa-bolt"
+                aria-hidden="true" style="color: #377EFA;font-size:  28px;"></i>  <br>Electricité</span></div>
+    <br><br>
+    <br *ngIf="mobile"> <br *ngIf="mobile">
+    <div style="width:33%;display: inline-block;text-align: center;"> <span style="font-weight:600"> <i class="fa fa-paint-brush"
+                aria-hidden="true" style="color: #377EFA;font-size:  28px;"></i> <br> Peinture</span></div>
+    <div style="width:33%;display: inline-block;text-align: center;"> <span style="font-weight:600"> <i class="fa fa-shower"
+                aria-hidden="true" style="color: #377EFA;font-size:  28px;"></i> <br> Sanitaires </span></div>
+    <div style="width:33%;display: inline-block;text-align: center;"> <span style="font-weight:600"><i class="fa fa-tint"
+                aria-hidden="true" style="color: #377EFA;font-size:  28px;"></i> <br> Plomberie</span></div>
+    <br><br>
+    <br *ngIf="mobile"> <br *ngIf="mobile">
+    <div style="width:33%;display: inline-block;vertical-align: text-top;text-align: center;"> <span style="font-weight:600"><i
+                class="fa fa-check-circle" aria-hidden="true" style="color: #377EFA;font-size: 28px;"></i> <br> Mises aux
+            normes</span></div>
+    <div style="width:33%;display: inline-block;vertical-align: text-top;text-align: center;"> <span style="font-weight:600"> <i
+                class="fa fa-home" aria-hidden="true" style="color: #377EFA;font-size: 28px;"></i>  <br>Aménagement de
+            l'habitat </span></div>
+    
+    
+    
+        </div>
+    </div>
+    
 </div>
 
 
