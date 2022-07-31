@@ -1,5 +1,5 @@
-<br><br><br>
-<br><br><br><br>
+<br *ngIf="!mobile"><br *ngIf="!mobile"><br *ngIf="!mobile">
+<br *ngIf="!mobile"><br *ngIf="!mobile"><br ><br >
 <div class="block">
     <div style="display: inline-block;width: 8%;"><i class="fa fa-question-circle-o" aria-hidden="true"
             style="font-size:25px;color:rgb(49, 170, 110)"></i></div>
@@ -52,12 +52,12 @@
 
 
 
-<br><br><br><br>
+<br><br *ngIf="!mobile"><br *ngIf="!mobile"><br *ngIf="!mobile">
 
 
-<br><br><br><br>
+<br *ngIf="!mobile"><br *ngIf="!mobile"><br *ngIf="!mobile"><br>
 
-<div style="width:50%;display: inline-block;">
+<div style="width:50%;display: inline-block;" *ngIf="!mobile">
 
 
 
@@ -66,43 +66,76 @@
 
 
 <div class="typestravaux">
-    <h1> Tous types de travaux <br><span style="color:#377EFA;"> et tout public.</span> </h1>
-    <br>
-    Particulier comme professionel, nous pouvons vous monter un dossier pour des subventions et vous accompagner à
-    réaliser des travaux de tous types :
-    <br><br>
+    <h1 *ngIf="!mobile"> Tous types de travaux <br><span style="color:#377EFA;"> et tout public.</span> </h1>
+    <h1 *ngIf="mobile" style="text-align:center"> Tous types de travaux <br><span style="color:#377EFA;"> et tout public.</span> </h1>
+    <br *ngIf="!mobile">
+    <span *ngIf="!mobile">    Particulier comme professionel, nous pouvons vous monter un dossier pour des subventions et vous accompagner à
+        réaliser des travaux de tous types :</span>
+        <div *ngIf="mobile" style="text-align:center">    Particulier comme professionel, nous pouvons vous monter un dossier pour des subventions et vous accompagner à
+            réaliser des travaux de tous types :</div>
+    
+    <br *ngIf="!mobile"><br *ngIf="!mobile">
     <br *ngIf="mobile"> <br *ngIf="mobile">
-    <div style="width:33%;display: inline-block;"> <span style="font-weight:600"><i class="fa fa-align-left"
-                aria-hidden="true" style="color: #377EFA;font-size: 15px;"></i> Menuiserie</span></div>
-    <div style="width:33%;display: inline-block;"> <span style="font-weight:600"><i class="fa fa-chevron-up"
-                aria-hidden="true" style="color: #377EFA;font-size: 15px;"></i> Toitures</span></div>
-    <div style="width:33%;display: inline-block;"> <span style="font-weight:600"> <i class="fa fa-bolt"
-                aria-hidden="true" style="color: #377EFA;font-size: 15px;"></i> Electricité</span></div>
-    <br><br>
-    <br *ngIf="mobile"> <br *ngIf="mobile">
-    <div style="width:33%;display: inline-block;"> <span style="font-weight:600"> <i class="fa fa-paint-brush"
-                aria-hidden="true" style="color: #377EFA;font-size: 15px;"></i> Peinture</span></div>
-    <div style="width:33%;display: inline-block;"> <span style="font-weight:600"> <i class="fa fa-shower"
-                aria-hidden="true" style="color: #377EFA;font-size: 15px;"></i> Sanitaires </span></div>
-    <div style="width:33%;display: inline-block;"> <span style="font-weight:600"><i class="fa fa-tint"
-                aria-hidden="true" style="color: #377EFA;font-size: 15px;"></i> Plomberie</span></div>
-    <br><br>
-    <br *ngIf="mobile"> <br *ngIf="mobile">
-    <div style="width:33%;display: inline-block;vertical-align: text-top;"> <span style="font-weight:600"><i
-                class="fa fa-check-circle" aria-hidden="true" style="color: #377EFA;font-size: 15px;"></i> Mises aux
-            normes</span></div>
-    <div style="width:60%;display: inline-block;vertical-align: text-top;"> <span style="font-weight:600"> <i
-                class="fa fa-home" aria-hidden="true" style="color: #377EFA;font-size: 15px;"></i> Aménagement de
-            l'habitat </span></div>
+    <div *ngIf="!mobile">
+        <div style="width:33%;display: inline-block;"> <span style="font-weight:600"><i class="fa fa-align-left"
+            aria-hidden="true" style="color: #377EFA;font-size: 15px;"></i> Menuiserie</span></div>
+<div style="width:33%;display: inline-block;"> <span style="font-weight:600"><i class="fa fa-chevron-up"
+            aria-hidden="true" style="color: #377EFA;font-size: 15px;"></i> Toitures</span></div>
+<div style="width:33%;display: inline-block;"> <span style="font-weight:600"> <i class="fa fa-bolt"
+            aria-hidden="true" style="color: #377EFA;font-size: 15px;"></i> Electricité</span></div>
+<br><br>
+<br *ngIf="mobile"> <br *ngIf="mobile">
+<div style="width:33%;display: inline-block;"> <span style="font-weight:600"> <i class="fa fa-paint-brush"
+            aria-hidden="true" style="color: #377EFA;font-size: 15px;"></i> Peinture</span></div>
+<div style="width:33%;display: inline-block;"> <span style="font-weight:600"> <i class="fa fa-shower"
+            aria-hidden="true" style="color: #377EFA;font-size: 15px;"></i> Sanitaires </span></div>
+<div style="width:33%;display: inline-block;"> <span style="font-weight:600"><i class="fa fa-tint"
+            aria-hidden="true" style="color: #377EFA;font-size: 15px;"></i> Plomberie</span></div>
+<br><br>
+<br *ngIf="mobile"> <br *ngIf="mobile">
+<div style="width:33%;display: inline-block;vertical-align: text-top;"> <span style="font-weight:600"><i
+            class="fa fa-check-circle" aria-hidden="true" style="color: #377EFA;font-size: 15px;"></i> Mises aux
+        normes</span></div>
+<div style="width:60%;display: inline-block;vertical-align: text-top;"> <span style="font-weight:600"> <i
+            class="fa fa-home" aria-hidden="true" style="color: #377EFA;font-size: 15px;"></i> Aménagement de
+        l'habitat </span></div>
+
+    </div>
+
+    <div *ngIf="mobile">
+        <div style="width:33%;display: inline-block;text-align: center;"> <span style="font-weight:600"><i class="fa fa-align-left"
+            aria-hidden="true" style="color: #377EFA;font-size: 28px;"></i>
+            <br>Menuiserie</span></div>
+<div style="width:33%;display: inline-block;text-align: center;"> <span style="font-weight:600"><i class="fa fa-chevron-up"
+            aria-hidden="true" style="color: #377EFA;font-size:  28px;"></i>  <br>Toitures</span></div>
+<div style="width:33%;display: inline-block;text-align: center;"> <span style="font-weight:600"> <i class="fa fa-bolt"
+            aria-hidden="true" style="color: #377EFA;font-size:  28px;"></i>  <br>Electricité</span></div>
+<br><br>
+<br *ngIf="mobile"> <br *ngIf="mobile">
+<div style="width:33%;display: inline-block;text-align: center;"> <span style="font-weight:600"> <i class="fa fa-paint-brush"
+            aria-hidden="true" style="color: #377EFA;font-size:  28px;"></i> <br> Peinture</span></div>
+<div style="width:33%;display: inline-block;text-align: center;"> <span style="font-weight:600"> <i class="fa fa-shower"
+            aria-hidden="true" style="color: #377EFA;font-size:  28px;"></i> <br> Sanitaires </span></div>
+<div style="width:33%;display: inline-block;text-align: center;"> <span style="font-weight:600"><i class="fa fa-tint"
+            aria-hidden="true" style="color: #377EFA;font-size:  28px;"></i> <br> Plomberie</span></div>
+<br><br>
+<br *ngIf="mobile"> <br *ngIf="mobile">
+<div style="width:33%;display: inline-block;vertical-align: text-top;text-align: center;"> <span style="font-weight:600"><i
+            class="fa fa-check-circle" aria-hidden="true" style="color: #377EFA;font-size: 28px;"></i> <br> Mises aux
+        normes</span></div>
+<div style="width:33%;display: inline-block;vertical-align: text-top;text-align: center;"> <span style="font-weight:600"> <i
+            class="fa fa-home" aria-hidden="true" style="color: #377EFA;font-size: 28px;"></i>  <br>Aménagement de
+        l'habitat </span></div>
 
 
 
+    </div>
 </div>
 
 
 
 
-<br><br><br><br>
+<br  *ngIf="!mobile"><br *ngIf="!mobile"><br *ngIf="!mobile"><br>
 
 
 <br>

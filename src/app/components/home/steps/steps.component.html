@@ -3,32 +3,68 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-<div style="display: inline-block;width: 50%;" *ngIf="mobile"></div>
-
-
-<div *ngIf="mobile">
-    <br>    <br>    <br>    <br>    <br>    <br>    <br>
-</div>
-
-<div class="content">
+<div class="content" *ngIf="!mobile">
     <div class="titre">
-        <h1 style="font-weight: 500"> Réaliser des travaux en  bénéficiant <br> <span style="font-weight: 500;color:#377EFA"> de subventions ?</span>  </h1>
+        <h1 style="font-weight: 500"> Réaliser des travaux en  bénéficiant <br *ngIf="!mobile"> <span style="font-weight: 500;color:#377EFA"> de subventions ?</span>  </h1>
     </div>
     
 
 <br><br *ngIf="!mobile">
 <div class='steptext-container'></div>
+    <div class='steptext-container'>
+        <div class='step-text'>
+            <div style="display:inline-block;vertical-align: top;">
+                <span style="font-size: 40px;color:#377EFA;">1</span>&nbsp;&nbsp;&nbsp;
+            </div>
+            <div style="display:inline-block">
+                <h4> Consultez nos services</h4>
+                <div>
+                    Identifiez le service qui vous convient le mieux.
+                </div>
+            </div>
+        </div>
+        <div class='step-text'>
+            <div style="display:inline-block;vertical-align: top;"><span style="font-size: 40px;color:#377EFA;">2</span> &nbsp;&nbsp;&nbsp;</div>
+            <div style="display:inline-block;vertical-align: top;">
+                <h4> Faites une demande</h4>
+                <div>
+                    Partagez-nous vos projets  en effectuant une demande <br *ngIf="!mobile">sur notre plateforme.
+                </div>
+            </div>
+      
+        </div>
+        <div class='step-text'>
+            <div style="display:inline-block;vertical-align: top;"><span style="font-size: 40px;color:#377EFA;">3</span> &nbsp;&nbsp;&nbsp; </div>
+            <div style="display:inline-block;vertical-align: top;">      <h4>Attendez notre retour</h4>
+                <div>
+                    Analyse de votre dossier pour évaluer le montant des<br *ngIf="!mobile"> aides  qui vous sont disponibles et prise d'un rendez-<br *ngIf="!mobile">vous pour démarrer les travaux.
+                </div>
+            </div>
+
+      
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="content" *ngIf="mobile">
+    <br>
+    <div class="titre">
+        <h1 style="font-weight: 500"> Réaliser des travaux en  bénéficiant <br *ngIf="!mobile"> <span style="font-weight: 500;"> de subventions ?</span>  </h1>
+    </div>
+    
+
+<br><br *ngIf="!mobile">
+
     <div class='steptext-container'>
         <div class='step-text'>
             <div style="display:inline-block;vertical-align: top;">

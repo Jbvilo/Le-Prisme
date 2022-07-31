@@ -1,4 +1,5 @@
-<br><br><br><br><br><br>
+<div *ngIf="!mobile">
+    <br><br><br><br><br><br>
 <div class="text">
     <h1 style="color:black">Découvrez notre plateforme <br *ngIf="!mobile"><span style="color:rgb(49, 170, 110)"> de demande. </span>
     </h1>
@@ -59,4 +60,71 @@
 
     </div>
 
+</div>
+</div>
+
+<!--MOBILE-->
+<div *ngIf="mobile">
+ 
+<div class="text">
+    <h1 style="color:black">Découvrez notre plateforme <br *ngIf="!mobile"><span style="color:rgb(49, 170, 110)"> de demande. </span>
+    </h1>
+    <div> Dans le but de faciliter nos échanges, vous pouvez
+        effectuer une demande d'accompagnement
+      vià notre plateforme, cela permet d'accelérer la procédure car
+        nous aurons toutes les informations pour votre dossier.</div>
+    <br>    
+
+    <div class="icons"><i class="fa fa-check" aria-hidden="true"
+            style="color:rgb(49, 170, 110)"></i> Echanges simplifiés</div>
+            <br *ngIf="mobile">    <br *ngIf="mobile">
+    <div class="icons"> <i class="fa fa-check" aria-hidden="true"
+            style="color:rgb(49, 170, 110)"></i> Réponse plus rapide</div>
+    <br> <br>
+    <div class="icons"> <i class="fa fa-check" aria-hidden="true"
+            style="color:rgb(49, 170, 110)"></i> Aide téléphonique</div>
+
+</div>
+
+<br *ngIf="mobile">    <br *ngIf="mobile">         <br *ngIf="mobile">    
+    <div class="forms">
+
+    <div class="card formsInput">
+     
+        
+        <div style="height: 15%;margin: auto;text-align: center;padding-top: 2px;" class="">
+          <h2 style="font-weight:300">Votre identité &nbsp;&nbsp;<i class="fa fa-id-card-o" aria-hidden="true" style="color:rgb(51, 94, 234)"></i></h2>
+ 
+        </div>
+
+        <div style="text-align: center;">
+            <mat-form-field appearance="outline" class="matform">
+                <mat-label>Nom</mat-label>
+                <input required matInput type="text" placeholder="XXXXXXXXXX">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="matform">
+                <mat-label>Prénom</mat-label>
+                <input required matInput type="text" placeholder="XXXXXXXXXX">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="matform">
+                <mat-label>Adresse email</mat-label>
+                <input required matInput type="text" placeholder="XXXXXXXXXX">
+            </mat-form-field>
+
+
+            <div style="text-align: center;">
+                <div class="button">
+                    <h4 >
+                        Étape suivante </h4>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
 </div>
