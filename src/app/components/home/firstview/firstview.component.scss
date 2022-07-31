@@ -44,19 +44,19 @@ h4 {
     font-size: 15px;
 }
 
+
 @media only screen and (max-width: 500px) {
     .firstview-content {
         text-align: center;
         margin-top: 285px;
     }
     h1 {
-        font-size: 35px;
+        font-size: 36px;
         font-weight: 400;
         margin-bottom: 12px;
     }
     .text {
         width: 100%;
-        color: #737982;
         font-weight: 500;
         font-size: 18px;
     }
@@ -69,7 +69,8 @@ h4 {
     }
     h4 {
         font-size: 14px;
-        font-weight: 600;
+        font-weight: 800;
+
     }
     
 }

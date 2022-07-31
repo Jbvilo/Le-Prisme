@@ -1,5 +1,5 @@
 <br *ngIf="!mobile"><br><br >
-<div class="avantages-content">
+<div class="avantages-content" *ngIf="!mobile">
 
     <div class="avantages2">
       
@@ -22,6 +22,39 @@
         </div>
     </div>
 </div>
+
+<div class="avantages-content" *ngIf="mobile">
+
+    <div class="avantages2">
+      
+        <div class="avantage-block firstblock">
+          
+            <h4 > Un accompagnement personnalisé</h4>
+            <div class="text">Nous nous chargeons de monter votre dossier et de vous trouver les meilleurs financements possible.</div>
+            <br>
+        </div>
+        <div class="avantage-block">
+            <!-- <i class="fa fa-gavel" aria-hidden="true" style="color :#377EFA;font-size: 35px;" ></i> -->
+            <h4>Des artisans fiables et compétents</h4>
+            <div class="text" >Grâce à nos 30 ans d’expérience dans la rénovation, nous prennons plaisir à vous trouver les meilleurs artisans.</div>
+        </div>
+        <div class="avantage-block">
+            <br>
+            <!-- <i class="fa fa-headphones" aria-hidden="true" style="color :#377EFA;font-size: 35px;" ></i> -->
+            <h4>Des équipes réactives et joignables</h4>
+            <div class="text">Nos collaborateurs sont à votre disposition pour vous tenir informés de l'avancée de votre chantier.</div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
 
 
 
