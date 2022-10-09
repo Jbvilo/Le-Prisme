@@ -3,10 +3,10 @@
 <div class="text">
     <h1 style="color:black">Découvrez notre plateforme <br *ngIf="!mobile"><span style="color:rgb(49, 170, 110)"> de demande. </span>
     </h1>
-    <div> Dans le but de faciliter nos échanges, vous pouvez
-        effectuer une demande d'accompagnement
-      vià notre plateforme, cela permet d'accelérer la procédure car
-        nous aurons toutes les informations pour votre dossier.</div>
+    <div style="font-size:19px"> Dans le but de faciliter nos échanges, vous pouvez
+        effectuer <br>une demande d'accompagnement
+        directement sur notre site vià notre plateforme de demande, cela permet d'accelérer la procédure car
+        nous aurons toutes les informations nécessaires.</div>
     <br><br>
 
     <div class="icons"><i class="fa fa-check" aria-hidden="true"
@@ -34,25 +34,25 @@
         <div style="text-align: center;">
             <mat-form-field appearance="outline" class="matform">
                 <mat-label>Nom</mat-label>
-                <input required matInput type="text" placeholder="XXXXXXXXXX">
+                <input required matInput type="text" placeholder="XXXXXXXXXX" [(ngModel)]="nom" [formControl]="nomControl">
             </mat-form-field>
 
             <mat-form-field appearance="outline" class="matform">
                 <mat-label>Prénom</mat-label>
-                <input required matInput type="text" placeholder="XXXXXXXXXX">
+                <input required matInput type="text" placeholder="XXXXXXXXXX" [(ngModel)]="prenom" [formControl]="prenomControl">
             </mat-form-field>
 
             <mat-form-field appearance="outline" class="matform">
-                <mat-label>Adresse email</mat-label>
-                <input required matInput type="text" placeholder="XXXXXXXXXX">
+                <mat-label>Date de naissance</mat-label>
+                <input required matInput type="text" placeholder="JJ/MM/AAAA" [(ngModel)]="birth" [formControl]="birthControl" (keyup.enter)="validateAnswers()">
             </mat-form-field>
 
 
             <div style="text-align: center;">
-                <div class="button">
+                <div class="button" (click)="validateAnswers()" >
                     <h4 >
                         Étape suivante </h4>
-                </div>
+                </div>  
             </div>
 
 
