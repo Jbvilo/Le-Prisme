@@ -4,6 +4,10 @@ h1 {
     margin-top:8%;
     font-size: 38px;
 }
+.logop {
+    color:$blueprisme;
+    font-weight: 900;
+  }
 .firstview-content {
     width: 100%;
     //height: calc(69vh);
@@ -25,11 +29,19 @@ h1 {
 .button-container {
     animation: 1s linear button-effect;
 }
+.titi{
+    text-align: center;
+    font-weight: 600;
+   // color: $blueprisme;
+    font-size: 180%;
+}
 .bold {
     color:$blueprisme;
+    font-weight: 600;
 }
 .boldi {
     color:$blueprisme;
+    font-weight: 600;
 }
 .info_button {
     margin: auto;

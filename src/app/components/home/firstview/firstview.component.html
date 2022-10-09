@@ -1,7 +1,9 @@
 <div class="firstview-content" *ngIf="!mobile">
-    <h1 style="font-weight: 500;">Donnez vie à<span class="boldi"> votre logement</span> <br *ngIf="!mobile"> avec l'aide de l'état. </h1>
+<!-- <img style="width: 13%;" class="img" src="../../../assets/images/logo.png"> -->
 
-    <div class="text"> Le Prisme,<span class="bold"> Assistant à Maîtrise d'Ouvrage</span> , vous accompagne dans la rénovation et l'amménagement de votre logement et vous permet de bénéficier de <span class="bold">subventions</span> de l'état.</div>
+    <h1 style="font-weight: 500;">Donnez vie à<span class="boldi"> votre logement</span> <br *ngIf="!mobile"> avec l'aide de l'état. </h1>  
+
+    <div class="text"> <span class="logop">Le Prisme , </span><span style="font-weight:600"> Assistant à Maîtrise d'Ouvrage</span> , vous accompagne dans la rénovation et l'aménagement de votre logement et vous permet de bénéficier des <span class="bold">subventions</span> de l'État.</div>
     <br><br>
     <div class="button-container" style="overflow: visible;">
         <div class="button" (click)="scroll()">
@@ -10,8 +12,12 @@
         <div class="button blue-button" (click)="navigateTo('/plateforme')">
             <h4 style="margin: auto;"> Se faire accompagner </h4>
         </div>
+
+    
+    <br><br><br>
     </div>
-    <br><br><br> 
+   
+
 </div>
 
 <div *ngIf="mobile" class="firstview-content">
