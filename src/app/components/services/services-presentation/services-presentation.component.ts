@@ -7,10 +7,20 @@ import { Router } from '@angular/router';
   styleUrls: ['./services-presentation.component.scss']
 })
 export class ServicesPresentationComponent implements OnInit {
-
+   img1:boolean=true;
+   imgtext="Avant";
   constructor(private route:Router) { }
 
   ngOnInit(): void {
+    setInterval(() => {
+      this.img1 = !this.img1;
+      if(this.img1){
+        this.imgtext="Avant"
+      }
+      else {
+        this.imgtext="Après"
+      }
+    }, 5000);
   }
 
   navigateTo(path): void {

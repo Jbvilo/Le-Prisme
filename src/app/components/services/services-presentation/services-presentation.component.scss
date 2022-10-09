@@ -1,6 +1,10 @@
+@import '../../../../styles.scss';
+
+
 .content {
     width: 49%;
     display: inline-block;
+    vertical-align: top;
 }
 
 h1 {
@@ -23,11 +27,18 @@ h1 {
 }
 
 i {
-    animation: 3s linear blink_effectt;
+    animation: 4s linear blink_effectt;
 }
 
 .bitou {
     text-align: center;width: 100%;margin:auto;font-size: 15px;
+}
+.jimg {
+    animation: 5s linear blink_effect2;
+    opacity: 1;
+}
+.imgtext {
+    animation: 5s linear blink_effect2;
 }
 
 

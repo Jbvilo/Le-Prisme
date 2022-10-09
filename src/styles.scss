@@ -116,6 +116,20 @@ body {
       opacity: 1;
     }
   }
+  @keyframes blink_effect2 {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
   @keyframes blink_effectt {
     0% {
       opacity: 0;

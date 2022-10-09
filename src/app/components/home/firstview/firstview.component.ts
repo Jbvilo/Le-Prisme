@@ -53,8 +53,11 @@ export class FirstviewComponent implements OnInit {
     if (window.screen.width <= 500) {
       return 585;
     }
-    if (window.screen.width <= 1080) {
+    else if (window.screen.width <= 1080) {
       return 800
+    }
+    else {
+      return 500;
     }
   }
 }
