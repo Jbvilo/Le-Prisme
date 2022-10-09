@@ -37,7 +37,8 @@
 <div style="border-bottom: solid 1px rgb(187, 186, 186);"> </div><br><br><br>
 <div class="content">
     <br><br>
-    <img style="width: 80%;" src="../../../../assets/images/accessibilite.png"/>
+    <img *ngIf="img1" class="jimg" style="width: 80%;" src="../../../../assets/images/accessibilite.png"/>
+    <img *ngIf="!img1" class="jimg" style="width: 60%;" src="../../../../assets/images/accessibilite2.png"/>
 </div>
 <div class="content">
     <div class="text">
