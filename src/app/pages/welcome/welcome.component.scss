@@ -5,10 +5,13 @@
   align-items: center;
   justify-content: space-around;
   height:calc(100vh);
+  animation: 4s linear welcome_effect;
+  opacity: 0;
 }
 .text_content {
   text-align: center;
   margin-top: calc(-8vh);
+
 }
 h1 {
   font-size: 10vw;
