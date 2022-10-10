@@ -37,7 +37,7 @@ export class FormulaireComponent implements OnInit {
 
   screensize(): number {
     if (window.screen.height <= 720) {
-      return 790;
+      return 762;
     }
     if (window.screen.height <= 1080) {
       return 700;
@@ -56,7 +56,7 @@ export class FormulaireComponent implements OnInit {
 
     this.route.queryParams.subscribe(param => {
       if (param.speedform == "speedform") {
-        window.scrollTo(0, 660)
+        window.scrollTo(0,780);
         setTimeout(() => {
           this.formulaireservice.changePage()
         }, 100);

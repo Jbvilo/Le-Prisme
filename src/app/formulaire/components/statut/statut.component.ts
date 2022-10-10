@@ -23,7 +23,6 @@ export class StatutComponent implements OnInit {
   }
   validateAnswers(){
     this.formGroup.markAllAsTouched()
-    window.scrollTo(0,660)
     if ( this.formGroup.valid) {
     this.formulaireservice.submitvalue({name:'REVENU_FISCAL',value:this.revenufiscal})
     this.formulaireservice.submitvalue({name:'PART',value:this.part})

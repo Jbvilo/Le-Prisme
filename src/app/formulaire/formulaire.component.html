@@ -8,7 +8,7 @@
   
 </div>
 
-<br><br><br>
+<br><br>
 
 <div style="width:100%;text-align:center">
   <i class="fa fa-arrow-down" aria-hidden="true" style="font-size:40px;color:#335EEA;cursor: pointer;"
@@ -18,21 +18,21 @@
 
 
 
-<br><br><br>
+<br><br><br><br><br><br><br>
 
 
 <div class="stepper_content" style="border-top: solid 1px rgb(187, 186, 186);">
   <br><br><br>
-  <h1 style="text-align:center"> Formulaire de demande.</h1>
-  <br><br><br>
+  <h1 style="text-align:center;font-size: 170%;"> Formulaire de demande </h1>
+  
   <mat-horizontal-stepper #stepper (selectionChange)="selectionChange($event)">
     <!-- [linear]="linear"-->
 
     <mat-step label="Votre identité">
-      <br> <br>
-      <div class="card" style="height:450px;width:450px;margin: auto;padding-top:2px ;" *ngIf="!mobile">
+      <br> 
+      <div class="card" style="height:400px;width:400px;margin: auto;padding-top:2px;margin-top:-10px" *ngIf="!mobile">
 
-        <h1 style="width:fit-content;font-size: 160%;">{{title}} &nbsp;&nbsp;<i class="fa fa-id-card-o"
+        <h1 style="width:fit-content;font-size: 140%;">{{title}} &nbsp;&nbsp;<i class="fa fa-id-card-o"
             aria-hidden="true"></i></h1>
 
         <app-identite></app-identite>
@@ -41,7 +41,7 @@
       <div class="card" style="height:450px;width:350px;margin: auto;padding-top:2px;margin-left: -32px;"
         *ngIf="mobile">
 
-        <h1 style="width:fit-content;font-size: 160%;">{{title}} &nbsp;&nbsp;<i class="fa fa-id-card-o"
+        <h1 style="width:fit-content;font-size: 140%;">{{title}} &nbsp;&nbsp;<i class="fa fa-id-card-o"
             aria-hidden="true"></i></h1>
 
         <app-identite></app-identite>
@@ -49,15 +49,15 @@
     </mat-step>
 
     <mat-step label=" Vos coordonnées">
-      <br><br>
+      <br>
       <div class="card" style="height:450px;width:350px;margin: auto;padding-top:2px;margin-left: -32px;"  *ngIf="mobile">
-        <h1 style="width:fit-content;font-size: 160%;">{{title}} &nbsp;<i class="fa fa-globe" aria-hidden="true"></i>
+        <h1 style="width:fit-content;font-size: 140%;">{{title}} &nbsp;<i class="fa fa-globe" aria-hidden="true"></i>
         </h1>
         <app-coordonnes></app-coordonnes>
       </div>
 
-      <div class="card" style="height:450px;width:450px;margin: auto;padding-top:2px;"  *ngIf="!mobile">
-        <h1 style="width:fit-content;font-size: 160%;">{{title}} &nbsp;<i class="fa fa-globe" aria-hidden="true"></i>
+      <div class="card" style="height:400px;width:400px;margin: auto;padding-top:2px;margin-top: -10px;"  *ngIf="!mobile">
+        <h1 style="width:fit-content;font-size: 140%;">{{title}} &nbsp;<i class="fa fa-globe" aria-hidden="true"></i>
         </h1>
         <app-coordonnes></app-coordonnes>
       </div>
@@ -65,25 +65,25 @@
 
     <mat-step label="Votre foyer">
       <br>
-      <h1 style="width:fit-content;font-size: 160%;">{{title}} &nbsp; <i class="fa fa-home" aria-hidden="true"></i></h1>
+      <h1 style="width:fit-content;font-size: 140%;margin-top: -10px;">{{title}} &nbsp; <i class="fa fa-home" aria-hidden="true"></i></h1>
       <app-foyer></app-foyer>
     </mat-step>
 
     <mat-step label="Situation fiscale">
       <br>
-      <h1 style="width:fit-content;font-size: 160%;">{{title}} &nbsp;<i class="fa fa-user" aria-hidden="true"></i></h1>
+      <h1 style="width:fit-content;font-size: 140%;margin-top: -10px;">{{title}} &nbsp;<i class="fa fa-user" aria-hidden="true"></i></h1>
       <app-statut></app-statut>
     </mat-step>
 
     <mat-step label="Votre statut">
       <br>
-      <h1 style="width:fit-content;font-size: 160%;">{{title}} &nbsp;<i class="fa fa-user" aria-hidden="true"></i></h1>
+      <h1 style="width:fit-content;font-size: 140%;margin-top: -10px;">{{title}} &nbsp;<i class="fa fa-user" aria-hidden="true"></i></h1>
       <app-revenus></app-revenus>
     </mat-step>
 
     <mat-step label="Votre projet">
       <br>
-      <h1 style="width:fit-content;font-size: 160%;">{{title}} &nbsp;<i class="fa fa-cogs" aria-hidden="true"></i></h1>
+      <h1 style="width:fit-content;font-size: 140%;margin-top: -15px;">{{title}} &nbsp;<i class="fa fa-cogs" aria-hidden="true"></i></h1>
       <app-projet></app-projet>
     </mat-step>
 
@@ -97,7 +97,7 @@
 
 
 
-<br><br><br><br><br>
+
 <h4 style="text-align:center" class="navbar_title"><i class="fa fa-check-circle" aria-hidden="true"></i> Le Prisme.fr
 </h4>
 <br *ngIf="mobile"><br *ngIf="mobile">

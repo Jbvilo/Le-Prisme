@@ -26,6 +26,7 @@ formGroup = new FormGroup({
   constructor(private router:Router,private formulaireservice:FormulaireServiceService) { }
 
   validateAnswers(){
+    
     this.formGroup.markAllAsTouched()
     if ( this.formGroup.valid) {
      

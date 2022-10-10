@@ -174,7 +174,7 @@ if(a == 9 ){
     this.formulaireservice.submitvalue({name:'NOM_AUTRE_REMUNERATION',value :this.autretypevalue})
 
       setTimeout(() => {
-        window.scrollTo(0,660)
+        
         this.formulaireservice.changePage();
       }, 500);
   }
