@@ -1,0 +1,26 @@
+:host {
+    .text-histoire {
+       padding: 20%;
+    }
+
+    .chrono-container {
+        margin:auto;
+        width:80%;
+        display: flex;
+        justify-content: space-between;
+        .chrono-step {
+            width : 30%;
+            text-align: start;
+        }
+    }
+    .accompagnement-button{
+        .button {
+            margin:auto;
+            height: 50px;
+            width: 220px;
+            p{
+                padding-top: 15px;
+            }
+        }
+    }
+}

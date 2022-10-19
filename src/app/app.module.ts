@@ -17,6 +17,10 @@ import { ProjetComponent } from './formulaire/components/projet/projet.component
 import { HttpClientModule } from '@angular/common/http';
 import { NavigationBarComponent } from './shared/navigation-bar/navigation-bar.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { AccompagnementComponent } from './pages/accompagnement/accompagnement.component';
+import { PresentationComponent } from './pages/presentation/presentation.component';
+import { PlateformeComponent } from './pages/plateforme/plateforme.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +35,10 @@ import { FooterComponent } from './shared/footer/footer.component';
     ProjetComponent,
     NavigationBarComponent,
     FooterComponent,
+    AccompagnementComponent,
+    PresentationComponent,
+    PlateformeComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class NavigationService {
+  navbarClass!:string;
 
   constructor() { }
 
@@ -20,5 +21,9 @@ export class NavigationService {
         clearInterval(interval)
       }
     }, 15);
+  }
+
+  setNavBarClass(className){
+    this.navbarClass = className
   }
 }

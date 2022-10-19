@@ -1,25 +1,48 @@
-.navigation-bar-container {
-height : 50px;
-padding-left:30px;
-padding-right:30px;
-display: flex;
-justify-content: space-between;
-p{
-    font-size: 16px;
-    cursor: pointer;
+.navigation-bar-container-black {
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #161C2D;
+    color:white;
+
+    p {
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .brand-name {
+        font-size: 21px;
+        font-weight: 800;
+    }
 }
 
-.brand-name{
-    font-size: 21px;
-    font-weight: 800;
+.navigation-bar-container-grey {
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F1F4F8;
+    color:#161C2D;
+
+    p {
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .brand-name {
+        font-size: 21px;
+        font-weight: 800;
+    }
 }
 
-}
 
 .space {
-    width:8%;
+    width: 8%;
 }
 
 .space2 {
-    width:10%;
+    width: 10%;
 }

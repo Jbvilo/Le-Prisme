@@ -8,7 +8,8 @@ import { NavigationService } from 'src/app/navigation.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private navigationService:NavigationService) { 
+  constructor(private navigationService:NavigationService) {
+    this.navigationService.setNavBarClass('navigation-bar-container-black'); 
   }
 
   ngOnInit(): void { }
