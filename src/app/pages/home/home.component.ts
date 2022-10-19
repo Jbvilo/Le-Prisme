@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationService } from 'src/app/navigation.service';
 
 @Component({
   selector: 'app-home',
@@ -7,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { 
+  constructor(private navigationService:NavigationService) { 
   }
 
-  ngOnInit(): void {
+  ngOnInit(): void { }
+  windowScrollBy(pageNumber:number){
+    this.navigationService.windowScrollBy(pageNumber);
   }
 
 }
