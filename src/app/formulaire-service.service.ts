@@ -1,8 +1,6 @@
 import { DatePipe } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { EventEmitter, Injectable } from '@angular/core';
-import { map } from 'rxjs/operators';
-import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'

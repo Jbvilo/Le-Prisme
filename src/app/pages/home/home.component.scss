@@ -1,3 +1,21 @@
-.home-content {
-    animation: 1s linear blink_effect;
+:host {
+    .firstview {
+      color:white;
+      padding-top: 110px;
+    }
+
+    .buttons-container {
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        margin: auto;
+    }
+    
+    .avantages-container {
+        padding-top: 4%;
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        margin: auto;
+    }
 }

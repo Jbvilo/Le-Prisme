@@ -1,4 +1,5 @@
 
+/* MATERIAL DESIGN */
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @import '~@angular/material/theming';
@@ -33,192 +34,121 @@ $LePrismeWeb-theme: mat-light-theme((
 // that you are using.
 @include angular-material-theme($LePrismeWeb-theme);
 
-/* You can add global styles to this file, and also import other style files */
-$blueprisme:#335EEA;
-$greyprisme:gray;
+/*LE PRISME WEB */
 
 body {
- font-family:'Open Sans', sans-serif;
-  font-size: 19px;
-  background-color: #FFFFFF;
-  line-height: 30px;
-}
-h1 {
-  line-height: 50px;
-}
-
-.bold {
-  color:$blueprisme;
-}
-h1 {
-  font-weight: 300;
-  color:#021c33;
-}
-
-.card {
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 10px;
-}
-
-// .card:hover {
-//     /* On mouse-over, add a deeper shadow */
-//     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
-// }
-body::-webkit-scrollbar {
-
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-.button {
-  height: 60px;
-  width: 100%;
-  text-align: center;
-  border-radius: 7px;
-  display: inline-flex;
-  align-items: center;
-  background-color:$blueprisme;
+  font-family: 'Lato', sans-serif;
+  margin: 0px;
   color:white;
-  transition: transform 0.3s;
 }
-.button:hover {
+
+h1 {
+  font-size: 65px;
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 43px;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+p {
+  font-size: 18px;
+  line-height: 35px;
+}
+.button p{
+  line-height: normal;
+}
+
+.content {
+  height: calc(100vh);
+  text-align: center;
+}
+
+.interview {
+  height: calc(50vh);
+}
+
+.content-half {
+  width: 50%;
+  display: inline-block;
+  text-align: start;
+}
+
+.text {
+ width: 70%;
+ margin: auto;
+ margin-top: 10%;
+}
+ 
+.titreMaj {
+
+}
+
+.content.black {
+  background-color: #1F2537;
+}
+
+.content.grey {
+  background-color: #F1F4F8;
+}
+.interview.black {
+  background-color: #1F2537;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//BUTTONS
+.button {
+  width: 300px;
+  font-weight: 600;
+  color: #fff;
   cursor: pointer;
-  box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24)
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
-.button:active {
-  transform: translateY(2px);
-}
+
 .button:hover {
-  transform: translateY(-4px);
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
-@media only screen and (max-width: 500px) {
-  h1 {
-      font-size: 30px;
-      font-weight: 400;
-  }
+.button:focus {
+  outline: none;
 }
 
+.button.color-9 {
+  background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+  box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
 
-
-
-/* CSS ANIMATIONS*/
-@keyframes blink_effect {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @keyframes blink_effect2 {
-    0% {
-      opacity: 0;
-    }
-    20% {
-      opacity: 1;
-    }
-    80% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  @keyframes blink_effectt {
-    0% {
-      opacity: 0;
-    }
-    25% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @keyframes imgback-effect {
-    0% {
-      opacity: 0;
-      margin-top: 0%;
-    }
-    100% {
-      opacity: 1;
-      margin-top: -45%;
-    }
-  }
-  @keyframes imghome-effect {
-    0% {
-      opacity: 0;
-      margin-bottom: 20%;
-    }
-    100% {
-      opacity: 1;
-      margin-bottom: 0%;
-    }
-  }
-  @keyframes button-effect {
-    0% {
-      opacity: 0;
-      margin-left: -50%;
-      margin-top:-20%;
-      
-    }
-    100% {
-      opacity: 1;
-      margin-left: 0%;
-      margin-top:0%;
-    }
-  }
-  @keyframes services-effect {
-    0% {
-      opacity: 0;
-      margin-left: -100%;
-    }
-    100% {
-      opacity: 1;
-      margin-left: 0%;
-    }
-  }
-  @keyframes header-effect {
-    0% {
-      box-shadow: 0px 10px 10px -15px ;
-    }
-    100% {
-      box-shadow: 0px 6px 10px -15px ;
-    }
-  }
-  @keyframes header-effect2 {
-    0% {
-      box-shadow: 0px 6px 10px -15px ;
-    }
-    100% {
-      box-shadow: 0px 10px 10px -15px ;
-    }
-  }
-  @keyframes definition-effect {
-    0% {
-   opacity: 0;
-    }
-    100% {
-opacity: 1;
-    }
-  }
-  @keyframes welcome_effect {
-    0% {
-      opacity: 0;
-    }
-    25% {
-        opacity: 1;
-      }
-    70%{
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
+.button.color-10 {
+  background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);
+box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
 }

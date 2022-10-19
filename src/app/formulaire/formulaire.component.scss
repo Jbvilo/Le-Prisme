@@ -1,4 +1,3 @@
-@import '../../styles.scss';
 
 :host {
     ::ng-deep div {
@@ -16,14 +15,12 @@
     }
     .navbar_title {
         font-weight: 500;
-        color:$blueprisme;
         font-size: 200%;
         width: fit-content;
         margin: auto;
       }
       .title {
         font-weight: 900;
-        color:$blueprisme;
         font-size: 120%;
         margin-left:2vw;
         margin-top:1vw;
@@ -64,7 +61,6 @@
   width: 15vw; 
   height: 2.2vw;
   margin-top: 1.5vw;
-  color:$blueprisme;
   font-size: 150%;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
