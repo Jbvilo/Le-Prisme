@@ -103,15 +103,34 @@ p {
     color:#161C2D;
   }
 }
+
+.content.gray {
+  background-color: #edeff1;
+  color:#161C2D;
+}
+.content.white {
+  background-color: white;
+  color:#161C2D;
+}
+.content.purple {
+  background-color: #1F1C4D;
+}
+
 .interview.black {
   background-color: #161C2D;
 }
+.navigation-bar-container {
+  background-color: #161C2D;
+}
 
-
-
-
-
-
+.bold {
+  font-weight: bold;
+}
+.line {
+  height: 0.1px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.242);
+}
 
 
 

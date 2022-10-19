@@ -1,0 +1,25 @@
+:host {
+    .content {
+        height: calc(70vh);
+        padding: 8%;
+        padding-top: 0%;
+    }
+.footer-content {
+    width: 100%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    padding-top: 7%;
+    .footer-element {
+        width: 25%;
+        p{
+            font-size: 16px;
+        }
+    }
+}
+
+.footer-bottomtext{
+    text-align: center;
+}
+}

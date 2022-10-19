@@ -15,6 +15,8 @@ import { FoyerComponent } from './formulaire/components/foyer/foyer.component';
 import { RevenusComponent } from './formulaire/components/revenus/revenus.component';
 import { ProjetComponent } from './formulaire/components/projet/projet.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NavigationBarComponent } from './shared/navigation-bar/navigation-bar.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { HttpClientModule } from '@angular/common/http';
     FoyerComponent,
     RevenusComponent,
     ProjetComponent,
+    NavigationBarComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

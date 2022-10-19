@@ -1,7 +1,7 @@
 :host {
     .firstview {
       color:white;
-      padding-top: 110px;
+      padding-top: 70px;
     }
 
     .buttons-container {
@@ -23,20 +23,99 @@
         justify-content: space-between;
         width: 70%;
         margin: auto;
+        text-align: start;
         P {
             width: 40%;
         }
     }
-    .content.grey {
-        height: calc(120vh);
-    }
     .types-travaux {
-        width:70%;
+        width:95%;
         display: flex;
         justify-content: space-between;
         margin: auto;
-        h3 {
+        p {
             width: 25%;
         }
     }
+    .steps-container {
+        display: flex;
+        width: 80%;
+        margin:auto;
+        justify-content: space-between;
+        .step {
+            width : 30%;
+            text-align: start;
+           // line-height: 10px;
+        }
+        .number-line-container {
+            display: flex;
+            overflow: visible;
+            .line {
+                height:0.1px;
+                width:100%;
+                background-color:black;
+                margin-top: 35px;
+            }
+        }
+
+    }
+
+    .steps-title {
+        width: 80%;
+        text-align: start;
+        padding:9%;
+        padding-bottom: 2%;
+        display: inline-block;
+    }
+
+    .plateforme {
+        width: 80%;
+        padding: 10%;
+        padding-top: 20%;
+        .button {
+            width:220px;
+            height: 50px;
+            margin-left: 150px;
+            margin-top: 40px;
+            p {
+                padding-top: 13px;
+            }
+        }
+    }
+
+    .questions {
+        display: flex;
+        justify-content: space-between;
+        text-align: start;
+        width: 70%;
+        margin: auto;
+        .questions-text {
+            width: 40%;
+        }
+    }
+
+    .numbers-content {
+        display:flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+        .number {
+            h1 {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    .keys-button{
+        text-align: center;
+        .button{
+            margin: auto;
+            width:230px;
+            p{
+                padding-top: 15px;
+            }
+        }
+    }
+    
+
 }
