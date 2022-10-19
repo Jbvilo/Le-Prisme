@@ -18,4 +18,25 @@
         width: 85%;
         margin: auto;
     }
+    .phases-accomp {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin: auto;
+        P {
+            width: 40%;
+        }
+    }
+    .content.grey {
+        height: calc(120vh);
+    }
+    .types-travaux {
+        width:70%;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        h3 {
+            width: 25%;
+        }
+    }
 }

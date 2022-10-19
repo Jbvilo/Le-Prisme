@@ -50,6 +50,7 @@ h1 {
 h2 {
   font-weight: 500;
   font-size: 43px;
+  margin-top: 0px;
 }
 
 h3 {
@@ -90,14 +91,20 @@ p {
 }
 
 .content.black {
-  background-color: #1F2537;
+  background-color: #161C2D;
 }
 
 .content.grey {
   background-color: #F1F4F8;
+  h2,h3,p {
+    color: #161C2D;
+  }
+  .titreMaj {
+    color:#161C2D;
+  }
 }
 .interview.black {
-  background-color: #1F2537;
+  background-color: #161C2D;
 }
 
 
