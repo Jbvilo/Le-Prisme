@@ -1,18 +1,28 @@
-<div class="content black">
-    <div class="content-half">
+<div class="content black" *ngIf="accueil">
+<div class="content-half">
 
-    </div>
-    <div class="content-half">
-        <div class="text-plateforme">
+</div>
+<div class="content-half">
+    
+    <div class="text-plateforme">
+        <br>
             <h1>Plateforme de demande.</h1>
             <p>
                 Pour effectuer une demande d'accompagnement
                  et de subventions, remplissez les informations demandées 
                  dans les différentes étapes du formulaire.
                 </p>
-                <div class="button color-10">
+                <div style="text-align:start;width:100%;">
+                <div class="button color-10" (click)="accueil=false;">
                     <p>Suivant</p>
                 </div>
             </div>
-    </div>
+            </div>
 </div>
+
+</div>
+
+
+
+
+<app-formulaire *ngIf="!accueil"></app-formulaire>

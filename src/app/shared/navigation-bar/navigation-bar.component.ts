@@ -11,8 +11,7 @@ export class NavigationBarComponent implements OnInit {
 
   constructor(private router:Router,private navigationService:NavigationService) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
   navigate(routeName:string){
     this.router.navigate([routeName])
   }

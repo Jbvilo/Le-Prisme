@@ -1,11 +1,15 @@
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
+import { BehaviorSubject, Observable, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class NavigationService {
   navbarClass!:string;
+  navbarVisibility = true;
+  navBarSubject : BehaviorSubject<any>;
 
+  
   constructor() { }
 
   windowScrollBy(pageNumber:number){
@@ -25,5 +29,10 @@ export class NavigationService {
 
   setNavBarClass(className){
     this.navbarClass = className
+  }
+
+  setNavBarVisibility(value){
+    this.navbarVisibility = value
+    this.navBarSubject.next("")
   }
 }

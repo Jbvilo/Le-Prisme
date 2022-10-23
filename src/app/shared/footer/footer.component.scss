@@ -4,6 +4,12 @@
         padding: 8%;
         padding-top: 0%;
     }
+    .bold {
+        font-weight: 300;
+    }
+    p {
+        line-height: 25px;
+    }
 .footer-content {
     width: 100%;
     margin:auto;
@@ -11,6 +17,7 @@
     justify-content: space-between;
     text-align: start;
     padding-top: 7%;
+    padding-left: 5%;
     .footer-element {
         width: 25%;
         p{

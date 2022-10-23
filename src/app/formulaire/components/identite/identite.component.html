@@ -1,4 +1,4 @@
-<div style="width: fit-content;margin: auto; height: 15vw;">
+<div style="width: fit-content;margin: auto;">
     <mat-form-field appearance="outline" >
         <mat-label>Nom</mat-label>
         <input required matInput type="text" [(ngModel)]="nom" [formControl]="nomControl" (keyup.enter)="validateAnswers()">
@@ -14,6 +14,6 @@
         <input required matInput type="text"  [(ngModel)]="birthdate" [formControl]="birthControl" placeholder="JJ/MM/AAAA" (keyup)="birthvalue()"  (keyup.enter)="validateAnswers()">
     </mat-form-field>   
     <br>
-    <div style="text-align: center;"> <div class="button" (click)="validateAnswers()">      <h4 style="margin: auto;   font-family:'Open Sans', sans-serif;">  Valider </h4> </div></div>
+    <div style="text-align: center;"> <div class="button color-9" (click)="validateAnswers()">      <p style="margin: auto;padding-top: 15px;">  Valider </p> </div></div>
     
 </div>

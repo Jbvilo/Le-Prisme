@@ -1,13 +1,30 @@
 
 :host {
+
+  ::ng-deep .mat-form-field-outline {
+    color:white;
+   border-radius:4px;
+   }
+   
+   
+   ::ng-deep .mat-form-field-label{
+     color:white;
+     
+   }
+   
     ::ng-deep div {
         overflow: visible;
     }
+    ::ng-deep i {
+      color : #335EEA;
+    }
     .stepper_content {
         margin: auto;
-        width: 100%;
-        height: 600px;
-        margin-top: -100px;
+    }
+    .card {
+      box-shadow: 0 0px 0px 0px white;
+      border-radius: 10px;
+      background-color: white;
     }
     ::ng-deep .mat-form-field {
         width: 27vw;
@@ -18,24 +35,22 @@
         font-size: 200%;
         width: fit-content;
         margin: auto;
-      }
+      } 
       .title {
         font-weight: 900;
         font-size: 120%;
         margin-left:2vw;
         margin-top:1vw;
         cursor: pointer;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      }
-      .title:hover {
-       
       }
       h1 {
         margin:auto; 
         margin-top: 1vw;  
         margin-bottom: 1vw;
-        color:black;
+        color:#161C2D;
       }
+
+
       //MOBILE
 @media only screen and (max-width: 500px) {
   .stepper_content {
@@ -48,21 +63,14 @@
    pointer-events: none !important;
 }
 
-::ng-deep h1 {
-  color : #5780FA;
- font-weight: 300;
-}
 
-::ng-deep i {
-  color : #335EEA;
-}
+
 
 .navbar_title {
   width: 15vw; 
   height: 2.2vw;
   margin-top: 1.5vw;
   font-size: 150%;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 i {
   animation: 3s linear blink_effectt;

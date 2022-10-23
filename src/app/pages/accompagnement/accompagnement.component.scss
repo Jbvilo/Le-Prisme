@@ -1,10 +1,10 @@
 .phases-accomp {
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 80%;
     margin: auto;
     text-align: start;
-    P {
+    .phase {
         width: 40%;
     }
 }
@@ -23,6 +23,17 @@
 }
 
 .img {
-    width: 600px;
+    width: 630px;
     margin-left: 70px;
+}
+
+.lastScreen {
+ .button {
+    width: 230px;
+    height: 50px;
+    margin: auto;
+ }   
+ h1 {
+    
+ }
 }

@@ -39,6 +39,7 @@ import { ContactComponent } from './pages/contact/contact.component';
     PresentationComponent,
     PlateformeComponent,
     ContactComponent,
+    FormulaireComponent
   ],
   imports: [
     BrowserModule,
