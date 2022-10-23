@@ -32,6 +32,10 @@
         width: 80%;
         margin:auto;
         justify-content: space-between;
+        h2 {
+            margin-bottom: 0px;
+            font-size: 20px;
+        }
         .step {
             width : 30%;
             text-align: start;
@@ -106,6 +110,10 @@
             }
         }
     }
-    
+ .numberstep {
+    color:white;
+    margin-top:6px;
+
+ }   
 
 }

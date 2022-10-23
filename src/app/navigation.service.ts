@@ -13,7 +13,7 @@ export class NavigationService {
   constructor() { }
 
   windowScrollBy(pageNumber:number){
-    let pageHeight = window.innerHeight*pageNumber+30;
+    let pageHeight = window.innerHeight*pageNumber+50
 
     let i = 0;
     let interval = setInterval(() => {

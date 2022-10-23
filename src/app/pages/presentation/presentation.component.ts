@@ -15,4 +15,7 @@ export class PresentationComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  scroll(){
+    this.navigationService.windowScrollBy(1)
+  }
 }
