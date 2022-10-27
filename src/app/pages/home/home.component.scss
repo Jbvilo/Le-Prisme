@@ -1,7 +1,7 @@
 :host {
     .firstview {
-      color:white;
-      padding-top: 70px;
+        color: white;
+        padding-top: 70px;
     }
 
     .buttons-container {
@@ -10,7 +10,7 @@
         width: 40%;
         margin: auto;
     }
-    
+
     .avantages-container {
         padding-top: 4%;
         display: flex;
@@ -18,36 +18,43 @@
         width: 85%;
         margin: auto;
     }
+
     .types-travaux {
-        width:95%;
+        width: 95%;
         display: flex;
         justify-content: space-between;
         margin: auto;
+
         p {
             width: 25%;
         }
     }
+
     .steps-container {
         display: flex;
         width: 80%;
-        margin:auto;
+        margin: auto;
         justify-content: space-between;
+
         h2 {
             margin-bottom: 0px;
             font-size: 20px;
         }
+
         .step {
-            width : 30%;
+            width: 30%;
             text-align: start;
-           // line-height: 10px;
+            // line-height: 10px;
         }
+
         .number-line-container {
             display: flex;
             overflow: visible;
+
             .line {
-                height:0.1px;
-                width:100%;
-                background-color:black;
+                height: 0.1px;
+                width: 100%;
+                background-color: black;
                 margin-top: 35px;
             }
         }
@@ -55,22 +62,27 @@
     }
 
     .steps-title {
-        width: 80%;
+        width: 40%;
         text-align: start;
-        padding:9%;
+        padding: 9%;
         padding-bottom: 2%;
         display: inline-block;
+        vertical-align: middle;
     }
-
+.way {
+display: none;
+}
     .plateforme {
         width: 80%;
         padding: 10%;
         padding-top: 20%;
+
         .button {
-            width:220px;
+            width: 220px;
             height: 50px;
-            margin-left: 150px;
+            margin-left: 0px;
             margin-top: 40px;
+
             p {
                 padding-top: 13px;
             }
@@ -81,18 +93,45 @@
         display: flex;
         justify-content: space-between;
         text-align: start;
-        width: 70%;
+        width: 85%;
         margin: auto;
+
         .questions-text {
-            width: 40%;
+            width: 48%;
+
+            .question-icon {
+                height: 25px;
+                width: 25px;
+                border-radius: 50%;
+            background:linear-gradient(#021541,#021541);
+
+                display: inline-block;
+                margin-top: 24px;
+                margin-right: 18px;
+
+                .icon-text {
+                    margin-left: 9px;
+                    margin-top: 0px;
+                    font-size: 18px;
+                    color: white;
+                }
+            }
+
+
+            .questions-text-value {
+                display: inline-block;
+                vertical-align: top;
+                width: 90%;
+            }
         }
     }
 
     .numbers-content {
-        display:flex;
+        display: flex;
         justify-content: space-between;
         width: 80%;
         margin: auto;
+
         .number {
             h1 {
                 margin-bottom: 5px;
@@ -100,20 +139,27 @@
         }
     }
 
-    .keys-button{
+    .keys-button {
         text-align: center;
-        .button{
+
+        .button {
             margin: auto;
-            width:230px;
-            p{
+            width: 230px;
+
+            p {
                 padding-top: 15px;
             }
         }
     }
- .numberstep {
-    color:white;
-    margin-top:6px;
 
- }   
+    .numberstep {
+        color: white;
+        margin-top: 6px;
+
+    }
+
+    .icons {
+        width: 70px;
+    }
 
 }

@@ -1,8 +1,9 @@
 .phases-accomp {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 85%;
     margin: auto;
+    margin-left: 10%;
     text-align: start;
     .phase {
         width: 40%;
@@ -36,4 +37,17 @@
  h1 {
     
  }
+
+ .boldi {
+
+ }
+}
+
+
+:host {
+    .icons {
+        padding-top: 30px;
+        width:80px;
+        margin-right: 60px ;
+    }
 }

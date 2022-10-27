@@ -3,14 +3,14 @@
 
   <div class="firstview">
     <div class="titreMaj">LE PRISME</div>
-    <h1>Vivre dans un logement <br> décent c'est possible.</h1>
+    <h1>Vivre dans un logement <br> décent, c'est possible.</h1>
     <p>Assistant à Maîtrise d'Ouvrage.</p>
     <br> <br>
     <div class="buttons-container">
       <div class="button color-9"  (click)="windowScrollBy(1)">
         <p>En savoir plus &nbsp; <i class="fa fa-arrow-down" aria-hidden="true"></i> </p>
       </div>
-      <div class="button color-10">
+      <div class="button color-10" (click)="navigate('/plateforme')">
         <p> Se faire accompagner</p>
       </div>
     </div>
@@ -21,7 +21,7 @@
 
 
 <!-- SECOND VIEW -->
-<div class="content black">
+<div class="content black"  style="background:linear-gradient(#161C2D,#011543)">
   <div class="content-half">
     <div class="text">
       <h2> Assitant à maîtrise <br> d'ouvrage ?</h2>
@@ -33,15 +33,16 @@
     </div>
   </div>
   <div class="content-half">
-
+<img src="../../../assets/images/illustration-2.png" style="width:570px">
   </div>
 </div>
 
 
 
 <!-- THIRD VIEW -->
-<div class="content black">
-  <div class="content-half">
+<div class="content black" style="background:linear-gradient(#011543,#161C2D)">
+  <div class="content-half" style="text-align:center">
+
 
   </div>
   <div class="content-half">
@@ -71,18 +72,21 @@
     <p>Particuliers comme professionels, nous vous accompagnons <br>pour tous types de travaux
       concernant votre logement.</p>
   </div>
+  <div style="display:inline-block;width:40%;vertical-align: middle;color: #011543;text-align: start;">
+  <img src="../../../assets/images/step.jpg" class="way" style="width: 300px;margin-top: 50px;"/> </div>
+
 
 <br><br>
   <div style="width:58.5%;margin:0px;margin-left:122px;display: flex;">
-    <div style="width:35px;height:35px;border-radius:50%;background-color:#26304ccf">
+    <div style="width:35px;height:35px;border-radius:50%;background:linear-gradient(#161C2D,#012371)">
       <div class="numberstep">1</div> 
     </div>
     <div style="width:340px;height:0.1px;background-color:#26304ccf;margin-top:18px"> </div>
-    <div style="width:35px;height:35px;border-radius:50%;background-color:#26304ccf">
+    <div style="width:35px;height:35px;border-radius:50%;background:linear-gradient(#161C2D,#012371)">
       <div class="numberstep">2</div> 
     </div>
     <div style="width:340px;height:0.1px;background-color:#26304ccf;margin-top:18px"> </div>
-    <div style="width:35px;height:35px;border-radius:50%;background-color:#26304ccf">
+    <div style="width:35px;height:35px;border-radius:50%;background:linear-gradient(#161C2D,#012371)">
       <div class="numberstep">3</div> 
     </div>
   </div>
@@ -119,25 +123,35 @@
 
 
 <!-- FIFTH VIEW -->
-<div class="content grey">
+<div class="content grey" style="height:calc(150vh)">
   <br><br>  <br>
-  <br>
+  <br>  <br>  <br>  <br>  <br>
   <h2> Tous types de travaux<br>   et tout public.</h2>
   <p> Particuliers comme professionels, nous vous accompagnons pour tous types de travaux <br>concernant votre logement.
   </p>
   <br>
   <div class="types-travaux">
-    <p class="bold"> Menuiserie</p>
-    <p class="bold"> Toiture</p>
-    <p class="bold"> Électricité</p>
-    <p class="bold"> Peinture</p>
+    <p class="bold">
+      <img class="icons" src="../../../assets/icones/scie-circulaire.png"><br>
+       Menuiserie</p>
+    <p class="bold">
+      <img class="icons" src="../../../assets/icones/toit.png"><br>
+      Toiture</p>
+    <p class="bold">   <img class="icons" src="../../../assets/icones/eclairage.png"><br>
+      Électricité</p>
+    <p class="bold">   <img class="icons" src="../../../assets/icones/rouleau-de-peinture.png"><br>
+      Peinture</p>
   </div>
   <br>
   <div class="types-travaux">
-    <p class="bold"> Sanitaire</p>
-    <p class="bold"> Plomberie</p>
-    <p class="bold"> Mise aux normes</p>
-    <p class="bold"> Aménagement</p>
+    <p class="bold">   <img class="icons" src="../../../assets/icones/salle-de-bains.png"><br>
+      Sanitaire</p>
+    <p class="bold">  <img class="icons" src="../../../assets/icones/plomberie.png"><br>
+       Plomberie</p>
+    <p class="bold">   <img class="icons" src="../../../assets/icones/iso.png"><br>
+      Mise aux normes</p>
+    <p class="bold">   <img class="icons" src="../../../assets/icones/accessibilite.png"><br>
+      Accessibilité</p>
   </div>
 </div>
 
@@ -153,7 +167,7 @@
       <h2> Notre plateforme de demande.</h2>
       <p> Dans le but d'accélérer la procédure, vous pouvez effectuer une demande d'accompagnement directement sur notre
         site vià notre plateforme de demande.</p>
-      <div class="button color-10 ">
+      <div class="button color-10 " (click)="navigate('/plateforme')">
         <p>Accéder à la plateforme </p>
       </div>
     </div>
@@ -163,19 +177,33 @@
 <div class="content gray">
   <div class="questions">
     <div class="questions-text">
-      <p class="bold"> Dois-je payer pour effectuer une demande ? </p>
-      <p>
-        Effectuer votre demande en ligne est totalement gratuit
-        et cela ne vous prendra que quelques minutes.
-      </p>
+      <div class="question-icon">
+        <h3 class="icon-text">?</h3>
+      </div>
+     
+     
+  <div class="questions-text-value">
+    <p class="bold"> 
+      Dois-je payer pour effectuer une demande ? </p>
+    <p>
+      Effectuer votre demande en ligne est totalement gratuit
+      et cela ne vous prendra que quelques minutes.
+    </p>
+  </div>
     </div>
 
     <div class="questions-text">
-      <p class="bold"> Comment vais-je être contacté ? </p>
-      <p>
-        Une fois votre demande effectuée vous serez contacté
-        dans moins de 48h par une instructrice directement par téléphone.
-      </p>
+      <div class="question-icon">
+        <h3 class="icon-text">?</h3>
+      </div>
+      <div class="questions-text-value">
+        <p class="bold"> Comment vais-je être contacté ? </p>
+        <p>
+          Une fois votre demande effectuée vous serez contacté
+          dans moins de 48h par une instructrice directement par téléphone.
+        </p>
+      </div>
+ 
     </div>
 
   </div>
@@ -183,19 +211,31 @@
   <br>
   <div class="questions">
     <div class="questions-text">
-      <p class="bold"> Qui réalise les travaux ? </p>
-      <p>
-        Nous collaborons avec de nombreux artisans qui
-        se chargeront de réaliser vos travaux avec soin dans les meilleurs délais.
-      </p>
+      <div class="question-icon">
+        <h3 class="icon-text">?</h3>
+      </div>
+      <div class="questions-text-value">
+        <p class="bold"> Qui réalise les travaux ? </p>
+        <p>
+          Nous collaborons avec de nombreux artisans qui
+          se chargeront de réaliser vos travaux avec soin dans les meilleurs délais.
+        </p>
+      </div>
+
     </div>
 
     <div class="questions-text">
-      <p class="bold"> Quand faire appel au Prisme ? </p>
-      <p>
-        Pour se faire accompagner et subventionner
-        lors de réalisation des travaux conséquents dans son lieu de vie.
-      </p>
+      <div class="question-icon">
+        <h3 class="icon-text">?</h3>
+      </div>
+      <div class="questions-text-value">
+        <p class="bold"> Quand faire appel au Prisme ? </p>
+        <p>
+          Pour se faire accompagner et subventionner
+          lors de réalisation des travaux conséquents dans son lieu de vie.
+        </p>
+      </div>
+
     </div>
   </div>
 </div>
@@ -238,7 +278,7 @@
   </div>
   <br><br>
 <div class="keys-button">
-  <div class="button color-9 ">
+  <div class="button color-9 " (click)="navigate('/presentation')">
     <p>Plus d'informations ?</p>
   </div>
 </div>
@@ -251,7 +291,7 @@
 <div class="content black">
  <br><br>
 <h2> Ils nous font confiance.</h2>
-<p>Nos partenaires nous font confiance depuis des années <br> et ce n'est pas pour rien. </p>
+<p>Nos partenaires nous font confiance depuis des années. </p>
 
 
 

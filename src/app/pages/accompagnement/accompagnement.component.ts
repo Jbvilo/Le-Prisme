@@ -17,10 +17,11 @@ export class AccompagnementComponent implements OnInit {
   ngOnInit() {}
 
   navigate(value){
-    this.router.navigate([value]);
+    this.navigationService.navigate(value)
   }
   scroll(){
     this.navigationService.windowScrollBy(1)
   }
+  
 
 }

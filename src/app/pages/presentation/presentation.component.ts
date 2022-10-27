@@ -18,4 +18,7 @@ export class PresentationComponent implements OnInit {
   scroll(){
     this.navigationService.windowScrollBy(1)
   }
+  navigate(value){
+    this.navigationService.navigate(value)
+  }
 }

@@ -1,4 +1,5 @@
 import { EventEmitter, Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 import { BehaviorSubject, Observable, Subject } from 'rxjs';
 
 @Injectable({
@@ -10,7 +11,11 @@ export class NavigationService {
   navBarSubject : BehaviorSubject<any>;
 
   
-  constructor() { }
+  constructor(private router:Router) {
+    this.router.events.subscribe(()=>{
+      window.scrollTo(0,0)
+    })
+   }
 
   windowScrollBy(pageNumber:number){
     let pageHeight = window.innerHeight*pageNumber+50
@@ -34,5 +39,8 @@ export class NavigationService {
   setNavBarVisibility(value){
     this.navbarVisibility = value
     this.navBarSubject.next("")
+  }
+  navigate(value){
+    this.router.navigate([value])
   }
 }
