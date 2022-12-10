@@ -60,10 +60,14 @@
     width:300px;
 }
 .content{
-height: calc(93vh);
+height: calc(80vh);
 }
 ::ng-deep .button {
   width: 150px;
+}
+
+.start {
+  height: calc(80vh);
 }
  }
  
