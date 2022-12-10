@@ -13,6 +13,8 @@ export class FormulaireComponent implements OnInit {
   @ViewChild('stepper') private myStepper: MatStepper;
   linear: boolean = false;
   mobile: boolean;
+  start:boolean=true;
+  
   constructor(private formulaireservice: FormulaireServiceService, private router: Router, private route: ActivatedRoute) {
     window.scrollTo(0, 0)
     this.formulaireservice.setFormsTitle("Votre identité")

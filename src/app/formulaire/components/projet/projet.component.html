@@ -1,179 +1,131 @@
 <div class="content" *ngIf="!ending">
+    <div *ngIf="typedetravaux">
+        <h2 class="center"> Quel type de travaux souhaitez-vous faire ?</h2>
+        <div class="check-box-container"><mat-checkbox [(ngModel)]="toiture">Toiture</mat-checkbox ></div>
+        &nbsp;&nbsp;
+        <div class="check-box-container"><mat-checkbox [(ngModel)]="fauxplafond">Faux-plafond</mat-checkbox></div>
+        <br>
+        <div class="check-box-container"><mat-checkbox [(ngModel)]="menuiserie">Menuiseries</mat-checkbox></div>
+        &nbsp;&nbsp;
+        <div class="check-box-container"><mat-checkbox  [(ngModel)]="miseonormelec">Mise aux normes <br *ngIf="mobile"> électriques</mat-checkbox></div>
+        <br>
+        <div class="check-box-container"><mat-checkbox [(ngModel)]="adaptsalldo">Adaptation <br *ngIf="mobile"> salle d'eau</mat-checkbox></div>
+        &nbsp;&nbsp;
+        <div class="check-box-container"><mat-checkbox [(ngModel)]="accesslog">Accessibilité <br *ngIf="mobile"> logement</mat-checkbox></div>
+        <br>
+        <div class="check-box-container"><mat-checkbox [(ngModel)]="fossesept">Fosse <br *ngIf="mobile"> septique</mat-checkbox></div>
+        &nbsp;&nbsp;
+        <div class="check-box-container"><mat-checkbox [(ngModel)]="parasis">Renforcement <br *ngIf="mobile"> para-sismique</mat-checkbox></div>
+        <br>
+        <div class="check-box-container"><mat-checkbox [(ngModel)]="antiterm">Traitement <br *ngIf="mobile"> anti-termites</mat-checkbox></div>
+        &nbsp;&nbsp;
+        <div class="check-box-container"><mat-checkbox [(ngModel)]="desamiantage">Désamiantage</mat-checkbox></div>
+        <br>
+        <div class="check-box-container"><mat-checkbox [(ngModel)]="ventilation">Ventilation</mat-checkbox></div>
+        &nbsp;&nbsp;
+        <div class="check-box-container"><mat-checkbox [(ngModel)]="autres">Autres</mat-checkbox></div>
+        <br><br>
+         <div class="button button-page" (click)="changeview(2)">
+            <h4> Valider </h4>
+        </div>
+    </div>
+
+    <div *ngIf="terminer">
+        <h2 class="center"> Décrivez votre projet si vous le souhaitez.</h2>
+        <mat-form-field appearance="outline" class="text-area">
+            <mat-label>Description de votre projet </mat-label>
+            <textarea matInput style="height:150px;" [(ngModel)]="descriptionproj"></textarea>
+        </mat-form-field>
+        <br><br><br><br>
+        <div class="button button-page" (click)="changeview(3)">
+            <h4> Valider </h4>
+        </div>
+    </div>
+
+    <div *ngIf="propouloc">
+        <h2 class="center"> Après les travaux, vous souhaitez <br> habitez dans le logement où le mettre en location ?</h2>
+        <div class="button button-page" (click)="aprestrav='habiter'; changeview(4)">
+            <h4> Habiter </h4>
+        </div>
+        &nbsp;
+        <div class="button button-page" (click)="aprestrav='louer'; changeview(4)" >
+            <h4> Louer </h4>
+        </div>
+    </div>
 
     <div *ngIf="travauxavant">
-
-        <h1 > Avez vous déjà perçu des aides pour des travaux antérieurs ?</h1>
-        <div class="solo">
-             <div class="button" (click)="aidestravauxanterieurs='oui'; changeview(1.5)">
-                <h4 style="margin: auto;   font-family:'Open Sans', sans-serif;"> OUI </h4>
-            </div>
-            &nbsp;&nbsp;
-             <div class="button" (click)="aidestravauxanterieurs='non'; changeview(5.1)">
-                <h4 style="margin: auto;   font-family:'Open Sans', sans-serif;"> NON </h4>
-            </div>
+        <h2 class="center"> Avez vous déjà perçu des aides pour des travaux antérieurs ?</h2>
+        <div class="button button-page" (click)="aidestravauxanterieurs='oui'; changeview(1.5)">
+            <h4> Oui </h4>
+        </div>&nbsp;
+        <div class="button button-page" (click)="aidestravauxanterieurs='non'; changeview(5.1)">
+            <h4> Non </h4>
         </div>
-
     </div>
 
     <div *ngIf="travauxoui">
-
-        <h1 > De qui ?</h1>
+        <h2 class="center"> De qui ?</h2>
         <mat-form-field appearance="outline">
             <mat-label>Organisme(s) d'aides ? </mat-label>
             <input matInput type="text" [(ngModel)]="organismeaide" (keyup.enter)="changeview(1.70)" [formControl]="quiControl">
         </mat-form-field>
-        <div style="text-align: center;"> <div class="button" (click)="changeview(1.70)">      <h4 style="margin: auto;   font-family:'Open Sans', sans-serif;">  Valider </h4> </div></div>
-    
-
+        <br>
+        <div class="button button-page" (click)="changeview(1.70)">
+            <h4> Valider </h4>
+        </div>
     </div>
 
     <div *ngIf="annee">
-
-        <h1 > En quelle année ?</h1>
+        <h2 class="center"> En quelle année ?</h2>
         <mat-form-field appearance="outline">
             <mat-label> Année des aides perçues</mat-label>
             <input matInput type="text" [(ngModel)]="anneeAide" (keyup.enter)="changeview(1.75)" [formControl]="anneeControl" placeholder="YYYY">
         </mat-form-field>
-        <div style="text-align: center;"> <div class="button" (click)="changeview(1.75)">      <h4 style="margin: auto;   font-family:'Open Sans', sans-serif;">  Valider </h4> </div></div>
-    
-
+        <br>
+        <div class="button button-page" (click)="changeview(1.75)">
+            <h4> Valider </h4>
+        </div>
     </div>
 
     
     <div *ngIf="travauxoui2">
-
-        <h1 >Quel était le montant de ces aides ?</h1>
+        <h2 class="center">Quel était le montant de ces aides ?</h2>
         <mat-form-field appearance="outline">
             <mat-label>Montant des aides perçues </mat-label>
             <input matInput type="text" [(ngModel)]="montantAide" (keyup.enter)="changeview(5)" [formControl]="montantControl">
         </mat-form-field>
-        <div style="text-align: center;"> <div class="button" (click)="changeview(5)">      <h4 style="margin: auto;   font-family:'Open Sans', sans-serif;">  Valider </h4> </div></div>
-    
-
-
-    </div>
-
-
-    <div *ngIf="typedetravaux">
-
-
-        <h1 > Quel type de travaux souhaitez-vous faire ?</h1>
-
-
-
-        <div class="checki"><mat-checkbox [(ngModel)]="toiture">Toiture</mat-checkbox ></div>
-        &nbsp;&nbsp;
-        <div class="checki"><mat-checkbox [(ngModel)]="fauxplafond">Faux-plafond</mat-checkbox></div>
         <br>
-        
-        <div class="checki"><mat-checkbox [(ngModel)]="menuiserie">Menuiseries</mat-checkbox></div>
-        &nbsp;&nbsp;
-      
-        <div class="checki"><mat-checkbox  [(ngModel)]="miseonormelec">Mise aux normes <br *ngIf="mobile"> électriques</mat-checkbox></div>
-        <br>
-      
-        <div class="checki"><mat-checkbox [(ngModel)]="adaptsalldo">Adaptation <br *ngIf="mobile"> salle d'eau</mat-checkbox></div>
-        &nbsp;&nbsp;
-   
-        <div class="checki"><mat-checkbox [(ngModel)]="accesslog">Accessibilité <br *ngIf="mobile"> logement</mat-checkbox></div>
-        <br>
-    
-        <div class="checki"><mat-checkbox [(ngModel)]="fossesept">Fosse <br *ngIf="mobile"> septique</mat-checkbox></div>
-        &nbsp;&nbsp;
-    
-        <div class="checki"><mat-checkbox [(ngModel)]="parasis">Renforcement <br *ngIf="mobile"> para-sismique</mat-checkbox></div>
-        <br>
-   
-        <div class="checki"><mat-checkbox [(ngModel)]="antiterm">Traitement <br *ngIf="mobile"> anti-termites</mat-checkbox></div>
-        &nbsp;&nbsp;
- 
-        <div class="checki"><mat-checkbox [(ngModel)]="desamiantage">Désamiantage</mat-checkbox></div>
-        <br>
-     
-        <div class="checki"><mat-checkbox [(ngModel)]="ventilation">Ventilation</mat-checkbox></div>
-        &nbsp;&nbsp;
-
-        <div class="checki"><mat-checkbox [(ngModel)]="autres">Autres</mat-checkbox></div>
-        <br>
-        <br>
-         <div class="button" (click)="changeview(2)">
-            <h4 style="margin: auto;   font-family:'Open Sans', sans-serif;"> Valider </h4>
-        </div>
-
-    </div>
-
-
-
-    <div *ngIf="propouloc">
-        <h1 > Après les travaux, vous souhaitez habitez dans le logement où le mettre en
-            location ?</h1>
-        <div class="solo">
-             <div class="button" (click)="aprestrav='habiter'; changeview(4)">
-                <h4 style="margin: auto;   font-family:'Open Sans', sans-serif;"> Habiter </h4>
-            </div>
-            &nbsp;&nbsp;
-             <div class="button" (click)="aprestrav='louer'; changeview(4)">
-                <h4 style="margin: auto;   font-family:'Open Sans', sans-serif;"> Louer </h4>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div *ngIf="terminer">
-        <h1 >Décrivez votre projet si vous le souhaitez</h1>
-        <mat-form-field appearance="outline">
-            <mat-label>Description de votre projet  </mat-label>
-            <textarea matInput style="height:100px" [(ngModel)]="descriptionproj"></textarea>
-        </mat-form-field>
-
-<br><br>
-         <div class="button" (click)="changeview(3)">
-            <h4 style="margin: auto;   font-family:'Open Sans', sans-serif;"> Valider </h4>
+        <div class="button button-page" (click)="changeview(5)">
+            <h4> Valider </h4>
         </div>
     </div>
 
     <div *ngIf="coms">
-        <h1 >Ajoutez un commentaire si vous le souhaitez</h1>
+        <h2 class="center">Ajoutez un commentaire si vous le souhaitez.</h2>
         <mat-form-field appearance="outline">
             <mat-label>Commentaire </mat-label>
-            <textarea matInput style="height:100px" [(ngModel)]="comsi"></textarea>
+            <textarea matInput style="height:150px" [(ngModel)]="comsi"></textarea>
         </mat-form-field>
-<br><br>
-
-         <div class="button" style="width: 220px;" (click)="changeview(6)">
-            <h4 style="margin: auto;   font-family:'Open Sans', sans-serif;"> Terminer </h4>
+        <br><br><br>
+        <div class="button button-page" (click)="changeview(6)">
+            <h4> Terminer </h4>
         </div>
     </div>
 
-    <div *ngIf="end">
-    <h1 style="font-weight:300"> 
-    Votre demande a été envoyée !
-    </h1> 
-    <h3  style="font-weight:300"> Nous vous contacterons par mail ou par téléphone une fois celle-ci traitée par nos services</h3>   
-    </div>
-
-
-
-    <div *ngIf="mobile" style="width: 100%;margin-top:30px;display: flex;justify-content: center;"> 
-        <mat-progress-spinner
-        [mode]="mode"
-        [value]="value"
-        [diameter]="80">
-        </mat-progress-spinner> </div>
+    <span *ngIf="end">
+        <h2>
+            Votre demande a été envoyée !
+        </h2>
+        <p> Nous vous contacterons par mail ou par téléphone une fois celle-ci traitée par nos services.</p>
+    </span>
 </div>
 
-
-<div style="display:flex;justify-content:end" *ngIf="spinner && !mobile && !ending"> 
+<!-- <div style="display:flex;justify-content:end" *ngIf="spinner && !mobile && !ending"> 
     <mat-progress-spinner
     [mode]="mode"
     [value]="value">
-    </mat-progress-spinner> </div>
+    </mat-progress-spinner> </div>-->
 
-
-
-
-
-    <div *ngIf="loading"  style="width: 100%;margin-top:30px;display: flex;justify-content: center;">
+    <div *ngIf="loading" class="loader-http">
         <mat-spinner [diameter]="80"></mat-spinner>
-    </div>
+    </div> 

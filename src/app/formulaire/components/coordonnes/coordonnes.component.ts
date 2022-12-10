@@ -14,7 +14,6 @@ export class CoordonnesComponent implements OnInit {
   emailFormControl = new FormControl('', [Validators.required, Validators.email]);
   phoneControl = new FormControl('', [Validators.required,Validators.minLength(10)]);
   adressControl = new FormControl('', [Validators.required]);
-
   formGroup = new FormGroup({
     first : this.emailFormControl,
     second : this.phoneControl,

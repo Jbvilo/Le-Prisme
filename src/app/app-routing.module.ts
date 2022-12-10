@@ -12,8 +12,8 @@ import { ServicesComponent } from './pages/services/services.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 
 const routes: Routes = [
-  {path:"", component:WelcomeComponent},
-  {path:"home", component:HomeComponent},
+  {path:"", component:FormulaireComponent},
+  {path:"home", component:FormulaireComponent},
   {path:"presentation", component:PresentationComponent},
   {path:"services", component:ServicesComponent},
   {path:"plateforme", component:FormulaireComponent},

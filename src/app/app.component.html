@@ -1,15 +1,3 @@
-
-  <div [ngClass]="scroll? 'scroll' : 'top'" style="width: 100%;z-index: 800;background-color: white;margin-top: -10px;">
-        <app-navigation-bar *ngIf="visible"></app-navigation-bar>
-    </div>
-  
-    <!--A remplacer, permet de descendre le contenu principal-->
-    <div *ngIf="visible" style="height: 100px"></div>
-
-    <div class="bodyy"> 
-    
-    <router-outlet></router-outlet>
-
-    </div>
-    <app-footer *ngIf="visible2"></app-footer>
-
+<app-navigation-bar></app-navigation-bar>
+<router-outlet></router-outlet>
+<!-- <app-footer></app-footer> -->
