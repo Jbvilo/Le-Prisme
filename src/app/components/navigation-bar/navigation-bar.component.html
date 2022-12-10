@@ -3,7 +3,8 @@
     <img class="img" (click)="navigateTo('home')" src="../../../assets/images/logo3.png">
 
     <div class="button" (click)="navigateTo('contacts')">
-        <h4>Nous contacter</h4>
+        <h4 *ngIf="!mobile">Nous contacter</h4>
+        <h4 *ngIf="mobile">Contacts</h4>
     </div>
 
 </div>
