@@ -2,54 +2,37 @@
 
 .content {
     text-align: center;
-    margin-top:120px;
+
+    height: calc(70vh);
+    display: flex;
+    
 }
+.values {
+   h4 {
+    margin-bottom: 5px;
+}
+}
+
 h1 {
     font-size: 40px;
 }
 h4 {
     margin: 0px;
-    font-size: 14px;
+    font-size: 17px;
     color : #335EEA;
+    text-align: center;
 }
 .info {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 140%;
+    margin: auto ;
+    position: relative;
+    bottom: 0px;
+    text-align: center;
+    margin-left: -100px;
 }
-h2 {
-    font-weight: 500;
-}
-.navbar_title {
-    width: 15vw; 
-    height: 2.2vw;
-    margin-top: 1.5vw;
-    color:$blueprisme;
-    font-size: 150%;
-  }
-.field {
-    width: 400px;
-}
-.fieldtext {
-    width: 832px;
-}
-
-.partenaires {
-    width: 100px;
-    margin-top: 50px;
-}
-  @media only screen and (max-width: 500px) {
-    .info {
-     display:block;
-    }
-    .values {
-        display: inline-block;
-        width: 50%;
-        vertical-align: top;
-    }
-    .field {
-        width: 100%;
-    }
-    .fieldtext {
-        width: 100%;
-    }
+.block  {
+    margin: auto;
+    align-self: flex-end;
 }

@@ -5,7 +5,7 @@
       Bienvenue sur notre espace de demande en ligne. Notre objectif est, <br> d’accompagner tout propriétaire
       désirant rénover, réparer ou adapter son logement, <br> en lui permettant de bénéficier de subventions. </p>
     <div class="button-container">
-      <div class="button button-page" (click)="start=false" style="width:200px">
+      <div class="button button-page" (click)="start=false" style="width:250px">
         <h4>Faire une demande</h4>
       </div>
     </div>
@@ -17,32 +17,32 @@
     <mat-horizontal-stepper #stepper (selectionChange)="selectionChange($event)">
 
    <mat-step label="Votre identité">
-    <br>
+    <br><br><br>
       <app-identite></app-identite>
   </mat-step>
 
      <mat-step label="Vos coordonnes">
-      <br>
+      <br><br><br>
         <app-coordonnes></app-coordonnes>
       </mat-step>
 
       <mat-step label="Votre identité">
-        <br>
+        <br><br><br>
         <app-foyer></app-foyer>
       </mat-step>
 
       <mat-step label="Votre identité">
-        <br>
+        <br><br><br>
         <app-statut></app-statut>
       </mat-step>
 
       <mat-step label="Votre identité">
-        <br>
+        <br><br><br>
         <app-revenus></app-revenus>
       </mat-step>
 
       <mat-step label="Votre identité"> 
-        <br>
+        <br><br><br>
         <app-projet></app-projet>
       </mat-step>
 
