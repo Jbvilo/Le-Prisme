@@ -47,5 +47,9 @@
 ::ng-deep i {
   color : #335EEA;
 }
-
+::ng-deep .mat-form-field-outline {
+  color:white;
+ border-radius:4px;
+ }
+ 
 }
