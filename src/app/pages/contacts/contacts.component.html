@@ -5,7 +5,7 @@
     <h1> N'hésitez pas à nous contacter.</h1>
 
    <br>
-    <div class="info" >
+    <div class="info"  *ngIf="!mobile" >
         <div class="values">
             <h4> TELEPHONE </h4>
             <span class="value">
@@ -34,6 +34,42 @@
             </span>
         </div>
     </div>
+
+    <div class="info err"  *ngIf="mobile" >
+        <div class="values">
+            <h4> TELEPHONE </h4>
+            <span class="value">
+                0596 56 37 59
+            </span>
+        </div>
+        <div class="values">
+            <h4> EMAIL </h4>
+            <span class="value">
+                contact@leprisme.fr
+            </span>
+        </div>
+        
+    </div>
+
+<br><br>
+
+    <div class="info"  *ngIf="mobile" >    <div class="values">
+        <h4> ADRESSE </h4>
+        <span class="value">
+            Allée Hermann Litté <br>
+            Quartier Bac, Ducos 97224 <br>
+            Martinique
+        </span>
+    </div>
+    <div class="values">
+        <h4> HORAIRE </h4>
+        <span class="value">
+            Du lundi au vendredi <br>
+            De 8h30 à 17h.
+        </span>
+    </div>
+</div>
+
 
 
 </div>

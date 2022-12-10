@@ -52,5 +52,19 @@
   color:white;
  border-radius:4px;
  }
+
+
+
+ @media only screen and (max-width: 500px) {
+  ::ng-deep .mat-form-field {
+    width:300px;
+}
+.content{
+height: calc(80vh);
+}
+::ng-deep .button {
+  width: 150px;
+}
+ }
  
 }

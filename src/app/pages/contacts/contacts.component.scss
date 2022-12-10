@@ -36,3 +36,17 @@ h4 {
     margin: auto;
     align-self: flex-end;
 }
+@media only screen and (max-width: 500px) {
+    .info {
+        width: 100%;
+        margin-left: -7px;
+    }
+    .content{
+        height: calc(85vh);
+        }
+        .err  {
+            width: 85%;
+            margin: auto;
+            margin-left: 42px;
+        }
+}
