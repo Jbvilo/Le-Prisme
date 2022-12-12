@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./button-round.component.scss']
 })
 export class ButtonRoundComponent implements OnInit {
-
+  tooltip:boolean=false;
   constructor() { }
 
   ngOnInit(): void {

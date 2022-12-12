@@ -1,3 +1,9 @@
-<div class="round-button">
+<div class="round-button"  (mouseenter)="tooltip=true"  (mouseleave)="tooltip=false">
     <i class="fa fa-television" aria-hidden="true"></i>
 </div>
+
+<span class="tooltip" *ngIf="tooltip">
+    <span class="tooltip-text" >
+        <i class="fa fa-undo" aria-hidden="true"></i>&nbsp;  Retourner sur le site web
+    </span> 
+</span>

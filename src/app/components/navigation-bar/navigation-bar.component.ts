@@ -16,6 +16,9 @@ export class NavigationBarComponent implements OnInit {
       this.mobile = true;
     }
   }
+  navigate(){
+    window.location.href = "https://home-5010518602.app-ionos.space/#/";
+  }
 
   navigateTo(path): void {
     this.route.navigate([path])
