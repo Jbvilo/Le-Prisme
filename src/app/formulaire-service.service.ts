@@ -12,6 +12,7 @@ export class FormulaireServiceService {
   changePageEvent: EventEmitter<any> = new EventEmitter<any>();
   values = [];
   apiurl: string = 'https://myleprismews.herokuapp.com/newDemande';
+  firstview: EventEmitter<string> = new EventEmitter<string>();
 
   constructor(private http: HttpClient, private datePipe: DatePipe) {
   }
@@ -66,5 +67,9 @@ export class FormulaireServiceService {
     const demande = this.values
     this.addState()
     return this.http.post<any>(this.apiurl, demande)
+  }
+
+  goFirstView() {
+    this.firstview.emit();
   }
 }

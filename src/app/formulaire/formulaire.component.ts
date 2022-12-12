@@ -22,6 +22,9 @@ export class FormulaireComponent implements OnInit {
       this.title = title
     })
 
+    this.formulaireservice.firstview.subscribe(()=>{
+      this.start=true;
+    })
 
   }
 

@@ -1,5 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { FormulaireServiceService } from 'src/app/formulaire-service.service';
 
 @Component({
   selector: 'app-navigation-bar',
@@ -9,7 +10,7 @@ import { Router } from '@angular/router';
 export class NavigationBarComponent implements OnInit {
   mobile: boolean;
 
-  constructor(private route: Router) { }
+  constructor(private route: Router,private formulaireService:FormulaireServiceService) { }
 
   ngOnInit(): void {
     if (window.innerWidth <= 500) {
@@ -21,6 +22,9 @@ export class NavigationBarComponent implements OnInit {
   }
 
   navigateTo(path): void {
+    if(path == "home"){
+      this.formulaireService.goFirstView()
+    }
     this.route.navigate([path])
   }
   @HostListener('window:resize', ['$event'])
