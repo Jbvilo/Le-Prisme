@@ -1,6 +1,8 @@
 :host {
     .text-plateforme{
-        padding: 5%;
+        padding: 4%;
+
+        padding-bottom: 0px;
     }
     .content {
         height: calc(93vh);
@@ -11,6 +13,7 @@
         margin-left: 0px;
         margin-top: 25px;
         margin-bottom: 0px;
+   
         p {
             padding-top:13px;
         }

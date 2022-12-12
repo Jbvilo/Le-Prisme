@@ -20,5 +20,8 @@ export class HomeComponent implements OnInit {
   navigate(value){
     this.navigationService.navigate(value)
   }
+  navigate2(){
+    window.location.href = "https://home-5006999311.app-ionos.space/#/home";
+  }
 
 }

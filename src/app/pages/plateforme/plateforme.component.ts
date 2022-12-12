@@ -15,4 +15,8 @@ accueil = true;
   ngOnInit(): void {
   }
 
+  navigate(){
+    window.location.href = "https://home-5006999311.app-ionos.space/#/home";
+  }
+
 }
