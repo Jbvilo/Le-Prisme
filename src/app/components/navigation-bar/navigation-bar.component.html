@@ -1,9 +1,9 @@
 <div class="navbar">
     
     <img class="img" (click)="navigateTo('home')" src="../../../assets/images/logo3.png">
-    <div *ngIf="!mobile" style="width:70%"></div>
-    
-    <app-button-round style="justify-content:end" (click)="navigate()"></app-button-round>
+<div class="space" *ngIf="!mobile"></div>
+    <app-button-round (click)="navigate()"></app-button-round>
+    <div style="width:10px" *ngIf="!mobile"> </div>
     <div class="button" (click)="navigateTo('contacts')">
         <h4 *ngIf="!mobile">Nous contacter</h4>
         <h4 *ngIf="mobile">Contacts</h4>
