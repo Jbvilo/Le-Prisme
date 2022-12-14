@@ -28,11 +28,17 @@
     text-align: start;
     height: 45px;
   }
+  @media only screen and (max-width: 500px) {
+    .check-box-container {
+      width: 150px;
+      height: 50px;
+    }
+}
 
   .loader-http {
     width: 100%;
     display: flex;
     justify-content: center;
   }
-
+  
 }

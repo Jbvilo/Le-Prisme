@@ -1,5 +1,5 @@
 <div class="content" *ngIf="!ending">
-    <div *ngIf="typedetravaux">
+    <div *ngIf="typedetravaux && !mobile">
         <h2 class="center"> Quel type de travaux souhaitez-vous faire ?</h2>
         <div class="check-box-container"><mat-checkbox [(ngModel)]="toiture">Toiture</mat-checkbox ></div>
         &nbsp;&nbsp;
@@ -25,6 +25,38 @@
         &nbsp;&nbsp;
         <div class="check-box-container"><mat-checkbox [(ngModel)]="autres">Autres</mat-checkbox></div>
         <br><br>
+         <div class="button button-page" (click)="changeview(2)">
+            <h4> Valider </h4>
+        </div>
+    </div>
+
+
+    <div *ngIf="typedetravaux && mobile">
+        <h2 class="center"> Quel type de travaux souhaitez-vous faire ?</h2>
+        <div class="check-box-container"><mat-checkbox [(ngModel)]="toiture">Toiture</mat-checkbox ></div>
+       
+        <div class="check-box-container"><mat-checkbox [(ngModel)]="fauxplafond">Faux-plafond</mat-checkbox></div>
+      
+        <div class="check-box-container"><mat-checkbox [(ngModel)]="menuiserie">Menuiseries</mat-checkbox></div>
+     
+        <div class="check-box-container"><mat-checkbox  [(ngModel)]="miseonormelec">Mise aux normes <br *ngIf="mobile"> électriques</mat-checkbox></div>
+      
+        <div class="check-box-container"><mat-checkbox [(ngModel)]="adaptsalldo">Adaptation <br *ngIf="mobile"> salle d'eau</mat-checkbox></div>
+    
+        <div class="check-box-container"><mat-checkbox [(ngModel)]="accesslog">Accessibilité <br *ngIf="mobile"> logement</mat-checkbox></div>
+    
+        <div class="check-box-container"><mat-checkbox [(ngModel)]="fossesept">Fosse <br *ngIf="mobile"> septique</mat-checkbox></div>
+     
+        <div class="check-box-container"><mat-checkbox [(ngModel)]="parasis">Renforcement <br *ngIf="mobile"> para-sismique</mat-checkbox></div>
+   
+        <div class="check-box-container"><mat-checkbox [(ngModel)]="antiterm">Traitement <br *ngIf="mobile"> anti-termites</mat-checkbox></div>
+
+        <div class="check-box-container"><mat-checkbox [(ngModel)]="desamiantage">Désamiantage</mat-checkbox></div>
+
+        <div class="check-box-container"><mat-checkbox [(ngModel)]="ventilation">Ventilation</mat-checkbox></div>
+   
+        <div class="check-box-container"><mat-checkbox [(ngModel)]="autres">Autres</mat-checkbox></div>
+   
          <div class="button button-page" (click)="changeview(2)">
             <h4> Valider </h4>
         </div>
