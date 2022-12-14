@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { FormulaireComponent } from './formulaire/formulaire.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
 
-
 const routes: Routes = [
   {path:"", component:FormulaireComponent},
   {path:"home", component:FormulaireComponent},

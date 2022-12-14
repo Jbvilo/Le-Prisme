@@ -1,8 +1,6 @@
 import { DatePipe } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { EventEmitter, Injectable } from '@angular/core';
-import { map } from 'rxjs/operators';
-import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -10,12 +8,11 @@ import { environment } from 'src/environments/environment';
 export class FormulaireServiceService {
   open: EventEmitter<string> = new EventEmitter<string>();
   changePageEvent: EventEmitter<any> = new EventEmitter<any>();
+  firstview: EventEmitter<string> = new EventEmitter<string>();
   values = [];
   apiurl: string = 'https://myleprismews.herokuapp.com/newDemande';
-  firstview: EventEmitter<string> = new EventEmitter<string>();
-
-  constructor(private http: HttpClient, private datePipe: DatePipe) {
-  }
+ 
+  constructor(private http: HttpClient, private datePipe: DatePipe) {}
 
   setFormsTitle(title) {
     setTimeout(() => {

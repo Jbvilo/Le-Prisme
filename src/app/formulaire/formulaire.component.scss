@@ -1,42 +1,39 @@
 @import '../../styles.scss';
-
 :host {
 
-      .text {
-        margin-top: -30px;
-      }
-      .content {
-        display: flex;
-      align-items: center;
-      }
-      .text-block{
-        width: fit-content;
-        margin: auto;
-        text-align: center;
-    
-      }
+  .text {
+    margin-top: -30px;
+  }
 
-    .button-container  {
-      padding-top: 30px;
-      text-align: center;
-    }
+  .content {
+    display: flex;
+    align-items: center;
+  }
 
-    .content  {
-      height:calc(65vh);
-    }
+  .text-block {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+  }
 
-    ::ng-deep div {
-        overflow: visible;
-    }
+  .button-container {
+    padding-top: 30px;
+    text-align: center;
+  }
 
-    ::ng-deep .mat-form-field {
-        width:500px;
-        height: 85px;
-        
-    }
-  
+  .content {
+    height: calc(65vh);
+  }
 
+  ::ng-deep div {
+    overflow: visible;
+  }
 
+  ::ng-deep .mat-form-field {
+    width: 500px;
+    height: 85px;
+
+  }
 ::ng-deep .mat-horizontal-stepper-header{
   //pointer-events: none !important;
 }
@@ -45,34 +42,35 @@
 }
 
 
-::ng-deep .mat-input-element::placeholder{
+::ng-deep .mat-input-element::placeholder {
   color: white;
 }
+
 ::ng-deep .mat-form-field-outline {
-  color:white;
- border-radius:4px;
- }
+  color: white;
+  border-radius: 4px;
+}
 
- ::ng-deep i {
+::ng-deep i {
   font-size: 25px;
- }
-
+}
 
  @media only screen and (max-width: 500px) {
-  ::ng-deep .mat-form-field {
-    width:300px;
-}
-.content{
-height: calc(55vh);
-}
-::ng-deep .button {
-  width: 140px;
-}
+   ::ng-deep .mat-form-field {
+     width: 300px;
+   }
 
+   .content {
+     height: calc(55vh);
+   }
 
-.start {
-  height: calc(80vh);
-}
+   ::ng-deep .button {
+     width: 140px;
+   }
+
+   .start {
+     height: calc(80vh);
+   }
  }
  
 }

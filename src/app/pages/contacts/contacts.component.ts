@@ -13,7 +13,7 @@ export class ContactsComponent implements OnInit {
     window.scrollTo(0,0)
   }
 
-  @HostListener('window:resize', ['$event'])
+@HostListener('window:resize', ['$event'])
 onResize(event) {
 if(window.innerWidth <= 500){
   this.mobile = true
