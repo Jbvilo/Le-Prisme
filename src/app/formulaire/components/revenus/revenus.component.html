@@ -19,29 +19,29 @@
                 [formControl]="employeurControl">
         </mat-form-field>
         <br>
-        <div class="button" (click)="changeview(1)">
+        <div class="button button-page" (click)="changeview(1)">
             <h4> Valider </h4>
         </div>
     </div>
 
     <div *ngIf="chommage">
        <h2 class="center"> Est ce que vous percevez des indemnités de chomage ? </h2>    
-            <div class="button" (click)="chommagevalue='oui'; changeview(2)">
+            <div class="button button-page" (click)="chommagevalue='oui'; changeview(2)">
                 <h4 > Oui </h4> 
             </div> 
             &nbsp;
-        <div class="button" (click)="chommagevalue='non';changeview(2)">
+        <div class="button button-page" (click)="chommagevalue='non';changeview(2)">
                 <h4 > Non </h4> 
         </div>
     </div>
         
     <div *ngIf="retraite">
    <h2 class="center"> Est ce que vous percevez une retraite ?</h2>    
-        <div class="button" (click)="retraitevalue='oui';changeview(3.5)">
+        <div class="button button-page" (click)="retraitevalue='oui';changeview(3.5)">
             <h4 > Oui </h4> 
         </div>
         &nbsp;
-        <div class="button" (click)="retraitevalue='non';changeview(3.1)">
+        <div class="button button-page" (click)="retraitevalue='non';changeview(3.1)">
             <h4 > Non </h4> 
         </div>
     </div>
@@ -53,18 +53,18 @@
             <input matInput type="text" [(ngModel)]="organismeretraitevalue"  (keyup.enter)="changeview(3)" [formControl]="retraiteControl">
         </mat-form-field>
         <br>
-        <div class="button" (click)="changeview(3)">
+        <div class="button button-page" (click)="changeview(3)">
             <h4 > Valider </h4>
         </div>
     </div>
         
     <div *ngIf="retraitecomplementaire">
        <h2 class="center"> Est ce que vous percevez une retraite complémentaire ?</h2>    
-            <div class="button" (click)="retraitecomplementairevalue='oui';changeview(4.5)">
+            <div class="button button-page" (click)="retraitecomplementairevalue='oui';changeview(4.5)">
                 <h4 > Oui </h4> 
             </div>
             &nbsp;
-            <div class="button" (click)="retraitecomplementaire='non';changeview(4.1)">
+            <div class="button button-page" (click)="retraitecomplementaire='non';changeview(4.1)">
                 <h4 > Non </h4> 
             </div>
     </div>
@@ -77,18 +77,18 @@
             <input matInput type="text" [(ngModel)]="organismeretraitecvalue" (keyup.enter)="changeview(4)" [formControl]="retraitecControl">
         </mat-form-field>
         <br>
-        <div class="button" (click)="changeview(4)">
+        <div class="button button-page" (click)="changeview(4)">
             <h4 > Valider </h4>
         </div>
     </div>
         
     <div *ngIf="pension">
        <h2 class="center"> Est ce que vous percevez une pension autre ?</h2>    
-            <div class="button" (click)="pensionvalue='oui'; changeview(5)">
+            <div class="button button-page" (click)="pensionvalue='oui'; changeview(5)">
                 <h4 > Oui </h4> 
             </div>
             &nbsp;
-            <div class="button" (click)="pensionvalue='non';changeview(6.1)">
+            <div class="button button-page" (click)="pensionvalue='non';changeview(6.1)">
                 <h4 > Non </h4> 
             </div>
     </div>
@@ -100,40 +100,40 @@
             <input matInput type="text" [(ngModel)]="pensionorganismevalue" (keyup.enter)="changeview(6)" [formControl]="pensionControl">
         </mat-form-field>
         <br>
-        <div class="button" (click)="changeview(6)">
+        <div class="button button-page" (click)="changeview(6)">
             <h4 > Valider </h4>
         </div>
     </div>
         
     <div *ngIf="rsa">
        <h2 class="center"> Est ce que vous percevez le RSA ?</h2>     
-            <div class="button" (click)="rsavalue='oui';changeview(7)">
+            <div class="button button-page" (click)="rsavalue='oui';changeview(7)">
                 <h4 > Oui </h4> 
             </div>
             &nbsp;
-            <div class="button" (click)="rsavalue='non'; changeview(7)">
+            <div class="button button-page" (click)="rsavalue='non'; changeview(7)">
                 <h4 > Non </h4> 
             </div>
     </div>
         
     <div *ngIf="allocAAH">
        <h2 class="center"> Est ce que vous percevez une allocation adulte handicapé ?</h2> 
-            <div class="button" (click)="allocAAHvalue='oui';changeview(8)">
+            <div class="button button-page" (click)="allocAAHvalue='oui';changeview(8)">
                 <h4 > Oui </h4> 
             </div>
             &nbsp;
-            <div class="button" (click)="allocAAHvalue='non' ; changeview(8)">
+            <div class="button button-page" (click)="allocAAHvalue='non' ; changeview(8)">
                 <h4 > Non </h4> 
             </div>
     </div>
 
     <div *ngIf="autreremu">
        <h2 class="center"> Percevez vous un autre type de rémunération ?</h2>    
-            <div class="button" (click)="autreremuvalue='oui'; changeview(9.5)">
+            <div class="button button-page" (click)="autreremuvalue='oui'; changeview(9.5)">
                 <h4 > Oui </h4> 
             </div>
             &nbsp;
-            <div class="button" (click)="autreremuvalue='non' ; changeview(9.1)">
+            <div class="button button-page" (click)="autreremuvalue='non' ; changeview(9.1)">
                 <h4 > Non </h4> 
             </div>
     </div>
@@ -145,7 +145,7 @@
             <input matInput type="text" [(ngModel)]="autretypevalue" (keyup.enter)="changeview(9)" [formControl]="autreControl">
         </mat-form-field>
         <br>
-        <div class="button" (click)="changeview(9)">
+        <div class="button button-page" (click)="changeview(9)">
             <h4 > Valider </h4>
         </div>
     </div>

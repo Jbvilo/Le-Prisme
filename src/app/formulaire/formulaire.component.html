@@ -3,8 +3,8 @@
     <h1 class="center glow">LE PRISME.fr</h1>
     <br *ngIf="mobile"> <br *ngIf="mobile"> <br *ngIf="mobile"> <br *ngIf="mobile">
     <p class="center text">
-      Bienvenue sur notre espace de demande en ligne. Notre objectif est<span *ngIf="!mobile">,</span> <br *ngIf="!mobile"> d’accompagner tout propriétaire
-      désirant rénover, réparer ou adapter son logement, <br *ngIf="!mobile"> en lui permettant de bénéficier de subventions. </p>
+      Bienvenue sur notre espace de demande en ligne. Remplissez <br *ngIf="!mobile">  les informations  du formulaire afin d'être accompagner pour
+      rénover, réparer ou adapter <br *ngIf="!mobile"> votre logement et bénéficier de subventions. </p>
       <br *ngIf="mobile">  <br *ngIf="mobile">
     <div class="button-container">
       <div class="button button-page" (click)="start=false" style="width:230px">
@@ -30,6 +30,7 @@
 
       <mat-step label="Votre identité">
         <br><br><br>
+       
         <app-foyer></app-foyer>
       </mat-step>
 
