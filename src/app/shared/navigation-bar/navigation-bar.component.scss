@@ -1,7 +1,8 @@
 .navigation-bar-container-black {
     height: 50px;
     padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 20px;
+    padding-top: 5px;
     display: flex;
     justify-content: space-between;
     background-color: #161C2D;
@@ -22,7 +23,8 @@
 .navigation-bar-container-grey {
     height: 50px;
     padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 20px;
+    padding-top: 5px;
     display: flex;
     justify-content: space-between;
     background-color: #F8FAFD;  
@@ -33,6 +35,13 @@
         cursor: pointer;
         color:#082460;
     }
+    .round {
+      background-color: #082460;
+    }
+ 
+    i {
+       color:white;
+    }
 
     .brand-name {
         font-size: 21px;
@@ -42,15 +51,56 @@
 
 
 .space {
-    width: 8%;
+    width: 0%;
 }
 
 .space2 {
-    width: 10%;
+    width: 50%;
+ 
 }
+
 
 .img {
     filter: drop-shadow(0 0 0.30rem #00A5EA);
     margin-top: 10px;
     height: 50px;
+}
+
+
+
+:host {
+    i {
+        font-size: 19px;
+    
+        margin-top: 5px;
+    }
+
+    .round {
+        height: 30px;
+        width: 30px;
+        border: solid 1px white;
+        border-radius: 50%;
+        margin-top: 20px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .contact {
+        border-radius: 50px;
+        height: 40px;
+        width: 150px;
+        border: solid 1px white;
+        text-align: center;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+    .helptext {
+        margin-top: 8px;
+    }
+
+    .round:hover {
+     
+
+    }
+
 }
