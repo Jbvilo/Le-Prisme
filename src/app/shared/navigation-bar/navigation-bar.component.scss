@@ -36,11 +36,13 @@
         color:#082460;
     }
     .round {
-      background-color: #082460;
+      background-color: white;
+      border: solid 1.2px #082460;
+      
     }
  
     i {
-       color:white;
+       color:#082460;
     }
 
     .brand-name {
@@ -52,10 +54,11 @@
 
 .space {
     width: 0%;
+    margin-left: -20px;
 }
 
 .space2 {
-    width: 50%;
+    width: 55%;
  
 }
 
@@ -63,7 +66,7 @@
 .img {
     filter: drop-shadow(0 0 0.30rem #00A5EA);
     margin-top: 10px;
-    height: 50px;
+    height: 47px;
 }
 
 
@@ -98,8 +101,35 @@
         margin-top: 8px;
     }
 
-    .round:hover {
-     
+    .glow:hover {
+        background-color: white;
+        filter: drop-shadow(0 0 0.30rem white);
+        i {
+          color: #203258;
+      
+        }
+      color: #203258;
+
+    }
+    .glowactive {
+        background-color: white;
+        filter: drop-shadow(0 0 0.30rem white);
+        i {
+          color: #203258;
+      
+        }
+      color: #203258;
+
+    }
+
+    .glow2:hover {
+        background-color: white;
+        filter: drop-shadow(0 0 0.20rem white);
+        i {
+          color: #203258;
+      
+        }
+      color: #203258;
 
     }
 
