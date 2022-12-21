@@ -2,24 +2,24 @@
     <img class="img" src="../../../assets/images/logo.png"/>
    
     <div class="space"></div>
-    <div class="round glow glowactive" (click)="navigate('')">
+    <div class="round glow"[ngClass]="activebutton('/')" (click)="navigate('')">
         <i class="fa fa-home" aria-hidden="true" ></i>
     </div>
 
-    <div class="round glow" (click)="navigate('presentation')">
+    <div class="round glow" [ngClass]="activebutton('/presentation')"  (click)="navigate('presentation')">
         <i class="fa fa-info" aria-hidden="true" ></i>
     </div>   
 
-    <div class="round glow" (click)="navigate('accompagnement')">
+    <div class="round glow" [ngClass]="activebutton('/accompagnement')"  (click)="navigate('accompagnement')">
         <i class="fa fa-handshake-o" aria-hidden="true" ></i>
     </div>
 
-    <div class="round glow"  (click)="navigate('plateforme')">
+    <div class="round glow" [ngClass]="activebutton('/plateforme')"  (click)="navigate('plateforme')">
         <i class="fa fa-space-shuttle" aria-hidden="true"></i>
     </div>
   
   
     <div class="space2"></div>
-    <div (click)="navigate('contacts')" class="bold contact glow2">
+    <div (click)="navigate('contacts')" class="bold contact glow2" [ngClass]="activebutton('/contacts')" >
         <div class="helptext">Nous contacter</div></div>
 </div>

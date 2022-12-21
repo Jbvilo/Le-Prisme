@@ -10,7 +10,7 @@ export class ContactComponent implements OnInit {
 
 
   constructor(private navigationService:NavigationService) {
-    this.navigationService.setNavBarClass('navigation-bar-container-grey'); 
+    this.navigationService.setNavBarClass('navigation-bar-container-black'); 
   }
   ngOnInit(): void {
   }

@@ -8,17 +8,17 @@ import { NavigationService } from 'src/app/navigation.service';
 })
 export class PresentationComponent implements OnInit {
 
-  constructor(private navigationService:NavigationService) {
-    this.navigationService.setNavBarClass('navigation-bar-container-grey'); 
+  constructor(private navigationService: NavigationService) {
+    this.navigationService.setNavBarClass('navigation-bar-container-black');
   }
 
   ngOnInit(): void {
   }
 
-  scroll(){
+  scroll() {
     this.navigationService.windowScrollBy(1)
   }
-  navigate(value){
+  navigate(value) {
     this.navigationService.navigate(value)
   }
 }

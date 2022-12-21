@@ -1,54 +1,27 @@
 :host {
-    .text-histoire {
-        padding:10%;
-       padding-top: 12%;
-       padding-left: 15%;
-     
-       color:black;
-    }
- 
-
-    .chrono-container {
-        margin:auto;
-        width:80%;
-        display: flex;
-        justify-content: space-between;
-        .chrono-step {
-            width : 30%;
-            text-align: start;
-        }
-    }
-    .accompagnement-button{
+    .accompagnement-button {
         .button {
-            margin:auto;
+            margin: auto;
             height: 50px;
             width: 220px;
-            p{
+
+            p {
                 padding-top: 15px;
             }
         }
     }
 
     .img-container {
-        display:flex;
+        display: flex;
         justify-content: space-between;
         margin: auto;
-        width:85%;
+        width: 85%;
     }
 
     .img-block {
-        height:450px;
+        height: 450px;
+        .card {
+            background-color: white;
+        }
     }
-    h1 {
-        font-size:140px;
-    }
-    .titreMaj {
-        font-size: 13px;
-    }
-    .startnum {
-      //  background: -webkit-linear-gradient(white, white);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent; 
-    }
-    
 }

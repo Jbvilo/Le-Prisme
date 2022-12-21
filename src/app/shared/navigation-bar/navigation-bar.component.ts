@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { NavigationService } from 'src/app/navigation.service';
 
 @Component({
@@ -18,4 +18,11 @@ export class NavigationBarComponent implements OnInit {
   navBarClass():string {
     return this.navigationService.navbarClass;
   }
+  activebutton(value){
+    if(this.router.url == value){
+      return 'glowactive';
+    }
+ 
+  }
+  
 }
