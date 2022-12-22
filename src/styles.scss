@@ -105,6 +105,28 @@ p {
 
 .titreMaj {}
 
+.biggi {
+  height:calc(80vh)
+}
+.biggig {
+  height:calc(155vh);
+}
+//big screen
+@media only screen and (min-width: 1300px) {
+  .content {
+   max-height: 600px;
+   padding-left: 6vw;
+   padding-right: 6vw;
+  }
+  .biggig{
+    height: calc(170vh);
+    padding-bottom: 240px;
+    padding-top: 40px;
+  }
+}
+
+
+
 .content.black {
   background-color: #161C2D;
 }
@@ -258,4 +280,33 @@ p {
 }
 .gradiant-5 {
   background:linear-gradient(#041130,#161C2D);
+}
+
+
+
+//big screen
+@media only screen and (min-width: 1600px) {
+  .content {
+   max-height: 600px;
+   padding-left: 8vw;
+   padding-right: 12vw;
+  }
+  .big {
+    padding-left: 14%;
+  }
+  .bigo {
+    padding-left: 17%;
+  }
+  .biggi {
+    height: calc(35vh);
+  }
+  .biggig{
+    height: calc(170vh);
+    padding-bottom: 260px;
+    padding-top: 60px;
+  }
+  .bigplat {
+    max-height: none;
+    height:47.3vw;
+  }
 }
