@@ -1,6 +1,7 @@
 <div class="content start" *ngIf="start">
   <div class="text-block">
-    <h1 class="center glow">LE PRISME.fr</h1>
+    <br>
+    <h1 class="center ">LE PRISME.fr</h1>
     <br *ngIf="mobile"> <br *ngIf="mobile"> <br *ngIf="mobile"> <br *ngIf="mobile">
     <p class="center text">
       Bienvenue sur notre espace de demande en ligne. Remplissez <br *ngIf="!mobile">  les informations  du formulaire afin d'être accompagner pour
@@ -19,33 +20,33 @@
     <mat-horizontal-stepper #stepper (selectionChange)="selectionChange($event)">
 
    <mat-step label="Votre identité">
-    <br>
+    <br> <br>
       <app-identite></app-identite>
   </mat-step>
 
      <mat-step label="Vos coordonnes">
-      <br>
+      <br> <br>
         <app-coordonnes></app-coordonnes>
       </mat-step>
 
       <mat-step label="Votre identité">
-        <br>
+        <br> <br>
        
         <app-foyer></app-foyer>
       </mat-step>
 
       <mat-step label="Votre identité">
-        <br>
+        <br> <br>
         <app-statut></app-statut>
       </mat-step>
 
       <mat-step label="Votre identité">
-        <br>
+        <br> <br>
         <app-revenus></app-revenus>
       </mat-step>
 
       <mat-step label="Votre identité"> 
-        <br>
+        <br> <br>
         <app-projet></app-projet>
       </mat-step>
 
