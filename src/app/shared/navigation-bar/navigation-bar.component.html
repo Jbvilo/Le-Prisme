@@ -2,23 +2,34 @@
     <img class="img" src="../../../assets/images/logo.png"/>
    
     <div class="space"></div>
-    <div class="round glow"[ngClass]="activebutton('/')" (click)="navigate('')">
-        <i class="fa fa-home" aria-hidden="true" ></i>
+   
+    <div style="width:200px;display:flex;justify-content:space-between;"> 
+        <div *ngIf="!plateforme" class="round glow"[ngClass]="activebutton('/')" (click)="navigate('')">
+            <i class="fa fa-home" aria-hidden="true" ></i>
+        </div>
+    
+        <div  *ngIf="!plateforme" class="round glow" [ngClass]="activebutton('/presentation')"  (click)="navigate('presentation')">
+            <i class="fa fa-info" aria-hidden="true" ></i>
+        </div>   
+    
+        <div  *ngIf="!plateforme" class="round glow" [ngClass]="activebutton('/accompagnement')"  (click)="navigate('accompagnement')">
+            <i class="fa fa-handshake-o" aria-hidden="true" ></i>
+        </div>
+
+        <div *ngIf="plateforme" style="width:90px"></div>
+        
+    <div style="width:30px;">
+        <div class="round glow" [ngClass]="activebutton('/plateforme')"  (click)="navigate('plateforme')">
+            <i class="fa fa-space-shuttle" aria-hidden="true"></i>
+        </div>
+    </div>
     </div>
 
-    <div class="round glow" [ngClass]="activebutton('/presentation')"  (click)="navigate('presentation')">
-        <i class="fa fa-info" aria-hidden="true" ></i>
-    </div>   
 
-    <div class="round glow" [ngClass]="activebutton('/accompagnement')"  (click)="navigate('accompagnement')">
-        <i class="fa fa-handshake-o" aria-hidden="true" ></i>
-    </div>
 
-    <div class="round glow" [ngClass]="activebutton('/plateforme')"  (click)="navigate('plateforme')">
-        <i class="fa fa-space-shuttle" aria-hidden="true"></i>
-    </div>
-  
-  
+
+
+    
     <div class="space2"></div>
     <div (click)="navigate('contacts')" class="bold contact glow2" [ngClass]="activebutton('/contacts')" >
         <div class="helptext">Nous contacter</div></div>

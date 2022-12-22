@@ -61,7 +61,22 @@
     width: 55%;
  
 }
+.spaceshuttle {
+    animation: 3s linear 0.2s slidein forwards;
+}
+.disap {
+    animation: 3s linear 0.2s lower forwards;
+}
 
+@keyframes slidein {
+    0% {  position: absolute;margin-left: 30px;}
+    100%   {position: absolute;margin-left: 55%;}
+  }
+
+  @keyframes lower {
+    0% {  opacity: 1;}
+    100%   {opacity: 0;}
+  }
 
 .img {
     filter: drop-shadow(0 0 0.30rem #00A5EA);

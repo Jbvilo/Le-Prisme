@@ -1,3 +1,7 @@
-<div class="content black gradiant1 center">
-    <h1> En vol vers notre plateforme d'échange </h1>
+<div class="content black gradiant1 center" *ngIf="!plateforme">
+    <h1> En vol vers notre plateforme de demande </h1>
+</div>
+
+<div class="content black gradiant1" *ngIf="plateforme">
+    <iframe class="iframe" src="https://home-5006999311.app-ionos.space/#/"></iframe>
 </div>
