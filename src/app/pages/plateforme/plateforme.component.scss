@@ -5,9 +5,14 @@
         border: none;
         height: calc(90vh);
         width: 98%;
+        animation: 0.5s linear 0s upper forwards;
     }
     .plat{
         background:linear-gradient(#161C2D,#002680);
     }
+    @keyframes upper {
+        0% {  opacity: 0;}
+        100%   {opacity: 1;}
+      }
 }
 
