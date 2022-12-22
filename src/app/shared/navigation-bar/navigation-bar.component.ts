@@ -25,9 +25,9 @@ export class NavigationBarComponent implements OnInit {
         return;
       }
     }
-    if(this.router.url != "/plateforme"){
+
       this.router.navigate([routeName])
-    }
+
  
   }
   navBarClass():string {
