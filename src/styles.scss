@@ -126,7 +126,6 @@ p {
 }
 
 
-
 .content.black {
   background-color: #161C2D;
 }
@@ -256,9 +255,21 @@ p {
 .center {
   display: flex;align-items: center;
   h1 {
-    font-size:55px;font-weight:600;margin: auto;margin-top: 17%;
+    font-size:55px;font-weight:600;margin: auto;
   }
 }
+.centre {
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+  margin-top: 17%;
+  i {
+    font-size: 35px;
+    margin-top: 39%;
+    cursor: pointer;
+  }
+}
+
 
 .gradiant1 {
   background:linear-gradient(#161C2D,#011543);
