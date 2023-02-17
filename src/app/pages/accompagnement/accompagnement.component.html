@@ -67,12 +67,16 @@
   
     </div>
     <div class="content-split6">
-        <div class="  cardtest" style="height:650px;width:700px;margin-left: 58px;">
+        <div *ngIf="carrous" class=" fondu cardtest" style="height:650px;width:700px;margin-left: 58px;">
             
             <img style="height: 250px;margin-left: 5%;margin-top: 5%;" src="../../../assets/icones/avantaah.png"/>
 &nbsp;<br>
             <img style="height: 320px;margin-top: 0px;margin-left: 33%;" src="../../../assets/images/apresaah.png"/>
         </div>
+<div *ngIf="!carrous" style="height:650px;width:700px;margin-left: 58px;" class="fondu">
+    <img style="height: 430px;margin-top: 130px;" src="../../../assets/images/aaah.jpg"/>
+</div>
+      
     </div>
 
     
@@ -89,7 +93,7 @@
 
     <div class="content-split6">
         <div class="" style="height:630px;width:700px;margin-left:-40px ;">
-        <img src="../../../assets/images/accessibilite.png" style="height: 260px;"/> &nbsp;        <img src="../../../assets/images/poigne.jfif" style="height: 224px;"/>  <br>
+        <img src="../../../assets/images/accessibilite.png" style="height: 260px;"/> &nbsp;        <img src="../../../assets/images/poigne.jfif" style="height: 260px;width: 224px;"/>  <br>
         <img src="../../../assets/images/accessibilite2.png"  style="height: 260px;"/>&nbsp;
         <img src="../../../assets/images/main_courante.jpg" style="height: 260px;" />
         </div>
@@ -168,7 +172,7 @@
 
 <!--FIFTH VIEW-->
 
-<div class="content gray lastScreen " style="height:400px">
+<div class="content gray lastScreen " style="height:450px">
     <br>
     <h1 >Vous savez tout !</h1>
     <p> Il ne vous reste plus qu'à faire votre demande.</p>

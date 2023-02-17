@@ -8,13 +8,17 @@ import { NavigationService } from 'src/app/navigation.service';
   styleUrls: ['./accompagnement.component.scss']
 })
 export class AccompagnementComponent implements OnInit {
-
+ carrous:boolean=true;
   constructor(private navigationService:NavigationService,private router:Router) { 
     this.navigationService.setNavBarClass('navigation-bar-container-black'); 
   }
   
 
-  ngOnInit() {}
+  ngOnInit() {
+setInterval(() => {
+  this.carrous = !this.carrous
+}, 5000);
+  }
 
   navigate(value){
     this.navigationService.navigate(value)
