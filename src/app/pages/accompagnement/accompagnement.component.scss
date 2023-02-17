@@ -1,14 +1,22 @@
 .phases-accomp {
     display: flex;
     justify-content: space-between;
-    width: 85%;
+    width: 90%;
     margin: auto;
-    margin-left: 10%;
+ 
     text-align: start;
     .phase {
-        width: 40%;
+        width: 22%;
+        text-align: center;
+        .txtphz {
+            font-size: 17px;
+        }
+        .icons {
+            margin:auto;
+        }
     }
 }
+
 
 .content-split4 {
     .text-contentleft {
