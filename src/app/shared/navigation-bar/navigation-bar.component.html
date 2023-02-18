@@ -1,19 +1,24 @@
 <div [ngClass]="navBarClass()">
-    <img class="img" src="../../../assets/images/logo.png"/>
+    <img class="img" src="../../../assets/images/logo.png" (click)="navigate('')"/>
    
     <div class="space"></div>
    
     <div style="width:200px;display:flex;justify-content:space-between;"> 
-        <div *ngIf="!plateforme" class="round glow"[ngClass]="activebutton('/')" (click)="navigate('')">
+        <div *ngIf="!plateforme" class="round glow" [ngClass]="activebutton('/')" (click)="navigate('')">
             <i class="fa fa-home" aria-hidden="true" ></i>
+            <span class="tooltipAcc" style="margin-left:-30px">Accueil</span>
         </div>
+
+    
     
         <div  *ngIf="!plateforme" class="round glow" [ngClass]="activebutton('/presentation')"  (click)="navigate('presentation')">
             <i class="fa fa-info" aria-hidden="true" ></i>
+            <span class="tooltipAcc"  style="margin-top: 45.6px">Qui sommes-nous ?</span>
         </div>   
     
         <div  *ngIf="!plateforme" class="round glow" [ngClass]="activebutton('/accompagnement')"  (click)="navigate('accompagnement')">
             <i class="fa fa-handshake-o" aria-hidden="true" ></i>
+            <span class="tooltipAcc"  style="margin-top: 45.8px">Nos services</span>
         </div>
 
         <div *ngIf="plateforme" style="width:90px"></div>
@@ -21,6 +26,7 @@
     <div style="width:30px;">
         <div class="round glow" [ngClass]="activebutton('/plateforme')"  (click)="navigate('plateforme')">
             <i class="fa fa-space-shuttle" aria-hidden="true"></i>
+            <span class="tooltipAcc"  style="margin-top: 46px">Faire une demande</span>
         </div>
     </div>
     </div>

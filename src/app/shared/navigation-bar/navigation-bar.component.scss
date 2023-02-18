@@ -57,6 +57,21 @@
     margin-left: -20px;
 }
 
+.tooltipAcc {
+  position:absolute;
+  margin-top:45px;
+  margin-left:-40px;
+  visibility: hidden;
+  color:white;
+  width: 150px;
+  text-align: start;
+  font-size: 14px;
+}
+
+.round:hover .tooltipAcc{
+    visibility: visible;
+
+}
 .space2 {
     width: 55%;
  
@@ -82,6 +97,7 @@
     filter: drop-shadow(0 0 0.30rem #00A5EA);
     margin-top: 10px;
     height: 47px;
+    cursor: pointer;
 }
 
 
