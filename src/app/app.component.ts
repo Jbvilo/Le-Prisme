@@ -12,11 +12,12 @@ export class AppComponent implements OnInit {
   visible2: boolean = false;
   scroll: boolean = false;
   computer: boolean;
+  mobile:boolean;
 
   constructor(private router: Router) {
 
  this.onResize()
-
+this.screen()
 
 
   }
@@ -32,12 +33,16 @@ export class AppComponent implements OnInit {
 
   @HostListener('window:resize', ['$event'])
   onResize() {
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-      this.computer= false;
-    }
-    else {
-      this.computer=true;
-    }
+  this.screen()
+  }
+
+  screen(){
+if(window.innerWidth <= 500){
+  this.mobile= true
+}
+else{
+  this.mobile=false;
+}
   }
 
   ngOnInit(): void {

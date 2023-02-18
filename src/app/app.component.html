@@ -1,15 +1,18 @@
 
-  <div [ngClass]="scroll? 'scroll' : 'top'" style="width: 100%;z-index: 800;background-color: white;margin-top: -10px;">
+  <div *ngIf="mobile" [ngClass]="scroll? 'scroll' : 'top'" style="width: 100%;z-index: 800;background-color: white;margin-top: -10px;">
         <app-navigation-bar *ngIf="visible"></app-navigation-bar>
     </div>
   
     <!--A remplacer, permet de descendre le contenu principal-->
-    <div *ngIf="visible" style="height: 100px"></div>
+    <div *ngIf="visible&&mobile" style="height: 100px"></div>
 
-    <div class="bodyy"> 
+    <div class="bodyy" *ngIf="mobile"> 
     
     <router-outlet></router-outlet>
 
     </div>
-    <app-footer *ngIf="visible2"></app-footer>
+    <app-footer *ngIf="visible2&&mobile"></app-footer>
 
+
+
+    <iframe *ngIf="!mobile" src="https://home-5010518602.app-ionos.space/#/" class="iframe"></iframe>
