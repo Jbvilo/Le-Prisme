@@ -43,4 +43,11 @@ export class NavigationService {
   navigate(value){
     this.router.navigate([value])
   }
+
+isMobile(){
+  if(window.innerWidth <=400){
+    return true
+  }
+  return false
+}
 }

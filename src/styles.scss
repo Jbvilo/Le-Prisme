@@ -326,3 +326,16 @@ p {
     height:47.3vw;
   }
 }
+
+
+
+@media only screen and (max-width: 600px) {
+
+  .button {
+      height: 37px;
+      margin:5px;
+     p {
+      font-size: 12px;
+     }
+  }
+}

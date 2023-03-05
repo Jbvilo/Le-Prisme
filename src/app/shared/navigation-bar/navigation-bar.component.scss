@@ -163,5 +163,36 @@
       color: #203258;
 
     }
+    .buttoncontainer {
+      width:200px;display:flex;justify-content:space-between;
+      
+    }
+
+
+    
+@media only screen and (max-width: 600px) {
+  .img {
+    height: 30px;
+  }
+  .buttoncontainer {
+    width: 1050px;
+    margin-top: -10px;
+    margin-left: 50px;
+  }
+
+  .helptext {
+    font-size: 10px;
+    width: 50px;
+  }
+  .contact {
+    border-radius: 5px;
+    height: 30px;
+    margin-top: 10px;
+    width: 50px;
+  }
 
 }
+
+}
+
+

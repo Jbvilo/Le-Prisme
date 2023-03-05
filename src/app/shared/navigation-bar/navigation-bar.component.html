@@ -3,7 +3,7 @@
    
     <div class="space"></div>
    
-    <div style="width:200px;display:flex;justify-content:space-between;"> 
+    <div class="buttoncontainer"> 
         <div *ngIf="!plateforme" class="round glow" [ngClass]="activebutton('/')" (click)="navigate('')">
             <i class="fa fa-home" aria-hidden="true" ></i>
             <span class="tooltipAcc" style="margin-left:-30px">Accueil</span>
@@ -38,5 +38,5 @@
     
     <div class="space2"></div>
     <div (click)="navigate('contacts')" class="bold contact glow2" [ngClass]="activebutton('/contacts')" >
-        <div class="helptext">Nous contacter</div></div>
+        <div class="helptext"><span *ngIf="!mobile">Nous contacter</span> <span *ngIf="mobile"> Contacts</span></div></div>
 </div>

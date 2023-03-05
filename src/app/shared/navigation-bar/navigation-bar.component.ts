@@ -9,7 +9,10 @@ import { NavigationService } from 'src/app/navigation.service';
 })
 export class NavigationBarComponent implements OnInit {
   plateforme!:boolean;
-  constructor(private router:Router,private navigationService:NavigationService) { }
+  mobile: boolean;
+  constructor(private router:Router,private navigationService:NavigationService) { 
+    this.mobile=this.navigationService.isMobile()
+  }
 
   ngOnInit(): void {
    }

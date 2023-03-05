@@ -8,9 +8,11 @@ import { NavigationService } from 'src/app/navigation.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  mobile: boolean;
 
   constructor(private navigationService:NavigationService,private router:Router) {
     this.navigationService.setNavBarClass('navigation-bar-container-black'); 
+    this.mobile=this.navigationService.isMobile()
   }
 
   ngOnInit(): void { }

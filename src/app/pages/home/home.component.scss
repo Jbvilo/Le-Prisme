@@ -176,4 +176,23 @@
     .text {
         margin-top: 0%;
     }
+
+    @media only screen and (max-width: 600px) {
+        h1 {
+            font-size: 45px;
+        }
+        .assis {
+            font-size: smaller;
+        }
+        .buttons-container {
+            width: 75%;
+        }
+        .button {
+            height: 37px;
+            margin:5px;
+           p {
+            font-size: 12px;
+           }
+        }
+    }
 }
