@@ -1,8 +1,25 @@
 body::-webkit-scrollbar {
     display: none;
 }
+
 body {
     -ms-overflow-style: none;
     scrollbar-width: none;
     margin: 0px;
+    font-family: 'Raleway';
+}
+
+.blue {
+    background: linear-gradient(#161C2E,#102f76,#161C2E);
+    height: 900px;
+}
+
+.white {
+    background-color: #F8FAFD;
+    height: 700px;
+}
+
+.grey {
+    background-color: #EDEFF1;
+    height: 700px;
 }
