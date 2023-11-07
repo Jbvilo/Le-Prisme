@@ -10,16 +10,18 @@ body {
 }
 
 .blue {
-    background: linear-gradient(#161C2E,#102f76,#161C2E);
-    height: 900px;
+    background-color: #161C2E;
+    color:white;
 }
 
 .white {
     background-color: #F8FAFD;
-    height: 700px;
 }
 
 .grey {
     background-color: #EDEFF1;
-    height: 700px;
+}
+
+.shade-blue {
+    background: linear-gradient(#161C2E,#102f76,#161C2E);
 }

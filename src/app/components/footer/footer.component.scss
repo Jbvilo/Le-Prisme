@@ -1,0 +1,17 @@
+:host {
+    .footer {
+        border-top: solid 1px grey;
+        .values {
+            display: flex;
+            justify-content: space-between ;
+            .value {
+                width: 50%;
+                padding: 10% 2% 5% 8%;
+            }
+        }
+        .signature {
+            text-align: center;
+            padding: 15%;
+        }
+    }
+}

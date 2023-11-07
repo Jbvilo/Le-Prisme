@@ -6,12 +6,22 @@ import { CommonModule, HashLocationStrategy, LocationStrategy } from '@angular/c
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './views/home/home.component';
+import { InfosComponent } from './views/infos/infos.component';
+import { ServicesComponent } from './views/services/services.component';
+import { ContactsComponent } from './views/contacts/contacts.component';
+import { RequestsComponent } from './views/requests/requests.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    InfosComponent,
+    ServicesComponent,
+    ContactsComponent,
+    RequestsComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
