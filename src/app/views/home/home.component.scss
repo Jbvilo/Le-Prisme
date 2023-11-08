@@ -1,16 +1,15 @@
 :host {
     .content {
         text-align: center;
-        height: calc(100vh);
+        height: calc(95vh);
         display: flex;
         align-items: center;
         justify-content: center;
+        padding-left: 5%;
+        padding-right: 5%;
         .info {
-            margin: 5%;
             font-size: 70%;
-            position: absolute;
-            bottom: 10%;
+            margin-top: 40%;
         }
     }
-
 }
