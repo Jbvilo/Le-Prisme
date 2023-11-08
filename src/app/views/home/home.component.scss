@@ -4,5 +4,12 @@
         height: calc(100vh);
         display: flex;
         align-items: center;
+        .info {
+            margin: 5%;
+            font-size: 70%;
+            position: absolute;
+            bottom: 0px;
+        }
     }
+
 }

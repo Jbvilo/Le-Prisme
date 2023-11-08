@@ -10,6 +10,7 @@ body {
     font-family: 'Roboto';
 }
 
+/*Screens color*/
 .blue {
     background-color: #161C2E;
     color:white;
@@ -29,3 +30,43 @@ body {
     background: linear-gradient(#161C2E,#102f76,#161C2E);
     color:white;
 }
+
+/*Buttons*/ 
+.button {
+    width: 50%;
+    font-weight: 600;
+    font-size: 80%;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 40px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .button:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .button:focus {
+    outline: none;
+  }
+  
+  .button.color-9 {
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+  }
+  
+  .button.color-10 {
+    background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a, #FBB03B);
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+  }  
