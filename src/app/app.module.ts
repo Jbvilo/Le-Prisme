@@ -11,6 +11,7 @@ import { ServicesComponent } from './views/services/services.component';
 import { ContactsComponent } from './views/contacts/contacts.component';
 import { RequestsComponent } from './views/requests/requests.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { LineComponent } from './components/line/line.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { FooterComponent } from './components/footer/footer.component';
     ContactsComponent,
     RequestsComponent,
     FooterComponent,
+    LineComponent,
   ],
   imports: [
     BrowserModule,
