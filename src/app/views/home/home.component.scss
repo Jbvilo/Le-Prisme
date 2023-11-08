@@ -5,11 +5,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-left: 5%;
-        padding-right: 5%;
         .info {
             font-size: 70%;
-            margin-top: 40%;
+           position: absolute;
+           bottom: 10%;
+           margin-left: 5%;
+           margin-right: 5%;
         }
     }
+
 }
