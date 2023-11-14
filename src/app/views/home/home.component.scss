@@ -19,6 +19,20 @@
             top: 1%;
             filter: drop-shadow(0 0 0.30rem #00A5EA);
         }
+        .contact {
+            position: absolute;
+            right: 2%;
+            top:1%;
+        }
+        .button-transparant  {
+            width: 15%;
+            padding:3%;
+            border-radius: 40px;
+        }
+        .button-transparant:active {
+            background-color: white;
+            color:#13285B;
+        }
     }
 
 }

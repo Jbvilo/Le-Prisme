@@ -15,5 +15,8 @@ export class HomeComponent implements OnInit {
   goToRequestView(){
     this.router.navigate(['request'])
   }
+  goToContact(){
+    this.router.navigate(['contacts'])
+  }
 
 }
