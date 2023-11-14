@@ -34,4 +34,11 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+    .img {
+        img {
+            border-radius: 5%;
+            height: 450px;
+            width: 32%;
+        }
+    }
 }
