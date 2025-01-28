@@ -214,8 +214,8 @@ export class ProjetComponent implements OnInit {
     this.ending = true;
     this.loading = true;
     this.formulaireservice.sendValues().subscribe(res => {
-
-      if (res.affectedRows) {
+      
+      if (res.status == 'success') {
         setTimeout(() => {
           this.value = 0;
           this.ending = false;
